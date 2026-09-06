@@ -12,10 +12,10 @@ This is you building your **Mindset OS** — the system you will use for the nex
 
 ### Expectations
 
-* Be honest.
-* Be specific.
-* Be practical.
-* Write like an adult professional: clear sentences, no one-liners.
+- Be honest.
+- Be specific.
+- Be practical.
+- Write like an adult professional: clear sentences, no one-liners.
 
 You will reuse this in later weeks. So do it properly once.
 
@@ -25,15 +25,15 @@ You will reuse this in later weeks. So do it properly once.
 
 ### Rules
 
-* No "safe" answers.
-* Must be your real belief (not copied from internet).
-* Minimum 50 words.
+- No "safe" answers.
+- Must be your real belief (not copied from internet).
+- Minimum 50 words.
 
 **Hint:** What do you believe about career, money, learning, discipline, relationships, health, success, life, tech industry, etc. that most people don't agree with?
 
 ## Answer
 
-Add your answer here...
+I believe that **being busy does not always mean being productive**. Many people around me think that working longer hours and always having something to do means they are working hard and moving closer to success. I disagree with this. I believe that working smart, having clear priorities, and knowing when to rest are more important than simply spending more hours working. Sometimes, taking a break or doing nothing for a while can help us think more clearly and come back with better ideas. For me, success is not about constantly being busy, but about making meaningful progress while maintaining a balanced life.
 
 ---
 
@@ -55,11 +55,12 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+Truth: Consistent practice produces better results than trying to learn everything in a short period of time.
 
 ### Evidence from my life
 
-Add your answer here...
+I worked on different programming and technical projects over time instead of trying to master everything at once.
+By repeatedly building projects and solving technical problems, I became more comfortable with technologies such as React, Node.js, databases, and cloud services.
 
 ---
 
@@ -67,11 +68,12 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Truth: Practical experience exposes problems that cannot be fully understood through theory alone.
 
 ### Evidence from my life
 
-Add your answer here...
+I worked on projects involving APIs, authentication, databases, cloud services, and deployment.
+I encountered real issues such as CORS errors, dependency conflicts, database connection problems, and deployment failures. Solving these problems taught me more than simply reading about the concepts.
 
 ---
 
@@ -79,11 +81,12 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Truth: Taking responsibility for a project forces me to develop skills beyond technical knowledge.
 
 ### Evidence from my life
 
-Add your answer here...
+While helping to organise technical events and manage volunteers, I had to communicate with different people, coordinate tasks, manage logistics, and solve unexpected problems.
+This experience showed me that leadership, communication, and responsibility are just as important as technical skills when working on real projects.
 
 ---
 
@@ -97,37 +100,37 @@ Write as if a journalist is writing about you **3 to 7 years from now** (not 20 
 
 ### Rules
 
-* Write in past tense, like it already happened.
-* Don't use "likes to / wants to / hopes to."
-* Use specifics:
+- Write in past tense, like it already happened.
+- Don't use "likes to / wants to / hopes to."
+- Use specifics:
+  - built
+  - shipped
+  - led
+  - published
+  - earned
+  - relocated
+  - contributed
 
-  * built
-  * shipped
-  * led
-  * published
-  * earned
-  * relocated
-  * contributed
-* Include skills proof:
+- Include skills proof:
+  - projects
+  - portfolios
+  - GitHub
+  - blogs
+  - certifications
+  - job role
+  - leadership
+  - community contribution
 
-  * projects
-  * portfolios
-  * GitHub
-  * blogs
-  * certifications
-  * job role
-  * leadership
-  * community contribution
-* Add 1–3 images if you can (optional but powerful).
+- Add 1–3 images if you can (optional but powerful).
 
 ### Publish It Publicly On Any ONE
 
-* LinkedIn
-* Medium
-* WordPress
-* Blogspot
-* Personal blog
-* Portfolio page
+- LinkedIn
+- Medium
+- WordPress
+- Blogspot
+- Personal blog
+- Portfolio page
 
 Include this line:
 
@@ -135,13 +138,29 @@ Include this line:
 
 ## Your Article
 
-Add your answer here...
+## My 2.0 Version
+
+By 2030, Kar Hin had built a career around software engineering, cloud technologies, and DevOps. What started as an interest in full-stack development had developed into a strong technical foundation across frontend development, backend systems, cloud infrastructure, and application security.
+
+Over the previous few years, he had built and shipped several real-world applications instead of keeping his work limited to university assignments. His portfolio included full-stack web applications using React, Node.js, databases, REST APIs, authentication systems, and cloud services. He had also worked on projects involving AI, Web3, and cloud security, giving him experience across different areas of modern technology.
+
+His GitHub had become an important part of his professional portfolio. It contained documented projects, source code, technical experiments, and contributions that demonstrated his ability to build and solve problems independently. He had also published technical articles and project write-ups explaining what he had learned, the problems he encountered, and how he solved them.
+
+Professionally, he had earned certifications related to cloud computing and AI and had gained practical experience working with AWS and other cloud technologies. His career had progressed from an internship-level role into a professional software or cloud engineering position, where he contributed to production systems and worked with other engineers to design, deploy, monitor, and improve applications.
+
+Beyond technical work, he had continued contributing to the technology community. His experience organising technical events and working with student communities had developed into stronger leadership skills. He had led teams, coordinated volunteers, worked with speakers and industry professionals, and contributed to technical community events.
+
+One of the biggest changes was not a specific technology or job title. It was his approach to learning. Instead of constantly jumping between technologies, he had learned to focus on fundamentals, build projects, document his progress, and gain practical experience. He had become more confident in solving unfamiliar problems independently.
+
+By this point, his portfolio was no longer simply a collection of projects created to complete assignments. It had become evidence of several years of consistent learning, experimentation, leadership, and professional growth. His 2.0 version had been built through small improvements repeated over time, turning a university student interested in technology into an engineer capable of building and contributing to real-world systems.
+
+> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public:** https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=cohort3
 
 ### Public Link
 
 Paste your link here:
 
-`Add your URL here`
+`https://medium.com/@chokarhin/what-does-your-2-0-version-look-like-34d4dc390cbb`
 
 ---
 
@@ -153,19 +172,19 @@ You don't need to write the full story.
 
 Focus on the feeling:
 
-* guilt
-* fear
-* shame
-* stress
-* regret
-* numbness
-* etc.
+- guilt
+- fear
+- shame
+- stress
+- regret
+- numbness
+- etc.
 
 This is about self-awareness, not judgment.
 
 ### Answer Format
 
-**Yes / No**
+**Yes**
 
 If Yes:
 
@@ -173,7 +192,7 @@ If Yes:
 
 ## Answer
 
-Add your answer here...
+I mainly felt guilt and stress when I cut corners. At first, it felt convenient because I could finish the task faster, but afterwards I kept thinking about whether I had done the right thing. I also felt worried that someone might notice or that the shortcut would cause problems later. It made me realise that finishing something quickly is not always worth sacrificing honesty or the quality of my work. Since then, I have tried to be more responsible and accept the extra effort required to do things properly.
 
 ---
 
@@ -181,34 +200,36 @@ Add your answer here...
 
 ### Rules
 
-* Mention **Title + Author**
-* Any language allowed
-* No fiction novels
+- Mention **Title + Author**
+- Any language allowed
+- No fiction novels
 
 ### Tip
 
 Choose books that improve:
 
-* mindset
-* communication
-* productivity
-* health
-* money
-* career
-* leadership
+- mindset
+- communication
+- productivity
+- health
+- money
+- career
+- leadership
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+### Book List
+
+1. **Atomic Habits** — James Clear
+2. **Deep Work** — Cal Newport
+3. **The 7 Habits of Highly Effective People** — Stephen R. Covey
+4. **How to Win Friends and Influence People** — Dale Carnegie
+5. **The Psychology of Money** — Morgan Housel
+6. **The Almanack of Naval Ravikant** — Eric Jorgenson
+7. **Mindset** — Carol S. Dweck
+8. **Essentialism** — Greg McKeown
+9. **So Good They Can't Ignore You** — Cal Newport
+10. **The Effective Executive** — Peter F. Drucker
 
 ---
 
@@ -220,33 +241,35 @@ List topics only. No need to share numbers.
 
 ### Must Include
 
-* Learning / skill
-* Output / proof
-* Health / energy
-* Time / focus
-* Money / finance (personal or business)
+- Learning / skill
+- Output / proof
+- Health / energy
+- Time / focus
+- Money / finance (personal or business)
 
 ### Example
 
-* Learning hours per week
-* Deep work sessions per week
-* Projects shipped / documented
-* Steps / workouts
-* Sleep hours
-* Spending tracker
+- Learning hours per week
+- Deep work sessions per week
+- Projects shipped / documented
+- Steps / workouts
+- Sleep hours
+- Spending tracker
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+### My Metrics
+
+- Learning and skill development
+- Learning hours per week
+- Technical projects completed
+- Projects shipped and documented
+- GitHub activity and contributions
+- Certifications completed
+- Deep work sessions
+- Time spent on social media
+- Sleep and energy levels
+- Personal spending and savings
 
 ---
 
@@ -258,21 +281,21 @@ Do a brain dump of everything in your mind into a notebook.
 
 Examples:
 
-* Bills
-* Tasks
-* Worries
-* Goals
-* Pending messages
-* Ideas
-* Responsibilities
+- Bills
+- Tasks
+- Worries
+- Goals
+- Pending messages
+- Ideas
+- Responsibilities
 
 ### Did You Do It?
 
-**Yes / No**
+**Yes**
 
 Answer:
 
-Add your answer here...
+I wrote down the tasks, responsibilities, ideas, worries, and goals that were currently on my mind. This helped me organise my thoughts and identify what needed my attention first.
 
 ---
 
@@ -284,13 +307,16 @@ Create a simple plan you can realistically follow for the next 5 months.
 
 Example:
 
-* Mon–Thu: 60 min deep work
-* Sat: DMI session
-* Sun: Weekly review
+- Mon–Thu: 60 min deep work
+- Sat: DMI session
+- Sun: Weekly review
 
 #### My Weekly Routine
 
-Add your answer here...
+Monday–Thursday: 1 hour of focused learning or technical work
+Friday: Review pending tasks and complete smaller tasks
+Saturday: DMI work and project development
+Sunday: Weekly review and plan for the following week
 
 ---
 
@@ -298,11 +324,11 @@ Add your answer here...
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+Saturday morning and Sunday afternoon.
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
+2–3 focused sessions per week.
 
 ---
 
@@ -310,13 +336,17 @@ Add your answer here...
 
 Examples:
 
-* Phone rules
-* Social media rules
-* Environment setup
+- Phone rules
+- Social media rules
+- Environment setup
 
 #### My Distraction Rules
 
-Add your answer here...
+Keep my phone away during focus sessions.
+Avoid social media until the focus session is completed.
+Use a quiet environment when studying or working.
+Work on one task at a time instead of constantly switching between tasks.
+Set a clear goal before starting each focus session.
 
 ---
 
@@ -324,28 +354,28 @@ Add your answer here...
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+I realised that I can be productive when I have a clear plan, but I sometimes spend too much time thinking about what to do instead of actually starting. Having a simple routine makes it easier for me to take action.
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+My biggest weakness is getting distracted by my phone, social media, or other tasks when I am supposed to focus. Sometimes I also try to handle too many things at the same time.
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+I will have a 1-hour focused work session from Monday to Thursday at 9:00 PM, with my phone away from me. I will choose one specific task before starting and avoid switching tasks until the session ends.
 
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
 
-`Add your URL here`
+`https://lnkd.in/p/g4hwbE7Z`
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **ADD LINK HERE**  
-- Blog / Medium : **ADD LINK HERE**  
+- LinkedIn Post URL: **[ADD LINK HERE](https://lnkd.in/p/g4hwbE7Z)**
+- Blog / Medium : **[ADD LINK HERE](https://medium.com/@chokarhin/what-does-your-2-0-version-look-like-34d4dc390cbb)**
 
 ---
 
@@ -355,17 +385,16 @@ DevOps Micro Internship (DMI) is a project-based DevOps program run by Pravin Mi
 
 It helps learners build strong DevOps foundations with hands-on experience.
 
-
 ## 📌 Resources
 
-- 🌐 **DMI Official Website:** https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 **University:** https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 **Discord Community:** https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 **Blog:** https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ **YouTube Playlist (DMI Cohort 3):** https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 **Pravin Mishra (LinkedIn):** https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 **DMI Official Website:** https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 **University:** https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 **Discord Community:** https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 **Blog:** https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ **YouTube Playlist (DMI Cohort 3):** https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 **Pravin Mishra (LinkedIn):** https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 **CloudAdvisory (LinkedIn):** https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track_

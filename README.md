@@ -131,7 +131,7 @@ _Complete a week → uncomment the badge → watch your stack grow._
 | Week | Topic                        | Status         | Assignment | LinkedIn Post              | Blog Post                                                                          |
 | ---- | ---------------------------- | -------------- | ---------- | -------------------------- | ---------------------------------------------------------------------------------- |
 | 00   | Internet & Networking Basics | ✅ Completed   | ✅ Solved  | https://lnkd.in/p/gsyRz-Xx | https://medium.com/@chokarhin/my-devops-learning-journey-dmi-cohort-3-3c4aab1e46da |
-| 01   | Success Mindset              | 🔄 In Progress | ⏳ Pending | —                          | —                                                                                  |
+| 01   | Success Mindset              | ✅ Completed   | ✅ Solved  | https://lnkd.in/p/g4hwbE7Z | https://medium.com/@chokarhin/what-does-your-2-0-version-look-like-34d4dc390cbb    |
 | 02   | Agentic AI with Claude Code  | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
 | 03   | Linux & Bash for DevOps      | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
 | 04   | Git & GitHub                 | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
