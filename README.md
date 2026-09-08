@@ -67,7 +67,7 @@ _Share your stack:_ `https://github.com/YOUR-USERNAME/devops-micro-internship-pr
 
 **Your stack (uncomment each badge as you earn it):**
 
-<!-- Week 00 → Internet & Networking Basics --> -->
+<!-- Week 00 → Internet & Networking Basics -->
 
 [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)
 
@@ -130,22 +130,22 @@ _Complete a week → uncomment the badge → watch your stack grow._
 
 ## Weekly Progress
 
-| Week | Topic                        | Status         | Assignment | LinkedIn Post              | Blog Post                                                                          |
-| ---- | ---------------------------- | -------------- | ---------- | -------------------------- | ---------------------------------------------------------------------------------- |
-| 00   | Internet & Networking Basics | ✅ Completed   | ✅ Solved  | https://lnkd.in/p/gsyRz-Xx | https://medium.com/@chokarhin/my-devops-learning-journey-dmi-cohort-3-3c4aab1e46da |
-| 01   | Success Mindset              | ✅ Completed   | ✅ Solved  | https://lnkd.in/p/g4hwbE7Z | https://medium.com/@chokarhin/what-does-your-2-0-version-look-like-34d4dc390cbb    |
-| 02   | Agentic AI with Claude Code  | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
-| 03   | Linux & Bash for DevOps      | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
-| 04   | Git & GitHub                 | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
-| 05   | DevOps Lifecycle & Agile     | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
-| 06   | AWS Cloud                    | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
-| 07   | Azure Cloud                  | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
-| 08   | Terraform                    | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
-| 09   | Ansible                      | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
-| 10   | Azure DevOps (CI/CD)         | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
-| 11   | Docker                       | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
-| 12   | Kubernetes                   | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
-| 13   | Final Project                | ⬜ Not Started | ⏳ Pending | —                          | —                                                                                  |
+| Week | Topic                        | Status         | Assignment | LinkedIn Post                                                                                                                                                                                             | Blog Post                                                                          |
+| ---- | ---------------------------- | -------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| 00   | Internet & Networking Basics | ✅ Completed   | ✅ Solved  | https://www.linkedin.com/posts/kar-hin-cho_my-devops-learning-journey-dmi-cohort-3-share-7502310691270234112-hC0S/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEIio1sBj-2smKgRZn9gRjiM1519SWV6luE | https://medium.com/@chokarhin/my-devops-learning-journey-dmi-cohort-3-3c4aab1e46da |
+| 01   | Success Mindset              | ✅ Completed   | ✅ Solved  | https://lnkd.in/p/g4hwbE7Z                                                                                                                                                                                | https://medium.com/@chokarhin/what-does-your-2-0-version-look-like-34d4dc390cbb    |
+| 02   | Agentic AI with Claude Code  | ⬜ Not Started | ⏳ Pending | —                                                                                                                                                                                                         | —                                                                                  |
+| 03   | Linux & Bash for DevOps      | ⬜ Not Started | ⏳ Pending | —                                                                                                                                                                                                         | —                                                                                  |
+| 04   | Git & GitHub                 | ⬜ Not Started | ⏳ Pending | —                                                                                                                                                                                                         | —                                                                                  |
+| 05   | DevOps Lifecycle & Agile     | ⬜ Not Started | ⏳ Pending | —                                                                                                                                                                                                         | —                                                                                  |
+| 06   | AWS Cloud                    | ⬜ Not Started | ⏳ Pending | —                                                                                                                                                                                                         | —                                                                                  |
+| 07   | Azure Cloud                  | ⬜ Not Started | ⏳ Pending | —                                                                                                                                                                                                         | —                                                                                  |
+| 08   | Terraform                    | ⬜ Not Started | ⏳ Pending | —                                                                                                                                                                                                         | —                                                                                  |
+| 09   | Ansible                      | ⬜ Not Started | ⏳ Pending | —                                                                                                                                                                                                         | —                                                                                  |
+| 10   | Azure DevOps (CI/CD)         | ⬜ Not Started | ⏳ Pending | —                                                                                                                                                                                                         | —                                                                                  |
+| 11   | Docker                       | ⬜ Not Started | ⏳ Pending | —                                                                                                                                                                                                         | —                                                                                  |
+| 12   | Kubernetes                   | ⬜ Not Started | ⏳ Pending | —                                                                                                                                                                                                         | —                                                                                  |
+| 13   | Final Project                | ⬜ Not Started | ⏳ Pending | —                                                                                                                                                                                                         | —                                                                                  |
 
 **Status:** ⬜ Not Started &nbsp;|&nbsp; 🔄 In Progress &nbsp;|&nbsp; ✅ Completed<br>
 **Assignment:** ⏳ Pending &nbsp;|&nbsp; ✅ Solved

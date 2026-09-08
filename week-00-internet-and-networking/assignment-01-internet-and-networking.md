@@ -219,7 +219,7 @@ Add the following credit note at the end of your post:
 Paste your LinkedIn post URL here:
 
 ```text
-https://lnkd.in/p/gsyRz-Xx
+https://www.linkedin.com/posts/kar-hin-cho_my-devops-learning-journey-dmi-cohort-3-share-7502310691270234112-hC0S/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEIio1sBj-2smKgRZn9gRjiM1519SWV6luE
 ```
 
 ---
@@ -228,7 +228,6 @@ https://lnkd.in/p/gsyRz-Xx
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
 My DevOps Learning Journey — DMI Cohort 3
 I’ve been learning the fundamentals of DevOps through the DevOps Micro Internship (DMI) — Cohort 3, exploring how applications communicate, are structured, and are deployed.
 ChatGPT
