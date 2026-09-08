@@ -368,13 +368,13 @@ I will have a 1-hour focused work session from Monday to Thursday at 9:00 PM, wi
 
 Paste your LinkedIn post link here:
 
-`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-share-7502320761899102208-JemT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEIio1sBj-2smKgRZn9gRjiM1519SWV6luE`
+`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-share-7502320761899102208-JemT/`
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **[ADD LINK HERE](https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-share-7502320761899102208-JemT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEIio1sBj-2smKgRZn9gRjiM1519SWV6luE)**
+- LinkedIn Post URL: **[ADD LINK HERE](https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-share-7502320761899102208-JemT/)**
 - Blog / Medium : **[ADD LINK HERE](https://medium.com/@chokarhin/what-does-your-2-0-version-look-like-34d4dc390cbb)**
 
 ---

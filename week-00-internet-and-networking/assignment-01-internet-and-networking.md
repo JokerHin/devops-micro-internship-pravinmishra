@@ -219,7 +219,7 @@ Add the following credit note at the end of your post:
 Paste your LinkedIn post URL here:
 
 ```text
-https://www.linkedin.com/posts/kar-hin-cho_my-devops-learning-journey-dmi-cohort-3-share-7502310691270234112-hC0S/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEIio1sBj-2smKgRZn9gRjiM1519SWV6luE
+https://www.linkedin.com/posts/kar-hin-cho_my-devops-learning-journey-dmi-cohort-3-share-7502310691270234112-hC0S/
 ```
 
 ---
