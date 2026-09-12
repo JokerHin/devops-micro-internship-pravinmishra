@@ -46,7 +46,7 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-![Blog published](blog-published.png)
+![Blog published](screenshots/blog-published.png)
 
 ---
 
@@ -54,7 +54,7 @@ You can publish your blog on:
 
 Blog Link:
 
-`https://medium.com/@chokarhin/reflection-week-2-97a0a18c4cbc`
+`https://medium.com/@chokarhin/reflection-week-2-97a0a18c4cbc?sharedUserId=chokarhin`
 
 ---
 
