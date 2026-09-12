@@ -134,7 +134,7 @@ Write as if a journalist is writing about you **3 to 7 years from now** (not 20 
 
 Include this line:
 
-> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=cohort3**
+> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/JokerHin.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=cohort3**
 
 ## Your Article
 
@@ -154,7 +154,7 @@ One of the biggest changes was not a specific technology or job title. It was hi
 
 By this point, his portfolio was no longer simply a collection of projects created to complete assignments. It had become evidence of several years of consistent learning, experimentation, leadership, and professional growth. His 2.0 version had been built through small improvements repeated over time, turning a university student interested in technology into an engineer capable of building and contributing to real-world systems.
 
-> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public:** https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=cohort3
+> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public:** https://dmi.pravinmishra.com/s/JokerHin.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=cohort3
 
 ### Public Link
 

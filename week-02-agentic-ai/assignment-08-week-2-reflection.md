@@ -54,7 +54,7 @@ You can publish your blog on:
 
 Blog Link:
 
-`https://medium.com/@chokarhin/reflection-week-2-97a0a18c4cbc?sharedUserId=chokarhin`
+`https://medium.com/@chokarhin/reflection-week-2-97a0a18c4cbc`
 
 ---
 
@@ -78,7 +78,7 @@ Your post must include:
 
 ### Required P.S. Line (Must Include Exactly)
 
-> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
+> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/JokerHin.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
 
 ---
 

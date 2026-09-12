@@ -10,9 +10,9 @@ For each weekly assignment, your LinkedIn post **must be created based on the in
 
 The template already specifies:
 
-* What content should be included in your post
-* Which screenshots need to be attached
-* Any required formatting or points to cover
+- What content should be included in your post
+- Which screenshots need to be attached
+- Any required formatting or points to cover
 
 👉 Please ensure you follow the template instructions for each assignment.
 
@@ -24,11 +24,11 @@ You must tag **Pravin Mishra**, your **Lead Co-Mentor** and your **Group Co-Ment
 
 ### Pravin Miahra
 
-* Pravin Mishra [Linkedin profile](https://www.linkedin.com/in/pravin-mishra-aws-trainer/)
+- Pravin Mishra [Linkedin profile](https://www.linkedin.com/in/pravin-mishra-aws-trainer/)
 
 ### 👨‍🏫 Lead Co-Mentor
 
-* Anjana Muthunayake [Linkedin profile](https://www.linkedin.com/in/anjana-muthunayake/)
+- Anjana Muthunayake [Linkedin profile](https://www.linkedin.com/in/anjana-muthunayake/)
 
 ---
 
@@ -36,18 +36,18 @@ You must tag **Pravin Mishra**, your **Lead Co-Mentor** and your **Group Co-Ment
 
 **Group 1**
 
-* Tanisha Borana [Linkedin profile](https://www.linkedin.com/in/tanisha-borana-552797233/)
-* Anuradha Iyer [Linkedin profile](https://www.linkedin.com/in/iyeranuradha/)
+- Tanisha Borana [Linkedin profile](https://www.linkedin.com/in/tanisha-borana-552797233/)
+- Anuradha Iyer [Linkedin profile](https://www.linkedin.com/in/iyeranuradha/)
 
 **Group 2**
 
-* Anjana Muthunayake [Linkedin profile](https://www.linkedin.com/in/anjana-muthunayake/)
-* Joy Ukpabi [Linkedin profile](https://www.linkedin.com/in/joyukpabi/)
+- Anjana Muthunayake [Linkedin profile](https://www.linkedin.com/in/anjana-muthunayake/)
+- Joy Ukpabi [Linkedin profile](https://www.linkedin.com/in/joyukpabi/)
 
 **Group 3**
 
-* Bhupendra Bhati [Linkedin profile](https://www.linkedin.com/in/bhupendrabhati/)
-* Ranbir Kaur [Linkedin profile](https://www.linkedin.com/in/ranbirkaur/)
+- Bhupendra Bhati [Linkedin profile](https://www.linkedin.com/in/bhupendrabhati/)
+- Ranbir Kaur [Linkedin profile](https://www.linkedin.com/in/ranbirkaur/)
 
 ---
 
@@ -57,14 +57,14 @@ You must tag **Pravin Mishra**, your **Lead Co-Mentor** and your **Group Co-Ment
 
 Examples:
 
-* 127.0.0.1
-* 54.20.30.2
+- 127.0.0.1
+- 54.20.30.2
 
 ### ❌ 2. Using fake domain-style text
 
 Example:
 
-* myexample.com
+- myexample.com
 
 ![fake ips](./images/ss159.png)
 
@@ -72,9 +72,9 @@ Example:
 
 LinkedIn may treat them as real links, which can:
 
-* Break formatting
-* Hide parts of your post
-* Show errors like “This post cannot be displayed.”
+- Break formatting
+- Hide parts of your post
+- Show errors like “This post cannot be displayed.”
 
 ![error](./images/ss160.png)
 
@@ -82,8 +82,8 @@ LinkedIn may treat them as real links, which can:
 
 Use commas instead of dots:
 
-* 127,0,0,1
-* myexample,com
+- 127,0,0,1
+- myexample,com
 
 ![fix](./images/ss161.png)
 
@@ -93,12 +93,11 @@ Use commas instead of dots:
 
 Every LinkedIn post MUST end with this:
 
-> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
+> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/JokerHin.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
 >
-> *(Replace `YOUR-GITHUB-USERNAME` with your GitHub username.)*
+> _(Replace `YOUR-GITHUB-USERNAME` with your GitHub username.)_
 >
->#DMIByPravinMishra #DevOps #AgenticAI
-
+> #DMIByPravinMishra #DevOps #AgenticAI
 
 ## **Example post P.S & tagging:**
 
@@ -108,7 +107,7 @@ Every LinkedIn post MUST end with this:
 
 ## 🎯 Final Checklist Before Posting
 
-✔ Clear explanation of work <br> 
+✔ Clear explanation of work <br>
 ✔ Proper mentor tagging<br>
 ✔ No IP addresses or fake domains<br>
 ✔ P.S. section & hashtags included<br>
