@@ -160,7 +160,7 @@ By this point, his portfolio was no longer simply a collection of projects creat
 
 Paste your link here:
 
-`https://medium.com/@chokarhin/what-does-your-2-0-version-look-like-34d4dc390cbb`
+(https://medium.com/@chokarhin/what-does-your-2-0-version-look-like-34d4dc390cbb)
 
 ---
 
@@ -368,14 +368,14 @@ I will have a 1-hour focused work session from Monday to Thursday at 9:00 PM, wi
 
 Paste your LinkedIn post link here:
 
-`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-share-7502320761899102208-JemT/`
+(https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-share-7502320761899102208-JemT/)
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **[ADD LINK HERE](https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-share-7502320761899102208-JemT/)**
-- Blog / Medium : **[ADD LINK HERE](https://medium.com/@chokarhin/what-does-your-2-0-version-look-like-34d4dc390cbb)**
+- LinkedIn Post URL: (https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-share-7502320761899102208-JemT/)
+- Blog / Medium : (https://medium.com/@chokarhin/what-does-your-2-0-version-look-like-34d4dc390cbb)
 
 ---
 
