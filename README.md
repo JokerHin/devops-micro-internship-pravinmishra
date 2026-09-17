@@ -80,7 +80,8 @@ _Share your stack:_ `https://github.com/YOUR-USERNAME/devops-micro-internship-pr
 [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/)
 
 <!-- Week 03 → Linux & Bash for DevOps -->
-<!-- [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) -->
+
+[![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/)
 
 <!-- Week 04 → Git & GitHub -->
 <!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) -->
@@ -136,7 +137,7 @@ _Complete a week → uncomment the badge → watch your stack grow._
 | 00   | Internet & Networking Basics | ✅ Completed   | ✅ Solved  | https://www.linkedin.com/posts/kar-hin-cho_my-devops-learning-journey-dmi-cohort-3-share-7502310691270234112-hC0S/ | https://medium.com/@chokarhin/my-devops-learning-journey-dmi-cohort-3-3c4aab1e46da |
 | 01   | Success Mindset              | ✅ Completed   | ✅ Solved  | https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-share-7502320761899102208-JemT/        | https://medium.com/@chokarhin/what-does-your-2-0-version-look-like-34d4dc390cbb    |
 | 02   | Agentic AI with Claude Code  | ✅ Completed   | ✅ Solved  | https://www.linkedin.com/posts/kar-hin-cho_dmibypravinmishra-agenticai-claudecode-share-7503814774439239680-edB0/  | https://medium.com/@chokarhin/reflection-week-2-97a0a18c4cbc                       |
-| 03   | Linux & Bash for DevOps      | ⬜ Not Started | ⏳ Pending | —                                                                                                                  | —                                                                                  |
+| 03   | Linux & Bash for DevOps      | ✅ Completed   | ✅ Solved  | https://www.linkedin.com/feed/update/urn:li:share:7506365184391692288/                                             | https://medium.com/@chokarhin/linux-and-bash-for-devops-ad9e43c6dc90               |
 | 04   | Git & GitHub                 | ⬜ Not Started | ⏳ Pending | —                                                                                                                  | —                                                                                  |
 | 05   | DevOps Lifecycle & Agile     | ⬜ Not Started | ⏳ Pending | —                                                                                                                  | —                                                                                  |
 | 06   | AWS Cloud                    | ⬜ Not Started | ⏳ Pending | —                                                                                                                  | —                                                                                  |
