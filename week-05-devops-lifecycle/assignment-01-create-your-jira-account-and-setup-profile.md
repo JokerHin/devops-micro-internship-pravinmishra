@@ -20,7 +20,7 @@ Create or access your Jira Cloud account and reach the Jira Software workspace s
 
 #### Screenshot 1 — Jira welcome page, dashboard, or main workspace after successful login, with your name or avatar visible
 
-Add your screenshot here.
+![Jira welcome page](screenshots/task-1-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Confirm your email address if Atlassian requests verification.
 
 #### Screenshot 2 (if applicable) — Confirmation screen after email verification, or the inbox showing the Atlassian verification email subject
 
-Add your screenshot here.
+![Confirmation screen after email verification](screenshots/task-2-diagram.png)
 
 ---
 
@@ -58,7 +58,7 @@ Update your Jira profile with your full name, a job title or role (e.g. "Aspirin
 
 #### Screenshot 3 — Updated profile page showing your full name, role/title, and bio
 
-Add your screenshot here.
+![Updated profile page showing your full name, role/title, and bio](screenshots/task-3-diagram.png)
 
 ---
 
@@ -72,13 +72,13 @@ Locate the project list and open a project's Board or Backlog, and view Project 
 
 #### Screenshot 4 — "View all projects" page showing at least one project
 
-Add your screenshot here.
+!["View all projects" page showing at least one project](screenshots/task-4-diagram.png)
 
 ---
 
 #### Screenshot 5 — Opened project showing either the Board or Backlog screen
 
-Add your screenshot here.
+![Opened project showing either the Board or Backlog screen](screenshots/task-5-diagram.png)
 
 ---
 
@@ -114,14 +114,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

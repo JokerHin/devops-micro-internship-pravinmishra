@@ -20,7 +20,7 @@ Create a private, team-managed Scrum Space named `DevOps Micro-Internship Websit
 
 #### Screenshot 1 — Space confirmation or Space sidebar showing the Space name and key
 
-Add your screenshot here.
+![Space confirmation or Space sidebar showing the Space name and key](screenshots/task-6-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create the Epic `Polish DMI Website UI & Deploy` to group the website UI and dep
 
 #### Screenshot 2 — Backlog showing the Epic panel enabled and the Epic visible
 
-Add your screenshot here.
+![Backlog showing the Epic panel enabled and the Epic visible](screenshots/task-7-diagram.png)e.
 
 ---
 
@@ -151,6 +151,7 @@ Add your screenshot here.
 - Add all 12 required screenshots in the specified order
 - Full name must be visible in required screenshots
 - Do not expose passwords, verification codes, private email content, account recovery details, or other sensitive information
+
 ---
 
 # Completion Checklist
@@ -178,14 +179,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
