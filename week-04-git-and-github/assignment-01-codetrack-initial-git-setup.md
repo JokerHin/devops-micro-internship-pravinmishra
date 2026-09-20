@@ -20,13 +20,13 @@ Create a `CodeTrack` project folder and initialize it as a Git repository.
 
 #### Screenshot 1 — Output of `git init` inside `CodeTrack` showing "Initialized empty Git repository"
 
-Add your screenshot here.
+![Output of `git init` inside `CodeTrack` showing "Initialized empty Git repository"](screenshots/task-1-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `ls -a` showing the `.git` folder
 
-Add your screenshot here.
+![Output of `ls -a` showing the `.git` folder](screenshots/task-2-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Add your screenshot here.
 
 **1. What is the `.git` folder, and why does it matter?**
 
-Add your answer here.
+The .git folder is the internal database and engine of a Git repository. It houses the complete commit history, object store (blobs, trees, commits, and tags), reference pointers (such as HEAD, branch pointers, and remote tracking branches), staging index data, and repository-specific configuration settings (.git/config). If the .git directory is deleted, the project reverts to a standard directory and loses all version control tracking, historical commits, and branching state.
 
 ---
 
@@ -48,7 +48,7 @@ Set your Git username and email for the `CodeTrack` repository only, using `git 
 
 #### Screenshot 3 — Output of `git config --local --list` showing your `user.name` and `user.email`
 
-Add your screenshot here.
+![Output of `git config --local --list` showing your `user.name` and `user.email`](screenshots/task-3-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Set a global Git username and email for this machine using `git config --global`
 
 #### Screenshot 4 — Output of `git config --global --list` showing your `user.name` and `user.email`
 
-Add your screenshot here.
+![Output of `git config --global --list` showing your `user.name` and `user.email`](screenshots/task-4-diagram.png)
 
 ---
 
@@ -94,14 +94,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

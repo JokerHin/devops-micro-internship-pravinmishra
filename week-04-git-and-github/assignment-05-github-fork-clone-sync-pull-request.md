@@ -20,7 +20,7 @@ Fork `pravinmishraaws/devops-micro-internship-interviews` into your own GitHub a
 
 #### Screenshot 1 — Your fork page with your username and `devops-micro-internship-interviews` visible in the browser URL
 
-Add your screenshot here.
+![Your forked repository page with your username and repository name visible in the URL](screenshots/task-38-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Configure one authentication method — HTTPS with a Personal Access Token, or S
 
 #### Screenshot 2 — Output of `git config --global --get credential.helper` (HTTPS) or `ssh -T git@github.com` (SSH) showing successful authentication — never show your token or private key
 
-Add your screenshot here.
+![Output of `git config --global --get credential.helper` (HTTPS) or `ssh -T git@github.com` (SSH) showing successful authentication — never show your token or private key](screenshots/task-39-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Clone your fork locally, then add the original repository as `upstream`.
 
 #### Screenshot 3 — Output of `git remote -v` showing `origin` pointing to your fork and `upstream` pointing to `pravinmishraaws/devops-micro-internship-interviews`
 
-Add your screenshot here.
+![Output of `git remote -v` showing `origin` pointing to your fork and `upstream` pointing to `pravinmishraaws/devops-micro-internship-interviews`](screenshots/task-40-diagram.png)
 
 ---
 
@@ -62,13 +62,13 @@ Create the branch `feature-readme-update`, add only your own entry (`Full Name �
 
 #### Screenshot 4 — Output of `git status` showing `pull_request.md` modified before staging
 
-Add your screenshot here.
+![Output of `git status` showing `pull_request.md` modified before staging](screenshots/task-41-diagram.png)
 
 ---
 
 #### Screenshot 5 — Output of `git commit`
 
-Add your screenshot here.
+![Output of `git commit](screenshots/task-42-diagram.png)
 
 ---
 
@@ -179,14 +179,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

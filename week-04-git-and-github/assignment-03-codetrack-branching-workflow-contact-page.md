@@ -20,7 +20,7 @@ Start from a clean default branch (`main` or `master`) and confirm the repositor
 
 #### Screenshot 1 — Output of `git status` and `git branch` showing a clean status and the default branch checked out
 
-Add your screenshot here.
+![Output of `git status` and `git branch` showing a clean status and the default branch checked out](screenshots/task-20-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a branch named exactly `feature/contact-page` and switch to it.
 
 #### Screenshot 2 — Output of `git checkout -b feature/contact-page` and `git branch` showing `* feature/contact-page`
 
-Add your screenshot here.
+![ Output of `git checkout -b feature/contact-page` and `git branch` showing `* feature/contact-page`](screenshots/task-21-diagram.png)
 
 ---
 
@@ -48,19 +48,19 @@ Create `contact.html` with the provided content and commit it alone using the me
 
 #### Screenshot 3 — Output of `ls` showing `contact.html`
 
-Add your screenshot here.
+![Output of `ls` showing `contact.html`](screenshots/task-22-diagram.png)
 
 ---
 
 #### Screenshot 4 — Output of `git commit`
 
-Add your screenshot here.
+![Output of `git commit`](screenshots/task-23-diagram.png)
 
 ---
 
 #### Screenshot 5 — Output of `git log --oneline -3` showing the new commit
 
-Add your screenshot here.
+![Output of `git log --oneline -3` showing the new commit](screenshots/task-24-diagram.png)
 
 ---
 
@@ -74,19 +74,19 @@ Add the provided Contact Page link to `index.html` and commit it separately usin
 
 #### Screenshot 6 — Output of `git status` showing `index.html` as modified before staging
 
-Add your screenshot here.
+![Output of `git status` showing `index.html` as modified before staging](screenshots/task-25-diagram.png)
 
 ---
 
 #### Screenshot 7 — Output of `git commit`
 
-Add your screenshot here.
+![Output of `git commit`](screenshots/task-26-diagram.png)
 
 ---
 
 #### Screenshot 8 — Browser showing the Contact Page link on the homepage while on `feature/contact-page`
 
-Add your screenshot here.
+![Browser showing the Contact Page link on the homepage while on `feature/contact-page`](screenshots/task-27-diagram.png)
 
 ---
 
@@ -100,13 +100,13 @@ Switch back to the default branch and confirm that `contact.html` and the Contac
 
 #### Screenshot 9 — Terminal showing the checkout and `ls` output, proving `contact.html` is absent
 
-Add your screenshot here.
+![Terminal showing the checkout and `ls` output, proving `contact.html` is absent](screenshots/task-28-diagram.png)
 
 ---
 
 #### Screenshot 10 — Browser showing the homepage on the default branch with no Contact Page link
 
-Add your screenshot here.
+![Browser showing the homepage on the default branch with no Contact Page link](screenshots/task-29-diagram.png)
 
 ---
 
@@ -120,19 +120,19 @@ Merge `feature/contact-page` into your default branch and confirm the Contact pa
 
 #### Screenshot 11 — Output of `git merge feature/contact-page`
 
-Add your screenshot here.
+![ Output of `git merge feature/contact-page`](screenshots/task-30-diagram.png)
 
 ---
 
 #### Screenshot 12 — Output of `ls` showing `contact.html` after the merge
 
-Add your screenshot here.
+![Output of `ls` showing `contact.html` after the merge](screenshots/task-31-diagram.png)
 
 ---
 
 #### Screenshot 13 — Browser showing the Contact page opened from the homepage link on the default branch
 
-Add your screenshot here.
+![Browser showing the Contact page opened from the homepage link on the default branch](screenshots/task-32-diagram.png)
 
 ---
 
@@ -146,7 +146,7 @@ Display the repository history as a graph and locate both feature commits.
 
 #### Screenshot 14 — Full output of `git log --oneline --graph --decorate --all`
 
-Add your screenshot here.
+![Full output of `git log --oneline --graph --decorate --all`](screenshots/task-33-diagram.png)
 
 ---
 
@@ -160,7 +160,7 @@ Delete the merged `feature/contact-page` branch to keep your branch list clean.
 
 #### Screenshot 15 (Optional) — Output showing `feature/contact-page` deleted and no longer listed
 
-Add your screenshot here.
+![Output showing `feature/contact-page` deleted and no longer listed](screenshots/task-35-diagram.png)
 
 ---
 
@@ -197,14 +197,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

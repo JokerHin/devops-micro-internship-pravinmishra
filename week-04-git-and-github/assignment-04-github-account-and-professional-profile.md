@@ -20,13 +20,13 @@ Confirm that you have a working GitHub account and can access your GitHub dashbo
 
 #### Screenshot 1 — GitHub dashboard or Home page showing you're signed in, with your username visible
 
-Add your screenshot here.
+![GitHub dashboard or Home page showing you're signed in, with your username visible](screenshots/task-35-diagram.png)
 
 ---
 
 #### Screenshot 2 (Optional but Recommended) — Your GitHub profile with `https://github.com/<username>` visible in the browser address bar
 
-Add your screenshot here.
+![Output showing `feature/contact-page` deleted and no longer listed](screenshots/task-35-diagram.png)
 
 ---
 
@@ -40,19 +40,19 @@ Browse Trending, search for a public project, star at least one repository, and 
 
 #### Screenshot 3 — GitHub Trending page visible in the browser
 
-Add your screenshot here.
+![GitHub Trending page visible in the browser](screenshots/task-36-diagram.png)
 
 ---
 
 #### Screenshot 4 — A repository page showing the Star button in the Starred state
 
-Add your screenshot here.
+![A repository page showing the Star button in the Starred state](screenshots/task-37-diagram.png)
 
 ---
 
 #### Screenshot 5 — Your forked repository page with your username and repository name visible in the URL
 
-Add your screenshot here.
+![Your forked repository page with your username and repository name visible in the URL](screenshots/task-38-diagram.png)
 
 ---
 
@@ -66,7 +66,7 @@ Add a professional bio to your GitHub profile — and optionally your location, 
 
 #### Screenshot 6 — Your public GitHub profile showing your username and professional bio
 
-Add your screenshot here.
+![Your public GitHub profile showing your username and professional bio](screenshots/task-35-diagram.png)
 
 ---
 
@@ -82,7 +82,7 @@ Add your screenshot here.
 
 Paste your GitHub profile URL here:
 
-`Add your URL here`
+`https://github.com/JokerHin`
 
 ---
 
@@ -108,14 +108,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

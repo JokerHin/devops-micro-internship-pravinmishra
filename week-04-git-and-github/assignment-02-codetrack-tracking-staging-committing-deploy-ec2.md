@@ -20,13 +20,13 @@ Confirm that Git works and that you are inside the correct `CodeTrack` repositor
 
 #### Screenshot 1 — Output of `pwd` showing you're inside `CodeTrack`
 
-Add your screenshot here.
+![Output of `pwd` showing you're inside `CodeTrack`](screenshots/task-5-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `git status` showing no "not a git repository" error
 
-Add your screenshot here.
+![Output of `git status` showing no "not a git repository" error](screenshots/task-6-diagram.png)
 
 ---
 
@@ -40,7 +40,7 @@ Create the two starter UI files inside `CodeTrack`.
 
 #### Screenshot 3 — Output of `ls` showing `index.html` and `style.css`
 
-Add your screenshot here.
+![Output of `ls` showing `index.html` and `style.css`](screenshots/task-7-diagram.png)
 
 ---
 
@@ -54,7 +54,7 @@ Copy the provided starter HTML and CSS content into your local `index.html` and 
 
 #### Screenshot 4 — Your editor showing the contents of `index.html` and `style.css`
 
-Add your screenshot here.
+![Your editor showing the contents of `index.html` and `style.css`](screenshots/task-8-diagram.png)
 
 ---
 
@@ -68,13 +68,13 @@ Confirm both files show as untracked, then stage them individually with `git add
 
 #### Screenshot 5 — Output of `git status` showing both files as untracked
 
-Add your screenshot here.
+![Output of `git status` showing both files as untracked](screenshots/task-9-diagram.png)
 
 ---
 
 #### Screenshot 6 — Output of `git status` showing both files staged under "Changes to be committed"
 
-Add your screenshot here.
+![Output of `git status` showing both files staged under "Changes to be committed"](screenshots/task-10-diagram.png)
 
 ---
 
@@ -88,13 +88,13 @@ Commit the staged starter files using the message `Initial UI scaffold: add inde
 
 #### Screenshot 7 — Output of `git commit`
 
-Add your screenshot here.
+![Output of `git commit`](screenshots/task-11-diagram.png)
 
 ---
 
 #### Screenshot 8 — Output of `git log --oneline` showing the first commit
 
-Add your screenshot here.
+![Output of `git log --oneline` showing the first commit](screenshots/task-12-diagram.png)
 
 ---
 
@@ -108,25 +108,25 @@ Follow the instruction comment inside `index.html` to update the Student Name an
 
 #### Screenshot 9 — Browser showing the updated page with your Student Name and Group Name visible
 
-Add your screenshot here.
+![Browser showing the updated page with your Student Name and Group Name visible](screenshots/task-13-diagram.png)
 
 ---
 
 #### Screenshot 10 — Output of `git status` showing `index.html` as modified
 
-Add your screenshot here.
+![Output of `git status` showing `index.html` as modified](screenshots/task-14-diagram.png)
 
 ---
 
 #### Screenshot 11 — Output of `git commit`
 
-Add your screenshot here.
+![Output of `git commit`](screenshots/task-15-diagram.png)
 
 ---
 
 #### Screenshot 12 — Output of `git log --oneline` showing two commits
 
-Add your screenshot here.
+![Output of `git log --oneline` showing two commits](screenshots/task-16-diagram.png)
 
 ---
 
@@ -140,19 +140,19 @@ Install and start Nginx on your EC2 instance, then copy `index.html` and `style.
 
 #### Screenshot 13 — Output of `systemctl status nginx --no-pager` showing Nginx `active (running)`
 
-Add your screenshot here.
+![Output of `systemctl status nginx --no-pager` showing Nginx `active (running)`](screenshots/task-17-diagram.png)
 
 ---
 
 #### Screenshot 14 — Output of `curl -I http://localhost` showing `HTTP/1.1 200 OK`
 
-Add your screenshot here.
+![Output of `curl -I http://localhost` showing `HTTP/1.1 200 OK`](screenshots/task-18-diagram.png)
 
 ---
 
 #### Screenshot 15 — Browser showing the CodeTrack site loaded at `http://<EC2_PUBLIC_IP>`, with your Full Name and Group Name visible
 
-Add your screenshot here.
+![Browser showing the CodeTrack site loaded at `http://<EC2_PUBLIC_IP>`, with your Full Name and Group Name visible](screenshots/task-19-diagram.png)
 
 ---
 
@@ -164,13 +164,13 @@ Add your screenshot here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/feed/update/urn:li:share:7506365184391692288/`
 
 ---
 
 #### Screenshot — LinkedIn post showing the deployed CodeTrack application
 
-Add your screenshot here.
+![LinkedIn post showing the deployed CodeTrack application](screenshots/task-19-diagram.png)
 
 ---
 
@@ -206,14 +206,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
