@@ -6,7 +6,7 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ## Purpose
 
-In Week 2 you built Claude Code hooks that block a dangerous action *before* it happens (`PreToolUse`), and a restricted skill that could look but not touch (`allowed-tools` without `Write`). In this assignment you will discover that Git has the exact same idea, decades older: a **pre-commit hook** that blocks a commit before it's created.
+In Week 2 you built Claude Code hooks that block a dangerous action _before_ it happens (`PreToolUse`), and a restricted skill that could look but not touch (`allowed-tools` without `Write`). In this assignment you will discover that Git has the exact same idea, decades older: a **pre-commit hook** that blocks a commit before it's created.
 
 You will build both halves of a real "PR Ready" workflow:
 
@@ -27,7 +27,7 @@ Confirm you are working in your own fork, then create a dedicated branch for thi
 
 #### Screenshot 1 — Output of git remote -v and git branch showing the new branch
 
-Add your screenshot here.
+![Output of git remote -v and git branch showing the new branch](screenshots/task-47-diagram.png)
 
 ---
 
@@ -35,7 +35,7 @@ Add your screenshot here.
 
 **1. Why create a dedicated branch instead of doing this work on main?**
 
-Add your answer here.
+A dedicated branch isolates work-in-progress experiments from the stable default branch (main). This prevents broken code, incomplete features, or unverified hook experiments from polluting the production baseline, enables clean peer reviews through Pull Requests, and makes rollbacks trivial if an approach is abandoned.
 
 ---
 
@@ -47,9 +47,9 @@ On your own fork of this repository (the one you've been submitting your DMI wor
 
 ### Evidence
 
-#### Screenshot 1 — Output of  `git status` showing the staged file on feature/ai-pr-ready
+#### Screenshot 1 — Output of `git status` showing the staged file on feature/ai-pr-ready
 
-Add your screenshot here.
+![Output of `git status` showing the staged file on feature/ai-pr-ready](screenshots/task-48-diagram.png)
 
 ---
 
@@ -57,7 +57,7 @@ Add your screenshot here.
 
 **1. Why does this assignment use an obviously fake key instead of a real one?**
 
-Add your answer here.
+Real secrets must never touch version control. Even if a commit is amended or deleted locally, unencrypted credentials staged or pushed to remotes can leak into git reflogs, caching proxies, and public scrapers. Using an industry-standard fake key (like AWS's official documentation dummy key AKIAIOSFODNN7EXAMPLE) ensures that detection rules can trigger reliably without introducing actual security vulnerability or leaking valid infrastructure credentials.
 
 ---
 
@@ -71,13 +71,13 @@ Create a tracked, shareable pre-commit hook that blocks a commit containing secr
 
 #### Screenshot 2 — `hooks/pre-commit` open in VS Code showing the full script
 
-Add your screenshot here.
+![`hooks/pre-commit` open in VS Code showing the full script](screenshots/task-49-diagram.png)
 
 ---
 
 #### Screenshot 3 — Output of `git config core.hooksPath` confirming it points to `hooks`
 
-Add your screenshot here.
+![Output of `git config core.hooksPath` confirming it points to `hooks`](screenshots/task-50-diagram.png)
 
 ---
 
@@ -85,13 +85,15 @@ Add your screenshot here.
 
 **1. Why is `hooks/pre-commit` tracked in the repo instead of living only in `.git/hooks/`?**
 
-Add your answer here.
+The .git/hooks directory is ignored by Git and never pushed to remotes, meaning hooks saved there only protect the local clone and cannot be shared with team members. Placing the script inside a tracked directory (hooks/) and setting core.hooksPath hooks allows the pre-commit rules to be version-controlled, reviewed, and uniformly adopted by everyone who clones the repository.
 
 ---
 
 **2. Compare this to `PreToolUse` from Week 2 Assignment 6. What does each one intercept, and what do they have in common?**
 
-Add your answer here.
+Git pre-commit hook: Intercepts git commit commands at the shell level, evaluating staged diffs before the commit object is written to the Git object database.
+Claude Code PreToolUse hook: Intercepts an AI agent's tool invocation request (e.g., executing Bash or Write tools) before the action runs in the environment.
+Commonality: Both serve as shift-left deterministic guardrails. They intercept actions at execution boundaries and enforce non-negotiable safety rules before permanent state modifications occur.
 
 ---
 
@@ -105,7 +107,7 @@ Attempt to commit the staged file from Task 1 and show the hook rejecting it.
 
 #### Screenshot 4 — Terminal showing `git commit` rejected with the hook's "BLOCKED" message naming the exact file
 
-Add your screenshot here.
+![Terminal showing `git commit` rejected with the hook's "BLOCKED" message naming the exact file](screenshots/task-51-diagram.png)
 
 ---
 
@@ -113,13 +115,13 @@ Add your screenshot here.
 
 **1. Which line in `hooks/pre-commit` matched your fake key, and why did it match?**
 
-Add your answer here.
+The regular expression (AKIA[0-9A-Z]{16}|BEGIN PRIVATE KEY|ghp\_[0-9a-zA-Z]{36}) evaluated against the added lines (^\+[^+]) matched the fake key. It matched because AKIAIOSFODNN7EXAMPLE starts with the literal string AKIA followed by exactly 16 uppercase alphanumeric characters (IOSFODNN7EXAMPLE), satisfying the standard AWS Access Key ID format pattern.
 
 ---
 
 **2. Could this hook have caught a poorly-named variable that stores a secret without the `AKIA` prefix? What does that tell you about the limits of a fixed rule like this?**
 
-Add your answer here.
+No. A fixed regex scanner only detects specific, hardcoded syntactic tokens (such as known vendor prefixes or key banners). If a credential is named my_token = "9f83a..." or lacks a recognizable prefix, a static regex will pass it without warning. This demonstrates that fixed deterministic rules excel at precision for known patterns, but are blind to semantic context, obfuscation, or unconventional variable declarations.
 
 ---
 
@@ -133,13 +135,13 @@ Create a manually invoked Claude Code skill that reads your staged changes and p
 
 #### Screenshot 5 — `SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no `Write`) and `disable-model-invocation: true`
 
-Add your screenshot here.
+![Terminal showing `git commit` rejected with the hook's "BLOCKED" message naming the exact file](screenshots/task-52-diagram.png)
 
 ---
 
 #### Screenshot 6 — `/pr-ready` output while the risky file is still staged, showing it flagged the secret and/or debug statement
 
-Add your screenshot here.
+![`/pr-ready` output while the risky file is still staged, showing it flagged the secret and/or debug statement](screenshots/task-53-diagram.png)
 
 ---
 
@@ -147,13 +149,15 @@ Add your screenshot here.
 
 **1. Why does `/pr-ready` have `Bash` and `Read` but not `Write`?**
 
-Add your answer here.
+Restricting /pr-ready to Bash and Read enforces a strict read-only boundary. The skill's sole responsibility is reconnaissance, telemetry gathering, and semantic reasoning. Omitting Write prevents the AI from altering code, overwriting configuration, or mutating repo state without human sign-off.
 
 ---
 
 **2. The pre-commit hook and `/pr-ready` both looked at the same staged diff. Did they flag the same things? What did one catch that the other didn't?**
 
-Add your answer here.
+Both tools successfully flagged the hardcoded AKIA secret. However:
+The pre-commit hook caught only the exact regex pattern match and enforced a hard exit code block, completely ignoring the console.log("DEBUG...") statement.
+The /pr-ready skill understood semantic intent: it identified the console.log statement as residual development artifact that degrades code hygiene, and contextualized how the changes impact overall PR quality.
 
 ---
 
@@ -167,13 +171,13 @@ Remove the secret and debug statement, then prove both gates now pass clean.
 
 #### Screenshot 7 — `git commit` succeeding after the fix (no BLOCKED message)
 
-Add your screenshot here.
+![`git commit` succeeding after the fix (no BLOCKED message)](screenshots/task-54-diagram.png)
 
 ---
 
 #### Screenshot 8 — Second `/pr-ready` run showing a clean risk report and a drafted PR title + description
 
-Add your screenshot here.
+![Second `/pr-ready` run showing a clean risk report and a drafted PR title + description](screenshots/task-55-diagram.png)
 
 ---
 
@@ -181,7 +185,7 @@ Add your screenshot here.
 
 **1. What exactly did you change to satisfy the pre-commit hook?**
 
-Add your answer here.
+Replaced the literal string AKIAIOSFODNN7EXAMPLE with process.env.AWS_ACCESS_KEY_ID || "", eliminating hardcoded credential patterns from the diff, and removed the console.log("DEBUG...") statement.
 
 ---
 
@@ -197,13 +201,13 @@ Push your branch and open a real Pull Request, using `/pr-ready`'s drafted title
 
 #### Screenshot 9 — Your Pull Request showing the base repository is your own fork, plus the title and description, with the `/pr-ready` draft visible for comparison (paste it in the PR conversation or your notes below)
 
-Add your screenshot here.
+![Evidence](screenshots/task-56-diagram.png)
 
 ---
 
 #### PR Link
 
-Add your PR URL here...
+`https://github.com/pravinmishraaws/devops-micro-internship-pravinmishra/pull/253`
 
 ---
 
@@ -211,19 +215,19 @@ Add your PR URL here...
 
 **1. What, if anything, did you edit in the AI's drafted PR description before using it? Why?**
 
-Add your answer here.
+Refined the testing and verification bullet points to reference the exact scripts and commands tested (hooks/pre-commit and core.hooksPath). While the AI drafted a strong conceptual summary, human operators must ensure testing details match actual terminal verification steps.
 
 ---
 
 **2. If you had blindly copy-pasted the AI's draft without reading it, what could go wrong?**
 
-Add your answer here.
+Blindly pasting AI drafts risks publishing hallucinated test results, inaccurate technical claims, or missing edge cases. If the model assumed tools or dependencies were added that weren't part of the diff, the Pull Request becomes misleading and fails peer audit.
 
 ---
 
 **3. Why does this PR need to target your own fork instead of the shared upstream repository?**
 
-Add your answer here.
+This assignment involves personalized configuration, custom hooks, and student-specific experimentation. Submitting these changes to the upstream class repository would clutter shared course infrastructure with individual practice code. Opening the PR against your own fork simulates the complete PR review lifecycle in an isolated sandbox.
 
 ---
 
@@ -237,31 +241,31 @@ Explain this assignment's workflow using the same Gather → Analyze → Human A
 
 **1. Which step(s) represent Gather?**
 
-Add your answer here.
+The pre-commit hook executing git diff --cached --name-only and the /pr-ready skill reading git diff --cached represent the Gather phase. Both tools extract staged delta telemetry directly from the Git index without altering state.
 
 ---
 
 **2. Which step(s) represent Analyze?**
 
-Add your answer here.
+The regex matching engine in hooks/pre-commit evaluating byte sizes and patterns, alongside Claude Code evaluating code semantics, detecting leftover debug statements, and assessing overall PR readiness represent the Analyze phase.
 
 ---
 
 **3. Which step is Human Act, and why must a human — not Claude — run `git commit`, `git push`, and open the PR?**
 
-Add your answer here.
+Removing the secret from test-config.js, running git commit, executing git push, and clicking "Create pull request" represent the Human Act phase. A human must execute these commands because code authoring and deployment commit authorization carry legal, security, and operational accountability that cannot be delegated to an automated agent.
 
 ---
 
 **4. Which step is Verify?**
 
-Add your answer here.
+Re-attempting git commit (confirming the pre-commit hook runs and exits with status 0) and running the second /pr-ready review (confirming a clean risk report and READY verdict) represent the Verify phase.
 
 ---
 
-**5. In one or two sentences: why do you need *both* the fixed-rule pre-commit hook and the AI skill? Isn't one enough?**
+**5. In one or two sentences: why do you need _both_ the fixed-rule pre-commit hook and the AI skill? Isn't one enough?**
 
-Add your answer here.
+A fixed-rule hook provides deterministic, zero-tolerance enforcement for known syntactic hazards (like regex patterns and file sizes), while the AI skill provides contextual, semantic judgment on code hygiene, debug logs, and intent that static regex cannot evaluate. Together, they form defense-in-depth: absolute enforcement at the gate plus intelligent analysis before submission.
 
 ---
 
@@ -275,7 +279,7 @@ Publish a LinkedIn post summarizing what you built and what you learned about co
 
 #### LinkedIn Post URL
 
-Add your LinkedIn post URL here...
+`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-share-7507360155022565376-Ayat/`
 
 ---
 
@@ -283,11 +287,9 @@ Add your LinkedIn post URL here...
 
 Add 3-5 bullet points on what you learned this week.
 
--
--
--
-
----
+- Tracked vs Untracked Hooks: Moving hooks from .git/hooks/ to a tracked hooks/ directory paired with git config core.hooksPath hooks makes client-side security policies shareable across team clones.
+- Deterministic vs Semantic Auditing: Regex patterns deliver immediate, binary enforcement against known credential signatures, whereas agentic tools analyze semantic intent, finding subtle hygiene issues like debug calls.
+- Read-Only Agent Boundaries: Setting disable-model-invocation: true and omitting Write permissions keeps AI agents in an advisory capacity, preserving human accountability over production commits.
 
 # Submission Instructions
 
@@ -305,7 +307,7 @@ Add 3-5 bullet points on what you learned this week.
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+`https://github.com/JokerHin/devops-micro-internship-pravinmishra`
 
 ---
 
@@ -337,14 +339,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
