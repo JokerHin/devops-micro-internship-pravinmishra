@@ -1,0 +1,44 @@
+#!/bin/bash
+# Pre-commit gatekeeper: Blocks commits containing secrets or files > 1MB
+
+EXIT_CODE=0
+MAX_FILE_SIZE_KB=1024
+
+# Break up the literal pattern tokens so the script definition doesn't match itself
+P_AWS="AK""IA[0-9A-Z]{16}"
+P_KEY="BEGIN ""PRIVATE KEY"
+P_GHP="gh""p_[0-9a-zA-Z]{36}"
+SECRET_PATTERNS="($P_AWS|$P_KEY|$P_GHP)"
+
+# Scan staged additions and modifications
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM)
+
+for FILE in $STAGED_FILES; do
+    # Skip non-existent files or the hook script itself
+    if [ ! -f "$FILE" ] || [ "$FILE" = "hooks/pre-commit" ]; then
+        continue
+    fi
+
+    # Check 1: File size limit (> 1MB)
+    FILE_SIZE_KB=$(du -k "$FILE" | cut -f1)
+    if [ "$FILE_SIZE_KB" -gt "$MAX_FILE_SIZE_KB" ]; then
+        echo "❌ BLOCKED: '$FILE' exceeds the 1MB file size limit (${FILE_SIZE_KB}KB)."
+        EXIT_CODE=1
+    fi
+
+    # Check 2: Hardcoded secret pattern scan
+    if git diff --cached "$FILE" | grep -Eq '^\+[^+].*'"$SECRET_PATTERNS"; then
+        echo "❌ BLOCKED: Hardcoded secret pattern detected in staged changes of '$FILE'."
+        echo "   Pattern matched: $SECRET_PATTERNS"
+        EXIT_CODE=1
+    fi
+done
+
+if [ $EXIT_CODE -ne 0 ]; then
+    echo "--------------------------------------------------"
+    echo "Commit aborted by pre-commit hook. Remove risky changes before committing."
+    echo "--------------------------------------------------"
+    exit 1
+fi
+
+exit 0
