@@ -20,7 +20,7 @@ Choose Team Mode or Solo Mode, and document how each Scrum role (Product Owner, 
 
 #### Screenshot 1 — Jira "Create project" screen, or the project sidebar after creation
 
-Add your screenshot here.
+![Jira "Create project" screen, or the project sidebar after creation](screenshots/task-36-diagram.png)
 
 ---
 
@@ -28,7 +28,10 @@ Add your screenshot here.
 
 Write one line for each role: PO (what you prioritized), SM (how you ensured process), Dev Lead (what you built), DevOps Lead (how you shipped).
 
-Write your answer here.
+Product Owner (PO): Prioritized user-facing credibility and friction reduction on the job search interface (clear CTA labels, verified badge typography, and transparent salary tag contrast).
+Scrum Master (SM): Protected the 90-minute time-box, enforced Definition of Ready (DoR) with Gherkin criteria, and ensured every sprint item was broken into testable sub-tasks.
+Dev Lead: Implemented the semantic HTML and CSS modifications locally, ensuring zero backend dependencies and no DOM layout shift.
+DevOps Lead: Handled feature branch isolation, git atomic commits, remote SCP synchronization to the AWS EC2 Nginx web root, and service verification.
 
 ---
 
@@ -42,7 +45,7 @@ Create a Team-managed Scrum project named `Gotto Job – Team <#>` (Team Mode) o
 
 #### Screenshot 2 — Project created page showing the project name and key
 
-Add your screenshot here.
+![Jira "Create project" screen, or the project sidebar after creation](screenshots/task-36-diagram.png)
 
 ---
 
@@ -56,7 +59,7 @@ Create the Epic `Improve Gotto Job UI discoverability & trust` to group the UI i
 
 #### Screenshot 3 — Backlog showing the Epic panel with the Epic visible
 
-Add your screenshot here.
+![Backlog showing the Epic panel with the Epic visible](screenshots/task-37-diagram.png)
 
 ---
 
@@ -70,13 +73,13 @@ Create at least six Stories under the Epic, estimate each with 1, 2, or 3 story 
 
 #### Screenshot 4 — Backlog showing the Epic and at least six Stories under it
 
-Add your screenshot here.
+![Backlog showing the Epic and at least six Stories under it](screenshots/task-38-diagram.png)
 
 ---
 
 #### Screenshot 5 — One Story opened showing its Story Points and acceptance criteria filled in
 
-Add your screenshot here.
+![One Story opened showing its Story Points and acceptance criteria filled in](screenshots/task-39-diagram.png)
 
 ---
 
@@ -90,7 +93,7 @@ Confirm the Story Points (1, 2, or 3) for each Story and record brief reasoning 
 
 #### Screenshot 6 — Backlog showing Story Points visible, or two or three Stories opened showing their points
 
-Add your screenshot here.
+![Backlog showing Story Points visible, or two or three Stories opened showing their points](screenshots/task-40-diagram.png)
 
 ---
 
@@ -98,7 +101,12 @@ Add your screenshot here.
 
 For each story, explain in one or two lines why it is a 1, 2, or 3 (mention any debate, even in Solo Mode).
 
-Write your answer here.
+GJ-1 (1 pt): Minor string and CSS color replacement on an existing button element. Zero layout risk and low uncertainty.
+GJ-2 (2 pts): Requires adding an inline SVG/icon asset and adjusting flex alignment with the company title without causing text wrap issues.
+GJ-3 (1 pt): Pure CSS typography update (font-weight and color contrast adjustment). Negligible complexity.
+GJ-4 (2 pts): Debate arose on whether touch-target padding (44px min) might overflow mobile card boundaries; estimated at 2 points to account for responsive breakpoint testing.
+GJ-5 (2 pts): Requires conditionally styling card headers and testing visual balance against the company logo and title elements.
+GJ-6 (1 pt): Straightforward static text update in the footer component with minimal risk.
 
 ---
 
@@ -112,13 +120,13 @@ Create Sprint 1, move three or four Stories into it (approximately 3–6 points)
 
 #### Screenshot 7 — Sprint 1 with the selected Stories inside it
 
-Add your screenshot here.
+![Sprint 1 with the selected Stories inside it](screenshots/task-41-diagram.png)
 
 ---
 
 #### Screenshot 8 — One Story showing the Sub-tasks created
 
-Add your screenshot here.
+![One Story showing the Sub-tasks created](screenshots/task-42-diagram.png)
 
 ---
 
@@ -132,7 +140,7 @@ Open the Burndown Chart and confirm it exists for Sprint 1. It is acceptable if 
 
 #### Screenshot 9 — Burndown Chart page opened, even if empty
 
-Add your screenshot here.
+![Burndown Chart page opened, even if empty](screenshots/task-43-diagram.png)
 
 ---
 
@@ -146,19 +154,19 @@ Implement one small UI-only Story from Sprint 1, commit it, deploy it live, and 
 
 #### Screenshot 10 — Jira board showing the Story moved to Done
 
-Add your screenshot here.
+![Jira board showing the Story moved to Done](screenshots/task-44-diagram.png)
 
 ---
 
 #### Screenshot 11 — Git commit output
 
-Add your screenshot here.
+![Jira board showing the Story moved to Done](screenshots/task-45-diagram.png)
 
 ---
 
 #### Screenshot 12 — Live URL in the browser showing the UI change, with the URL visible
 
-Add your screenshot here.
+![Live URL in the browser showing the UI change, with the URL visible](screenshots/task-46-diagram.png)
 
 ---
 
@@ -172,7 +180,7 @@ Add a retro comment covering what went well, what to improve, one Scrum pillar o
 
 #### Screenshot 13 — Jira retro comment visible
 
-Add your screenshot here.
+![Jira retro comment visible](screenshots/task-47-diagram.png)
 
 ---
 
@@ -188,13 +196,13 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-share-7507360155022565376-Ayat/`
 
 ---
 
 #### Screenshot 14 — Published LinkedIn post
 
-Add your screenshot here.
+![Published LinkedIn post showing the post content and at least one required link or proof image](screenshots/task-35-diagram.png)
 
 ---
 
@@ -233,14 +241,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
