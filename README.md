@@ -92,7 +92,8 @@ _Share your stack:_ `https://github.com/YOUR-USERNAME/devops-micro-internship-pr
 [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/)
 
 <!-- Week 06 → AWS Cloud -->
-<!-- [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) -->
+
+[![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/)
 
 <!-- Week 07 → Azure Cloud -->
 <!-- [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) -->
@@ -142,7 +143,7 @@ _Complete a week → uncomment the badge → watch your stack grow._
 | 03   | Linux & Bash for DevOps      | ✅ Completed   | ✅ Solved  | https://www.linkedin.com/posts/kar-hin-cho_linux-health-audit-and-incident-triage-pipeline-share-7506365184391692288-L_c5/ | https://medium.com/@chokarhin/linux-and-bash-for-devops-ad9e43c6dc90               |
 | 04   | Git & GitHub                 | ✅ Completed   | ✅ Solved  | https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-share-7507360155022565376-Ayat/                | https://medium.com/@chokarhin/git-and-github-sharing-progress-66fef31b1754         |
 | 05   | DevOps Lifecycle & Agile     | ✅ Completed   | ✅ Solved  | https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-share-7507360155022565376-Ayat/                | https://medium.com/@chokarhin/devops-lifecycle-with-jira-2e6918366c28              |
-| 06   | AWS Cloud                    | ⬜ Not Started | ⏳ Pending | —                                                                                                                          | —                                                                                  |
+| 06   | AWS Cloud                    | ✅ Completed   | ✅ Solved  | https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-ugcPost-7512882293045125120-usfO/              | https://medium.com/@chokarhin/deploy-a-two-tier-web-stack-on-aws-5bd50aefa242      |
 | 07   | Azure Cloud                  | ⬜ Not Started | ⏳ Pending | —                                                                                                                          | —                                                                                  |
 | 08   | Terraform                    | ⬜ Not Started | ⏳ Pending | —                                                                                                                          | —                                                                                  |
 | 09   | Ansible                      | ⬜ Not Started | ⏳ Pending | —                                                                                                                          | —                                                                                  |
