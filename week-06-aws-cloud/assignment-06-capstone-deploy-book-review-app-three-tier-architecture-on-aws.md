@@ -20,7 +20,7 @@ Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six sub
 
 #### Diagram image or link
 
-Add your diagram image or link here.
+![Diagram image or link](screenshots/task-54-diagram.png)
 
 ---
 
@@ -34,13 +34,17 @@ Record the AWS Region used and list every AWS service used across networking, co
 
 **Region:**
 
-Write your answer here.
+us-east-1 (US East - N. Virginia)
 
 ---
 
 **Services:**
 
-Write your answer here.
+Networking & Content Delivery: Amazon VPC, 6 Subnets (2 Public Web, 2 Private App, 2 Private DB across 2 AZs), Internet Gateway, NAT Gateway with Elastic IP, Route Tables.
+Compute: Amazon EC2 (Next.js Web frontend and Node.js/Express backend instances).
+Load Balancing: AWS Application Load Balancer (1 Internet-Facing ALB for public traffic, 1 Internal ALB for internal microservice API routing).Security & Identity: AWS Security Groups (least-privilege tier chaining: Public ALB $\rightarrow$ Web EC2 $\rightarrow$ Internal ALB $\rightarrow$ App EC2 $\rightarrow$ RDS), AWS IAM.
+Database: Amazon RDS for MySQL (Multi-AZ Primary instance with an asynchronous cross-AZ Read Replica).
+Management & Monitoring: Amazon CloudWatch, PM2 process manager, Nginx reverse proxy.
 
 ---
 
@@ -56,7 +60,7 @@ Confirm the Book Review App loads through the public ALB DNS name.
 
 Paste your public ALB DNS name here:
 
-`Add your URL here`
+`https://ha-web-alb-1682449902-us-east-1.elb.amazonaws.com`
 
 ---
 
@@ -70,37 +74,37 @@ Capture visual proof of every tier and load balancer.
 
 #### Web EC2
 
-Add your screenshot here.
+![Web EC2](screenshots/task-45-diagram.png)
 
 ---
 
 #### App EC2
 
-Add your screenshot here.
+![App EC2](screenshots/task-45-diagram.png)
 
 ---
 
 #### Public ALB
 
-Add your screenshot here.
+![Public ALB](screenshots/task-42-diagram.png)
 
 ---
 
 #### Internal ALB
 
-Add your screenshot here.
+![Internal ALB](screenshots/task-42-diagram.png)
 
 ---
 
 #### RDS + Replica
 
-Add your screenshot here.
+![RDS + Replica](screenshots/task-38-diagram.png)
 
 ---
 
 #### App UI proof
 
-Add your screenshot here.
+![App UI proof](screenshots/task-51-diagram.png)
 
 ---
 
@@ -114,19 +118,30 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 **What worked:**
 
-Write your answer here.
+Clean separation of concerns across 3 isolated tiers with two Availability Zones ensuring high availability.
+The Internet-Facing ALB successfully accepted public user traffic and routed it to the Next.js frontend on the Web Tier.
+The Internal ALB accepted backend API calls from the Web Tier and load-balanced them to the private Express App Tier.
+Read/write splitting where transactional writes targeted the Primary Multi-AZ MySQL instance while query loads were directed to the Read Replica.
 
 ---
 
 **Issues + fixes:**
 
-Write your answer here.
+Issue: Web Tier failed to connect to the Express API through the Internal ALB.
+Fix: Updated alb-internal-sg inbound rules to explicitly allow port 5000 from the web-sg security group.
+Issue: App tier instances in private subnets could not install npm dependencies during deployment.
+Fix: Added route 0.0.0.0/0 pointing to the NAT Gateway in the private App Route Table to grant outbound internet access.
+Issue: Database connection errors during initialization.
+Fix: Configured db-sg inbound rules to authorize port 3306 exclusively from app-sg, keeping the database isolated from the public internet and Web Tier.
 
 ---
 
 **Tools/sources used:**
 
-Write your answer here.
+Eraser.io for infrastructure architectural visualization.
+AWS Management Console & AWS CLI for provisioning, subnet routing, and target health verification.
+PM2 & Systemd for continuous Node.js background process management.
+curl for step-by-step endpoint validation through each load balancer.
 
 ---
 
@@ -142,13 +157,13 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-ugcPost-7512882293045125120-usfO/`
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![Screenshot of LinkedIn post](screenshots/task-53-diagram.png)
 
 ---
 
@@ -182,14 +197,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
