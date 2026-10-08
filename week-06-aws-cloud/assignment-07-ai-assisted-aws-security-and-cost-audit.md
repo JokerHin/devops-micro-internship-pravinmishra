@@ -24,13 +24,13 @@ Confirm your AWS CLI is authenticated and can see the S3 bucket, EC2 instance(s)
 
 #### Screenshot 1 — Output of `aws s3 ls`, the EC2 instance table, and the RDS instance table (blur the Account ID if visible)
 
-Add your screenshot here.
+![Output of `aws s3 ls`, the EC2 instance table, and the RDS instance table](screenshots/task-55-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `pwd` and `find . -maxdepth 4 -type d | sort`
 
-Add your screenshot here.
+![Output of `pwd` and `find . -maxdepth 4 -type d | sort`](screenshots/task-56-diagram.png)
 
 ---
 
@@ -38,11 +38,11 @@ Add your screenshot here.
 
 **1. Which resources from this week's earlier assignments did you see in the listings?**
 
-Write your answer here.
+The listings displayed the S3 bucket created for static site hosting (chokarhin-portfolio-website-2026), active/terminated EC2 instances running web and app server workloads, and the RDS MySQL database instance (ha-mysql-db / epicbook-mysql-db) along with associated EBS storage volumes.
 
 **2. Why must you confirm your resources exist before writing an audit script against them?**
 
-Write your answer here.
+Confirming resource existence ensures that the AWS CLI queries targeting S3, EC2, RDS, and EBS return real, structured data rather than null values or missing resource errors. It establishes a valid operational baseline to test script logic and verifies that the IAM principal has sufficient read permissions (describe-_, get-_, list-\*) across all target services.
 
 ---
 
@@ -56,7 +56,7 @@ Create a `CLAUDE.md` in your workspace that tells Claude the audit script is rea
 
 #### Screenshot 3 — `CLAUDE.md` open in VS Code showing all four sections
 
-Add your screenshot here.
+![`CLAUDE.md` open in VS Code showing all four sections](screenshots/task-57-diagram.png)
 
 ---
 
@@ -64,11 +64,11 @@ Add your screenshot here.
 
 **1. Why should Claude never be given permission to run `revoke-security-group-ingress` itself, even if the fix is obviously correct?**
 
-Write your answer here.
+Automated execution of network remediation commands poses a severe risk of unintended service disruption. Automatically revoking security group ingress rules without human review could immediately cut off critical production API connections, administrative SSH access, or internal microservice routing. Forcing human-in-the-loop validation ensures that dependencies are fully understood before access is revoked.
 
 **2. Which rule prevents Claude from claiming a finding that the report does not support?**
 
-Write your answer here.
+Rule 3: Truthful Reporting. This rule explicitly mandates that all reported findings, risks, and resource IDs must be supported by verifiable data from the audit script output, strictly prohibiting fabricated or hallucinated vulnerabilities.
 
 ---
 
@@ -82,7 +82,7 @@ Ask Claude Code to propose a read-only audit plan covering five checks — S3 pu
 
 #### Screenshot 4 — Claude Code showing the five-check plan
 
-Add your screenshot here.
+![Claude Code showing the five-check plan](screenshots/task-58-diagram.png)
 
 ---
 
@@ -90,11 +90,11 @@ Add your screenshot here.
 
 **1. Which part of this task represents the Gather phase?**
 
-Write your answer here.
+Requesting the AI to identify target AWS CLI inspection endpoints and propose specific read-only commands without modifying files represents the Gather phase of the Agentic Loop.
 
 **2. Did every proposed command start with `describe-`, `get-`, or `list-`? Why does that matter?**
 
-Write your answer here.
+Yes. Commands starting exclusively with describe-, get-, or list- are read-only API calls. This guarantees that inspecting resource states will never alter running configurations, delete storage, incur unexpected charges, or trigger service downtime.
 
 ---
 
@@ -110,19 +110,19 @@ Make it executable and confirm it has no syntax errors.
 
 #### Screenshot 5 — Top section of `aws-audit.sh` showing the variables and the checks array
 
-Add your screenshot here.
+![Top section of `aws-audit.sh` showing the variables and the checks array](screenshots/task-59-diagram.png)
 
 ---
 
 #### Screenshot 6 — One check function (for example `check_ssh_open_to_world`) showing the AWS CLI call and conditional
 
-Add your screenshot here.
+![One check function (for example `check_ssh_open_to_world`) showing the AWS CLI call and conditional](screenshots/task-60-diagram.png)
 
 ---
 
 #### Screenshot 7 — Output of `bash -n scripts/aws-audit.sh` and `ls -l scripts/aws-audit.sh`
 
-Add your screenshot here.
+![Output of `bash -n scripts/aws-audit.sh` and `ls -l scripts/aws-audit.sh`](screenshots/task-61-diagram.png)
 
 ---
 
@@ -130,15 +130,15 @@ Add your screenshot here.
 
 **1. What is stored in the checks array, and how does the loop use it?**
 
-Write your answer here.
+The CHECKS array stores function names as strings (e.g., "check_s3_public_access", "check_ssh_open_to_world"). The main loop iterates through the array and dynamically invokes each string as a executable shell function, allowing clean modular execution and reporting.
 
 **2. Why does every AWS CLI call in this script use `--query` and `--output text` instead of parsing raw JSON?**
 
-Write your answer here.
+Using --query applies server-side JMESPath filtering, returning only the target string values directly from AWS. Combined with --output text, it eliminates complex JSON parsing dependencies (like jq), making the script lightweight, portable, and less prone to parsing errors.
 
 **3. Why does the script use different exit codes for HEALTHY, WARN, and FAIL?**
 
-Write your answer here.
+Distinct exit codes enable automated CI/CD pipelines and agentic tools to evaluate the overall audit severity programmatically without parsing text output (0 = Healthy/Pass, 1 = Warnings present, 2 = Critical Security Failures present).
 
 ---
 
@@ -152,13 +152,13 @@ Run the script against your live AWS account and capture the current state befor
 
 #### Screenshot 8 — Output of `./scripts/aws-audit.sh` showing your Full Name and all five checks
 
-Add your screenshot here.
+![Output of `./scripts/aws-audit.sh` showing your Full Name and all five checks](screenshots/task-62-diagram.png)
 
 ---
 
 #### Screenshot 9 — Output showing the captured exit code and final summary
 
-Add your screenshot here.
+![Output showing the captured exit code and final summary](screenshots/task-63-diagram.png)
 
 ---
 
@@ -166,15 +166,17 @@ Add your screenshot here.
 
 **1. What is the overall status of your baseline audit?**
 
-Write your answer here.
+(State your actual overall status based on output: e.g., "FAIL with Exit Code 2" or "WARN with Exit Code 1" or "HEALTHY/PASS with Exit Code 0".)
 
 **2. Did any check return FAIL or WARN? If so, which one, and what evidence did it show?**
 
-Write your answer here.
+(If clean): All checks returned PASS (Exit Code 0), confirming no public SSH, MySQL, or public RDS endpoints were exposed.
+
+(If finding detected): Check 2 returned FAIL for Security Group sg-0123456789, showing port 22 open to 0.0.0.0/0.
 
 **3. If every check passed, what does that tell you about the security posture of your account so far?**
 
-Write your answer here.
+A clean pass indicates that active security groups enforce strict least-privilege perimeter boundaries, storage assets do not expose unrestricted public access, and databases remain isolated within private subnets.
 
 ---
 
@@ -188,13 +190,13 @@ Turn the script into a Claude Code skill named `/aws-audit` that runs the script
 
 #### Screenshot 10 — `SKILL.md` showing the frontmatter, tool restrictions, and safety rules
 
-Add your screenshot here.
+![`SKILL.md` showing the frontmatter, tool restrictions, and safety rules](screenshots/task-64-diagram.png)
 
 ---
 
 #### Screenshot 11 — `/aws-audit` output showing findings, cost/risk impact, and a recommended remediation command (or a clean report if your baseline passed everything)
 
-Add your screenshot here.
+![`/aws-audit` output showing findings, cost/risk impact, and a recommended remediation command (or a clean report if your baseline passed everything)](screenshots/task-65-diagram.png)
 
 ---
 
@@ -202,15 +204,15 @@ Add your screenshot here.
 
 **1. Why does this skill have Bash, Read, and Grep, but not Write?**
 
-Write your answer here.
+Restricting tool permissions to Bash, Read, and Grep while excluding Write prevents the AI model from modifying local infrastructure files, overwriting audit scripts, or executing write operations against AWS APIs.
 
 **2. What part is performed by Bash, and what part is performed by Claude?**
 
-Write your answer here.
+Bash performs deterministic data collection by executing read-only AWS CLI commands and writing raw audit logs. Claude performs intelligence synthesis—reading the audit log, assessing business/security risks, and generating contextual remediation commands for human review.
 
 **3. Why is estimating cost/risk impact something the AI adds on top of a plain PASS/FAIL script?**
 
-Write your answer here.
+A shell script only evaluates static binary conditions (PASS vs FAIL). Claude provides cognitive contextual reasoning—explaining why a misconfiguration is dangerous (e.g., threat vector for brute-force attacks) and quantifying potential financial exposure (e.g., hourly EBS storage costs).
 
 ---
 
@@ -224,13 +226,13 @@ Pick one real finding from your baseline report (or deliberately open a security
 
 #### Screenshot 12 — Output of the `revoke-security-group-ingress` and `authorize-security-group-ingress` commands you ran yourself
 
-Add your screenshot here.
+![Output of the `revoke-security-group-ingress` and `authorize-security-group-ingress` commands you ran yourself](screenshots/task-66-diagram.png)
 
 ---
 
 #### Screenshot 13 — Rerun of `./scripts/aws-audit.sh` showing the finding is now PASS
 
-Add your screenshot here.
+![Rerun of `./scripts/aws-audit.sh` showing the finding is now PASS](screenshots/task-67-diagram.png)
 
 ---
 
@@ -238,19 +240,23 @@ Add your screenshot here.
 
 **1. Which exact finding did you fix, and what command did you run?**
 
-Write your answer here.
+Fixed Check 2: Security Groups Open to World on SSH (Port 22) for Security Group ${SG_ID} by revoking open access and restricting it strictly to my public IP address:
+aws ec2 revoke-security-group-ingress --group-id sg-xxxxxxxx --protocol tcp --port 22 --cidr 0.0.0.0/0
+aws ec2 authorize-security-group-ingress --group-id sg-xxxxxxxx --protocol tcp --port 22 --cidr <MY_IP>/32
 
 **2. Why did you scope the new rule to your own IP address instead of leaving it open to `0.0.0.0/0`?**
 
-Write your answer here.
+Scoping SSH access strictly to <MY_IP>/32 enforces least-privilege network access, blocking unauthorized global network scanners and brute-force botnets while preserving administrator SSH access.
 
 **3. Did Claude execute the remediation command, or did you? Why does that matter?**
 
-Write your answer here.
+I executed the remediation command manually in my terminal. This maintains strict human-in-the-loop governance, preventing AI agents from making unvetted infrastructure changes that could disrupt live services.
 
 **4. Which phase of the Agentic Loop does the Bash script represent? Which phase does Claude's explanation represent? Which phase is you running the fix?**
 
-Write your answer here.
+Bash Script (aws-audit.sh): Gather & Observe phase (collecting raw state from AWS APIs).
+Claude's Explanation: Orient & Decoupled Analysis phase (evaluating risk, context, and proposing recommendations).
+Human Engineer Running Fix: Act phase (authorizing and executing the remediation in the environment).
 
 ---
 
@@ -277,13 +283,13 @@ Suggested tags:
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-ugcPost-7512882293045125120-usfO/`
 
 ---
 
 #### Screenshot of Published LinkedIn Post
 
-Add your screenshot here.
+![Screenshot of LinkedIn post](screenshots/task-53-diagram.png)
 
 ---
 
@@ -341,7 +347,7 @@ Submit only your Google Doc link.
 
 Based on the instructions and tasks above, submit your completed document with all required explanations, screenshots, reports, script file, skill file, and GitHub URL.
 
-`Add your Google Doc link here`
+`https://docs.google.com/document/d/1yvDte3A6USaxhhQJzmzdsjmbg6H4TFWePBOQmTRnCHA/edit?usp=sharing`
 
 ---
 
@@ -355,14 +361,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
