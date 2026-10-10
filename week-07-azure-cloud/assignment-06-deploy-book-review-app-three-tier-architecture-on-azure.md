@@ -20,13 +20,13 @@ Create an architecture diagram and implementation plan identifying the presentat
 
 #### Screenshot 1 — Architecture diagram showing the public entry point, three tiers, network boundaries, and traffic flow
 
-Add your screenshot here.
+![Proof of a successful database-backed action](screenshots/task-27-diagram.png)
 
 ---
 
 #### Screenshot 2 — Written architecture assumptions and selected Azure services
 
-Add your screenshot here.
+![Written architecture assumptions and selected Azure services](screenshots/task-28-diagram.png)
 
 ---
 
@@ -40,19 +40,19 @@ Create a dedicated Resource Group and VNet with separate subnets for the web, ap
 
 #### Screenshot 3 — Resource Group overview showing the assignment resources
 
-Add your screenshot here.
+![Resource Group overview showing the assignment resources](screenshots/task-29-diagram.png)
 
 ---
 
 #### Screenshot 4 — VNet overview showing the address space and all required subnets
 
-Add your screenshot here.
+![VNet overview showing the address space and all required subnets](screenshots/task-30-diagram.png)
 
 ---
 
 #### Screenshot 5 — Route-table or Private DNS evidence where applicable
 
-Add your screenshot here.
+![Route-table or Private DNS evidence where applicable](screenshots/task-31-diagram.png)
 
 ---
 
@@ -66,13 +66,13 @@ Apply least-privilege NSG rules so traffic flows Internet → public entry point
 
 #### Screenshot 6 — NSG rules proving least-privilege access between the tiers
 
-Add your screenshot here.
+![NSG rules proving least-privilege access between the tiers](screenshots/task-32-diagram.png)
 
 ---
 
 #### Screenshot 7 — Key Vault or approved secret-management configuration (without displaying secret values)
 
-Add your screenshot here.
+![Key Vault or approved secret-management configuration](screenshots/task-33-diagram.png)
 
 ---
 
@@ -86,13 +86,13 @@ Deploy the Book Review App presentation layer on the approved web-tier compute s
 
 #### Screenshot 8 — Web-tier compute overview showing subnet and availability configuration
 
-Add your screenshot here.
+![Web-tier compute overview showing subnet and availability configuration](screenshots/task-34-diagram.png)
 
 ---
 
 #### Screenshot 9 — Terminal or service output proving the presentation layer is running
 
-Add your screenshot here.
+![Terminal or service output proving the presentation layer is running](screenshots/task-35-diagram.png)
 
 ---
 
@@ -106,19 +106,19 @@ Deploy the Book Review App backend privately in the application subnet, configur
 
 #### Screenshot 10 — Application-tier compute overview showing private subnet placement
 
-Add your screenshot here.
+![Application-tier compute overview showing private subnet placement](screenshots/task-36-diagram.png)
 
 ---
 
 #### Screenshot 11 — Backend process, service, or listening-port evidence
 
-Add your screenshot here.
+![Backend process, service, or listening-port evidence](screenshots/task-37-diagram.png)
 
 ---
 
 #### Screenshot 12 — Internal health-check or API response (without exposing secrets)
 
-Add your screenshot here.
+![Internal health-check or API respons](screenshots/task-38-diagram.png)
 
 ---
 
@@ -132,19 +132,19 @@ Create a private Azure managed database (public access disabled), with availabil
 
 #### Screenshot 13 — Database overview showing private connectivity and public access disabled
 
-Add your screenshot here.
+![Database overview showing private connectivity and public access disabled](screenshots/task-39-diagram.png)
 
 ---
 
 #### Screenshot 14 — Availability, backup, and retention configuration
 
-Add your screenshot here.
+![Availability, backup, and retention configuration](screenshots/task-40-diagram.png)
 
 ---
 
 #### Screenshot 15 — Successful schema or connectivity verification (without exposing credentials)
 
-Add your screenshot here.
+![Successful schema or connectivity verification](screenshots/task-41-diagram.png)
 
 ---
 
@@ -158,19 +158,19 @@ Configure the approved public entry service with health probes and backend pools
 
 #### Screenshot 16 — Public entry service showing listener, frontend endpoint, and healthy web targets
 
-Add your screenshot here.
+![Public entry service showing listener, frontend endpoint, and healthy web targets](screenshots/task-42-diagram.png)
 
 ---
 
 #### Screenshot 17 — Internal application-tier load-balancing or routing configuration where applicable
 
-Add your screenshot here.
+![ Internal application-tier load-balancing or routing configuration where applicable](screenshots/task-43-diagram.png)
 
 ---
 
 #### Screenshot 18 — Azure Monitor, diagnostic settings, logs, metrics, or alert evidence
 
-Add your screenshot here.
+![Azure Monitor, diagnostic settings, logs, metrics, or alert evidence](screenshots/task-44-diagram.png)
 
 ---
 
@@ -184,25 +184,25 @@ Confirm the Book Review App works end to end through the public endpoint, with a
 
 #### Screenshot 19 — Browser showing the Book Review App through the public endpoint
 
-Add your screenshot here.
+![Browser showing the Book Review App through the public endpoint](screenshots/task-45-diagram.png)
 
 ---
 
 #### Screenshot 20 — Proof of successful database-backed read and write operations
 
-Add your screenshot here.
+![Proof of successful database-backed read and write operations](screenshots/task-46-diagram.png)
 
 ---
 
 #### Screenshot 21 — Evidence that private tiers are not publicly accessible
 
-Add your screenshot here.
+![Evidence that private tiers are not publicly accessible](screenshots/task-47-diagram.png)
 
 ---
 
 #### Screenshot 22 — Availability-test and healthy-target evidence
 
-Add your screenshot here.
+![Availability-test and healthy-target evidence](screenshots/task-48-diagram.png)
 
 ---
 
@@ -210,7 +210,7 @@ Add your screenshot here.
 
 Paste your public endpoint URL here:
 
-`Add your URL here`
+`http://10.1.0.4:80`
 
 ---
 
@@ -218,7 +218,54 @@ Paste your public endpoint URL here:
 
 Summarize what worked, issues encountered and how they were fixed, and the availability/security/secrets/monitoring/backup choices made.
 
-Write your answer here.
+What Worked
+Resource Provisioning & Foundation: Resource Group (CHAMOISLY-CAPSTONE-RG) and Virtual Network (capstone-vnet: 10.1.0.0/16) were successfully instantiated in malaysiawest with mandatory governance tags (Workload=BookReviewApp, Environment=Development, Business Owner=ChoKarHin, Technical Owner=ChoKarHin, Department=IT, Location=MalaysiaWest, Business Criticality=Low).
+
+Multi-Tier Compute & Database Isolation: Provisioned capstone-web-vm (10.1.1.4) in web-subnet, capstone-app-vm (10.1.2.4) in app-subnet, and capstone-db-chokarin01 (Azure Database for MySQL Flexible Server) in delegated db-subnet (10.1.3.0/24).
+
+Cross-Tier Communication: End-to-end communication was validated across all tiers via Azure Serial Console:
+
+Ingress HTTP traffic routed through capstone-internal-lb (10.1.0.4).
+
+Presentation layer (capstone-web-vm) invoked backend REST API services on capstone-app-vm:5000.
+
+Business layer queried MySQL Flexible Server on private port 3306.
+
+Issues Encountered & Engineering Solutions
+Subnet Creation Denied (MG-NSG-REQUIRE-DENY):
+
+Issue: Policy mandated Network Security Groups (NSGs) be associated with subnets upon creation.
+
+Fix: Pre-created appgw-nsg, web-nsg, app-nsg, and db-nsg, binding them inline during subnet creation commands.
+
+Key Vault RBAC Authorization (ForbiddenByRbac):
+
+Issue: Setting db-admin-password secret failed due to missing Key Vault RBAC permissions.
+
+Fix: Registered the Microsoft.KeyVault provider and granted the KeyVault Secrets Officer role to the user account prior to setting secrets.
+
+VM SKU Policy & Capacity Restrictions (ROOT-VM-ALLOWEDSKUS-DENY / SkuNotAvailable):
+
+Issue: Standard_B1ms was blocked by corporate SKU policy, while Standard_B2s hit regional capacity limits in malaysiawest.
+
+Fix: Selected Standard_B2s_v2, an allowed SKU with active regional capacity.
+
+Public IP Restriction (ROOT-ALL-SECURITYBASELINE-DENY):
+
+Issue: Public IP creation for the load balancer was denied by corporate security policy.
+
+Fix: Deployed an Internal Azure Load Balancer (capstone-internal-lb) with a private frontend IP (10.1.0.4) inside appgw-subnet, fulfilling all traffic management requirements securely.
+
+Architectural & Operational Choices
+Security & Isolation: Network Security Group rules enforce zero-trust isolation between subnets. web-subnet accepts inbound traffic only from appgw-subnet (ports 80/443); app-subnet accepts traffic only from web-subnet (port 5000); db-subnet accepts MySQL traffic only from app-subnet (port 3306). Public internet access to private tiers is completely disabled.
+
+Secrets Management: Database administrative credentials (db-admin-password) are centralized inside Azure Key Vault (capstone-kv-chokarin01) using Azure RBAC access policies, preventing hardcoded secrets in source code.
+
+Availability & Traffic Management: capstone-internal-lb distributes traffic with an HTTP health probe monitoring / on port 80 every 5 seconds to ensure active target health.
+
+Backup & Retention: Azure Database for MySQL Flexible Server was deployed in the Burstable tier (Standard_B1ms) with automated daily backups and a 7-day retention period.
+
+Monitoring: Diagnostic telemetry and performance metrics (Percentage CPU, Network In/Out) are captured continuously via Azure Monitor.
 
 ---
 
@@ -253,14 +300,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

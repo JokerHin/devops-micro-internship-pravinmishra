@@ -20,7 +20,7 @@ Confirm your Azure CLI is authenticated and can see the VM, network, storage acc
 
 #### Screenshot 1 — `az account show` and `az vm list -d -o table` confirming your subscription and running VM (subscription ID partially blurred)
 
-Add your screenshot here.
+![`az account show` and `az vm list -d -o table` confirming your subscription and running VM](screenshots/task-49-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a `CLAUDE.md` for this workspace that tells Claude what the audit covers 
 
 #### Screenshot 2 — `CLAUDE.md` open in your editor showing the project overview, audit workflow, and safety rules
 
-Add your screenshot here.
+![`CLAUDE.md` open in your editor showing the project overview, audit workflow, and safety rules](screenshots/task-50-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Ask Claude Code to read `CLAUDE.md` and propose a read-only, four-check audit pl
 
 #### Screenshot 3 — Claude Code showing the four-check plan, with no files created or modified
 
-Add your screenshot here.
+![Claude Code showing the four-check plan, with no files created or modified](screenshots/task-51-diagram.png)
 
 ---
 
@@ -62,13 +62,13 @@ Write a Bash script that runs the four checks from Task 3 using read-only `az` c
 
 #### Screenshot 4 — Your script open in your editor, showing the check functions and the `az` commands they call
 
-Add your screenshot here.
+![Your script open in your editor, showing the check functions and the `az` commands they call](screenshots/task-52-diagram.png)
 
 ---
 
 #### Screenshot 5 — Output of `bash -n` (no syntax errors) and `ls -l` showing the script is executable
 
-Add your screenshot here.
+![Output of `bash -n` (no syntax errors) and `ls -l` showing the script is executable](screenshots/task-53-diagram.png)
 
 ---
 
@@ -82,7 +82,7 @@ Run the script against your live resources and read the report honestly, even if
 
 #### Screenshot 6 — Script output showing your Full Name and all four checks with a PASS, WARN, or FAIL result
 
-Add your screenshot here.
+![Script output showing your Full Name and all four checks with a PASS, WARN, or FAIL result](screenshots/task-54-diagram.png)
 
 ---
 
@@ -96,13 +96,13 @@ Create a Claude Code skill restricted to read-only tools (no `Write`) that runs 
 
 #### Screenshot 7 — Your skill file's frontmatter showing `allowed-tools` without `Write`
 
-Add your screenshot here.
+![Your skill file's frontmatter showing `allowed-tools` without `Write`](screenshots/task-55-diagram.png)
 
 ---
 
 #### Screenshot 8 — `/azure-audit` output showing the baseline findings and Claude's explanation
 
-Add your screenshot here.
+![`/azure-audit` output showing the baseline findings and Claude's explanation](screenshots/task-56-diagram.png)
 
 ---
 
@@ -116,19 +116,19 @@ Pick one WARN or FAIL finding (or deliberately open an NSG rule to port 22 from 
 
 #### Screenshot 9 — Saved report showing the original finding before the fix
 
-Add your screenshot here.
+![Saved report showing the original finding before the fix](screenshots/task-57-diagram.png)
 
 ---
 
 #### Screenshot 10 — Terminal output of the remediation command you ran yourself
 
-Add your screenshot here.
+![Terminal output of the remediation command you ran yourself](screenshots/task-57-diagram.png)
 
 ---
 
 #### Screenshot 11 — Second `/azure-audit` run (or report) showing the finding resolved
 
-Add your screenshot here.
+![Second `/azure-audit` run (or report) showing the finding resolved](screenshots/task-58-diagram.png)
 
 ---
 
@@ -136,7 +136,26 @@ Add your screenshot here.
 
 Compare this assignment to the AWS audit you built in Week 6: which finding categories map to each other across the two clouds, and what stayed exactly the same about the workflow even though the `az`/`aws` commands are completely different?
 
-Add your answer here
+### Comparison: AWS Security Audit (Week 6) vs. Azure Security Audit (Week 7)
+
+#### 1. Category Mapping Across Clouds
+
+Despite syntactic differences in command-line tools (`aws` vs. `az`), the security domain categories map directly across both cloud platforms:
+
+| Security Domain               | AWS Service & Audit Check                                                                                   | Azure Service & Audit Check                                                                                    |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Network Exposure**          | Security Groups (`aws ec2 describe-security-groups`) checking open ingress on Ports 22/3389 to `0.0.0.0/0`. | Network Security Groups (`az network nsg rule list`) checking inbound rules open to `0.0.0.0/0` or `*`.        |
+| **Object Storage Privacy**    | S3 Bucket Public Access Block (`aws s3api get-public-access-block`) checking public read/list.              | Storage Account Blob Access (`az storage account list`) checking `allowBlobPublicAccess == true`.              |
+| **Compute Disk Encryption**   | EBS Volume Encryption (`aws ec2 describe-volumes`) checking `Encrypted == false`.                           | Virtual Machine OS Disk Encryption (`az vm list`) checking `storageProfile.osDisk.encryptionSettings.enabled`. |
+| **Managed Database Security** | RDS Public Accessibility (`aws rds describe-db-instances`) checking `PubliclyAccessible == true`.           | MySQL Flexible Server Access (`az mysql flexible-server list`) checking `publicNetworkAccess == Enabled`.      |
+
+#### 2. Universal Workflow Principles
+
+Regardless of whether managing AWS or Azure infrastructure, the core DevSecOps workflow remained completely identical:
+
+- **Read-Only Evidence First**: The audit script operates strictly with non-mutating query commands (`list`, `show`, `describe`), producing verifiable evidence reports without altering production state.
+- **Human-in-the-Loop Remediation**: Agentic AI (Claude Code) acts purely as an analytical assistant—explaining risk posture and recommending scoped fixes—while authorization and execution of mutating commands remain exclusively under human control.
+- **Verification Loop**: Following manual remediation, re-running the deterministic audit script verifies that the vulnerability was successfully resolved without regression.
 
 ---
 
@@ -145,6 +164,7 @@ Add your answer here
 Complete all tasks in sequence.
 
 Your submission must include:
+
 - All 11 required screenshots
 - Do not expose your Azure subscription ID, tenant ID, client secrets, or connection strings
 
@@ -174,14 +194,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
