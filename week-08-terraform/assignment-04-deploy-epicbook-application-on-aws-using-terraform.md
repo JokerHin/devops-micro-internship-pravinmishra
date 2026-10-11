@@ -24,7 +24,7 @@ Prepare your local environment by installing Terraform, AWS CLI, and the HashiCo
 
 Add a screenshot of the terminal showing successful `terraform version` output.
 
-Add your screenshot here.
+![Terraform Destroy](screenshots/task-35-diagram.png)
 
 ---
 
@@ -582,4 +582,4 @@ It helps learners build strong DevOps foundations through hands-on experience.
 
 ---
 
-*This submission is part of the DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of the DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
