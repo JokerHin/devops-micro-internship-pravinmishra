@@ -22,7 +22,7 @@ Create the required folders and files for the Ansible project.
 
 #### Screenshot 1 — Terminal or VS Code showing the complete `static-web` project structure
 
-Add your screenshot here.
+[Terminal or VS Code showing the complete `static-web` project structure](screenshots/task-30-diagram.png)
 
 ---
 
@@ -36,7 +36,7 @@ Add both Ubuntu servers to the Ansible inventory.
 
 #### Screenshot 2 — Output of `ansible-inventory -i inventory.ini --graph` showing `web1` and `web2`
 
-Add your screenshot here.
+[Output of `ansible-inventory -i inventory.ini --graph` showing `web1` and `web2`](screenshots/task-31-diagram.png)
 
 ---
 
@@ -45,4 +45,7 @@ Add your screenshot here.
 Copy and paste the complete contents of your `inventory.ini` file below:
 
 ```ini
-Add your inventory.ini content here.
+[web]
+web1 ansible_host=100.26.23.58 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_ed25519
+web2 ansible_host=52.91.12.104 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_ed25519
+```

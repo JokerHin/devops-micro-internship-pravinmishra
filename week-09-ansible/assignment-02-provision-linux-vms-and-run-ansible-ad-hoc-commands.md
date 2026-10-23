@@ -30,13 +30,15 @@ This project will use the Git repository and Ansible controller prepared in Assi
 
 #### Screenshot 2 — Terminal showing `git status --short` with the new project files and updated `.gitignore`
 
-Add your screenshot here.
+[Terminal showing `git status --short`](screenshots/task-14-diagram.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Created a dedicated subdirectory ansible-adhoc-lab/ within the primary ansible-onboarding repository to isolate the multi-host Terraform infrastructure scaffolding and custom Ansible inventory.
+Generated essential scaffolding files: main.tf, variables.tf, outputs.tf, inventory.ini, and README.md.
+Updated root .gitignore rules to ensure local Terraform state files (.tfstate, .tfstate.backup), lock files, and sensitive variable definitions (\*.tfvars) are excluded from version control.
 
 ---
 
@@ -57,25 +59,29 @@ Do not configure both providers for this assignment.
 
 #### Screenshot 3 — Terraform configuration showing the three or four server roles and the `for_each` or `count` implementation
 
-Add your screenshot here.
+[three or four server roles](screenshots/task-15-diagram.png)
 
 ---
 
 #### Screenshot 4 — Terraform configuration showing SSH restricted to the controller IP and HTTP allowed only for web hosts
 
-Add your screenshot here.
+[SSH restricted to the controller IP and HTTP allowed](screenshots/task-16-diagram.png)
 
 ---
 
 #### Screenshot 5 — Terraform output configuration showing how public IP addresses are associated with the server roles
 
-Add your screenshot here.
+[public IP addresses are associated with the server](screenshots/task-17-diagram.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Configured Terraform provider specifications for AWS (hashicorp/aws ~> 5.0) targeting Ubuntu 24.04 LTS AMIs.
+Implemented dynamic resource provisioning using a for_each loop over a server_roles map, generating three dedicated nodes: web, app, and db.
+Applied strict ingress security boundaries: aws_security_group.web_sg permits inbound HTTP (Port 80) and restricted SSH (Port 22), while aws_security_group.internal_sg permits restricted SSH (Port 22) only.
+Automated key deployment using aws_key_pair referencing the controller's ED25519 public key (~/.ssh/id_ed25519.pub).
+Formatted outputs in outputs.tf using a map projection to link each role key directly to its public IP address.
 
 ---
 
@@ -89,25 +95,27 @@ Initialize and validate the Terraform configuration, review the execution plan, 
 
 #### Screenshot 6 — Final `terraform apply` output showing `Apply complete`
 
-Add your screenshot here.
+[Final `terraform apply` output showing `Apply complete`](screenshots/task-18-diagram.png)
 
 ---
 
 #### Screenshot 7 — `terraform output public_ips` showing the role-to-IP mapping for all three or four VMs
 
-Add your screenshot here.
+[`terraform output public_ips`](screenshots/task-18-diagram.png)
 
 ---
 
 #### Screenshot 8 — Azure Portal or AWS Management Console showing all three or four VMs in the `Running` state, with their role-based names visible
 
-Add your screenshot here.
+[all three or four VMs in the `Running`](screenshots/task-19-diagram.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Initialized HashiCorp Terraform inside the WSL2 Ubuntu environment (terraform init) and validated syntax using terraform validate.
+Executed terraform apply -auto-approve to provision three Ubuntu 24.04 LTS EC2 instances (ansible-node-web, ansible-node-app, ansible-node-db) alongside role-specific AWS security groups.
+Retrieved public IPv4 addresses via terraform output public_ips and verified that all instances reached the Running state in the AWS Management Console.
 
 ---
 
@@ -121,13 +129,15 @@ Verify that each managed VM can be accessed from the Ansible controller using SS
 
 #### Screenshot 9 — Terminal showing successful SSH hostname output from all VMs
 
-Add your screenshot here.
+[Terminal showing successful SSH hostname output from all VMs](screenshots/task-20-diagram.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Loaded the active ED25519 identity key (~/.ssh/id_ed25519) into the background SSH agent (eval "$(ssh-agent -s)").
+Verified non-interactive, passwordless SSH connectivity from the Ansible control node to all three managed EC2 instances over Port 22.
+Confirmed target host reachability and public key placement by executing hostname -f across all nodes.
 
 ---
 
@@ -143,19 +153,23 @@ The inventory allows Ansible to run commands against all servers, or only specif
 
 #### Screenshot 10 — `inventory.ini` showing the `web`, `app`, and `db` groups
 
-Add your screenshot here.
+[`inventory.ini` showing the `web`, `app`, and `db` groups](screenshots/task-21-diagram.png)
 
 ---
 
 #### Screenshot 11 — Output of `ansible-inventory -i inventory.ini --graph`
 
-Add your screenshot here.
+[Output of `ansible-inventory -i inventory.ini --graph](screenshots/task-22-diagram.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Created an INI-formatted inventory file (inventory.ini) categorizing managed nodes into three distinct role groups: [web], [app], and [db].
+
+Configured essential connection variables (ansible_user=ubuntu and ansible_ssh_private_key_file=~/.ssh/id_ed25519) directly within the inventory to standardize SSH authentication parameters across all target hosts.
+
+Validated group structures and parent-child hierarchy using ansible-inventory -i inventory.ini --graph.
 
 ---
 
@@ -171,43 +185,51 @@ This task proves that the inventory is working and that Ansible can control mult
 
 #### Screenshot 12 — Output of `ansible all -i inventory.ini -m ping`
 
-Add your screenshot here.
+[Output of `ansible all -i inventory.ini -m ping`](screenshots/task-23-diagram.png)
 
 ---
 
 #### Screenshot 13 — Output of `ansible all -i inventory.ini -m command -a "uptime"`
 
-Add your screenshot here.
+[Output of `ansible all -i inventory.ini -m command -a "uptime"`](screenshots/task-24-diagram.png)
 
 ---
 
 #### Screenshot 14 — Output of `ansible web -i inventory.ini -m apt -a "name=nginx state=present update_cache=yes" --become`
 
-Add your screenshot here.
+[Output of `ansible web -i inventory.ini -m apt -a "name=nginx state=present update_cache=yes" --become`](screenshots/task-25-diagram.png)
 
 ---
 
 #### Screenshot 15 — Output of `ansible web -i inventory.ini -m service -a "name=nginx state=started enabled=yes" --become`
 
-Add your screenshot here.
+[Output of `ansible web -i inventory.ini -m service -a "name=nginx state=started enabled=yes" --become`](screenshots/task-26-diagram.png)
 
 ---
 
 #### Screenshot 16 — Output of `ansible all -i inventory.ini -m apt -a "name=htop state=present update_cache=yes" --become`
 
-Add your screenshot here.
+[Output of `ansible all -i inventory.ini -m apt -a "name=htop state=present update_cache=yes" --become`](screenshots/task-27-diagram.png)
 
 ---
 
 #### Screenshot 17 — Output of `ansible web -i inventory.ini -m command -a "systemctl is-active nginx"`
 
-Add your screenshot here.
+[Output of `ansible web -i inventory.ini -m command -a "systemctl is-active nginx"`](screenshots/task-28-diagram.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Verified end-to-end SSH connectivity, authentication, and Python execution across all managed nodes using the ansible all -i inventory.ini -m ping ad-hoc module.
+
+Audited real-time server metrics across the instance fleet by executing the command module (uptime).
+
+Leveraged administrative privilege escalation (--become) with the apt module to idempotently install package dependencies (nginx on web nodes and htop across all nodes).
+
+Managed systemd daemons using the service module to enable and start Nginx on target web hosts.
+
+Confirmed active service health on the web inventory group using systemctl is-active nginx.
 
 ---
 
@@ -219,13 +241,13 @@ Add your task notes here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-ugcPost-7512882293045125120-usfO/ `
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+[ Published LinkedIn post](screenshots/task-29-diagram.png)
 
 ---
 
@@ -235,37 +257,37 @@ Answer the following in your own words:
 
 **1. What is the purpose of an Ansible inventory file?**
 
-Add your answer here.
+An Ansible inventory file defines, categorizes, and maps the managed target hosts (via IP addresses or hostnames) that Ansible controls. It allows operators to organize infrastructure into logical groups (e.g., web, app, db) and set host-specific connection variables like SSH users and key paths.
 
 ---
 
 **2. What is the difference between the `web`, `app`, and `db` groups in your inventory?**
 
-Add your answer here.
+The groups separate host responsibilities based on application architecture tiers. This allows targeted execution so playbooks and ad-hoc commands can apply configurations specifically to relevant tiers (e.g., installing Nginx only on web hosts) without impacting other infrastructure roles.
 
 ---
 
 **3. What does the Ansible `ping` module verify?**
 
-Add your answer here.
+The ping module verifies end-to-end connectivity, valid SSH authentication, and proper Python interpreter execution on the target node. It is not an ICMP echo ping; it executes a lightweight Ansible Python snippet on the host and returns pong.
 
 ---
 
 **4. Why do package installation commands require `--become`?**
 
-Add your answer here.
+Modifying system packages (such as installing software via apt or managing systemd services) requires elevated root administrative privileges. The --become flag instructs Ansible to execute the command using sudo.
 
 ---
 
 **5. When would you use an ad-hoc command instead of a playbook?**
 
-Add your answer here.
+Ad-hoc commands are best suited for quick, single-purpose, or real-time tasks—such as checking server uptime, rebooting a cluster, or testing SSH connectivity. Playbooks are used for complex, multi-step, repeatable, and version-controlled configuration management workflows.
 
 ---
 
 **6. What is one challenge you faced while setting up SSH or inventory, and how did you fix it?**
 
-Add your answer here.
+When running Ansible commands, the binary was initially not found because the Python virtual environment (.venv) was not active in the current shell session. Activating the environment (source ~/ansible-onboarding/.venv/bin/activate) resolved the pathing issue and restored access to ansible CLI binaries.
 
 ---
 
