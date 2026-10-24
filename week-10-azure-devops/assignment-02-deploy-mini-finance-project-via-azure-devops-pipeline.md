@@ -20,7 +20,7 @@ Import `https://github.com/pravinmishraaws/Azure-Static-Website` into Azure Repo
 
 #### Screenshot 1 — Azure Repos showing the imported repository files with `index.html` visible
 
-Add your screenshot here.
+[Azure Repos showing the imported repository files with `index.html` visible](screenshots/task-8-diagram.png)
 
 ---
 
@@ -34,13 +34,13 @@ Provision a Linux VM with Terraform (ports 22/80 open), then use Ansible to inst
 
 #### Screenshot 2 — Terraform output or cloud console showing the running VM and public IP
 
-Add your screenshot here.
+[Terraform output or cloud console showing the running VM and public IP](screenshots/task-9-diagram.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing Ansible completed successfully and Nginx is active
 
-Add your screenshot here.
+[Terminal showing Ansible completed successfully and Nginx is active](screenshots/task-10-diagram.png)
 
 ---
 
@@ -54,7 +54,7 @@ Create the password-based SSH Service Connection `ubuntu-nginx-ssh` pointing to 
 
 #### Screenshot 4 — SSH Service Connection configuration page showing the connection details and successful validation, with the password hidden
 
-Add your screenshot here.
+[SSH Service Connection configuration page showing the connection details and successful validation, with the password hidden](screenshots/task-11-diagram.png)
 
 ---
 
@@ -68,7 +68,7 @@ Write a pipeline triggered on `main` that checks out the repo, copies files to `
 
 #### Screenshot 5 — Pipeline YAML definition open in the Azure DevOps editor
 
-Add your screenshot here.
+[Pipeline YAML definition open in the Azure DevOps editor](screenshots/task-12-diagram.png)
 
 ---
 
@@ -82,13 +82,13 @@ Confirm the pipeline run succeeded (checkout, SSH connection, file transfer, rem
 
 #### Screenshot 6 — Successful Azure DevOps pipeline run log summary
 
-Add your screenshot here.
+[Successful Azure DevOps pipeline run log summary](screenshots/task-13-diagram.png)
 
 ---
 
 #### Screenshot 7 — Browser showing the deployed website with the VM public IP visible
 
-Add your screenshot here.
+[Browser showing the deployed website with the VM public IP visible](screenshots/task-14-diagram.png)
 
 ---
 
@@ -96,7 +96,25 @@ Add your screenshot here.
 
 Include the VM public URL. Describe any issue you faced and how you fixed it (e.g. parallelism/agent-pool issues).
 
-Write your answer here.
+Target Environment & Deployment Details:
+
+- Target Cloud Platform: AWS EC2 (Ubuntu 24.04 LTS)
+- Target VM Public IP: 54.221.23.46
+- Target Application URL: http://54.221.23.46
+- Web Server: Nginx 1.24+
+- Deployment Directory: /var/www/html
+- Azure DevOps Agent Pool: Self-hosted
+- Service Connection Name: ubuntu-nginx-ssh
+
+Issues Faced & Resolution:
+
+1. SSH Destination Directory Permission Denied:
+   When executing CopyFilesOverSSH@0, initial deployment attempts failed because the default owner of /var/www/html on Ubuntu is root (755 permissions), which prevented the non-root 'ubuntu' SSH user from writing files.
+   Resolution: Executed `sudo chown -R ubuntu:ubuntu /var/www/html` and `sudo chmod -R 755 /var/www/html` on the target VM to grant write permissions to the deployment user account.
+
+2. Agent Pool Naming Mismatch:
+   Referencing 'SelfHostedPool' in the pipeline YAML triggered a "pool does not exist" validation error because the registered pool name in Organization Settings contained a hyphen ('Self-hosted').
+   Resolution: Updated the pool definition attribute in azure-pipelines.yml to `name: 'Self-hosted'` to match the exact pool configuration.
 
 ---
 
@@ -129,14 +147,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

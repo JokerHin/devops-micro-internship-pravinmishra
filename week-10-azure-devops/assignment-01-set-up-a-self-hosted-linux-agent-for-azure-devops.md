@@ -30,7 +30,7 @@ Create a self-hosted agent pool (e.g. `SelfHostedPool`) in Azure DevOps Organiza
 
 #### Screenshot 1 — Azure DevOps Agent Pools page showing the newly created pool
 
-Add your screenshot here.
+[Azure DevOps Agent Pools page showing the newly created pool](screenshots/task-1-diagram.png)
 
 ---
 
@@ -44,13 +44,13 @@ Create an Ubuntu 22.04 (or latest) VM in AWS or Azure with SSH access, and confi
 
 #### Screenshot 2 — Cloud console showing the running Ubuntu VM and its public IP or DNS name
 
-Add your screenshot here.
+[Cloud console showing the running Ubuntu VM and its public IP or DNS name](screenshots/task-2-diagram.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing a successful SSH login and Ubuntu version details
 
-Add your screenshot here.
+[Terminal showing a successful SSH login and Ubuntu version details](screenshots/task-3-diagram.png)
 
 ---
 
@@ -64,13 +64,13 @@ Download the Linux agent package, register it with your organization/pool/PAT vi
 
 #### Screenshot 4 — Terminal showing successful agent configuration without exposing the PAT
 
-Add your screenshot here.
+[Terminal showing successful agent configuration without exposing the PAT](screenshots/task-4-diagram.png)
 
 ---
 
 #### Screenshot 5 — Terminal showing the agent service running successfully
 
-Add your screenshot here.
+[Terminal showing the agent service running successfully](screenshots/task-5-diagram.png)
 
 ---
 
@@ -84,7 +84,7 @@ Confirm the agent service is running and the agent shows as Online in the Azure 
 
 #### Screenshot 6 — Agent Pool listing showing the registered agent online
 
-Add your screenshot here.
+[Agent Pool listing showing the registered agent online](screenshots/task-6-diagram.png)
 
 ---
 
@@ -98,7 +98,7 @@ Create and run a YAML pipeline targeting the self-hosted pool, running `uname -a
 
 #### Screenshot 7 — Successful test pipeline run output in Azure DevOps showing the Linux commands
 
-Add your screenshot here.
+[Successful test pipeline run output in Azure DevOps showing the Linux commands](screenshots/task-7-diagram.png)
 
 ---
 
@@ -106,7 +106,25 @@ Add your screenshot here.
 
 Note the cloud platform used, your Azure DevOps organization/project name, and the agent pool name. Describe any issue you faced and how you resolved it.
 
-Write your answer here.
+Infrastructure & Environment Details:
+
+- Cloud Platform: Amazon Web Services (AWS EC2 - Ubuntu 24.04 LTS)
+- Public IP Address: 54.221.23.46
+- Azure DevOps Organization: TP076151
+- Agent Pool Name: SelfHostedPool
+- Agent Name: ubuntu-aws-agent1
+- Agent Version: v5.281.1
+
+Issues Faced & Resolution:
+
+1. Deprecated Agent Package Mirror:
+   Attempts to download the agent package using legacy endpoints (vstsagentpackage.azureedge.net) failed with DNS resolution errors (NXDOMAIN). The issue was resolved by obtaining the official download URL from the Azure DevOps Agent Pools configuration UI using the active CDN domain (download.agent.dev.azure.com).
+
+2. Prompt Misconfiguration During Agent Registration:
+   During the interactive execution of ./config.sh, entering the secret Personal Access Token (PAT) string at the "authentication type" prompt triggered an invalid value error. The issue was resolved by pressing Enter at the authentication type prompt to accept the default PAT option before pasting the token string at the subsequent prompt.
+
+3. Background Daemon Persistence:
+   Executing ./svc.sh install and ./svc.sh start registered the agent as a systemd background service on Ubuntu, ensuring continuous polling and automatic recovery across system reboots.
 
 ---
 
@@ -140,14 +158,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
