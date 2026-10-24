@@ -22,19 +22,19 @@ Confirm that your previous EpicBook Ansible project is working before creating t
 
 #### Screenshot 1 — Output of `ansible web -i inventory.ini -m ping`
 
-Add your screenshot here.
+[Output of `ansible web -i inventory.ini -m ping`](screenshots/task-71-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `ansible-playbook -i inventory.ini site.yml --syntax-check`
 
-Add your screenshot here.
+[Output of `ansible-playbook -i inventory.ini site.yml --syntax-check`](screenshots/task-72-diagram.png)
 
 ---
 
 #### Screenshot 3 — Output of `pwd` and `find . -maxdepth 4 -type d | sort`
 
-Add your screenshot here.
+[Output of `pwd` and `find . -maxdepth 4 -type d | sort`](screenshots/task-73-diagram.png)
 
 ---
 
@@ -44,13 +44,13 @@ Answer the following in your own words:
 
 **1. What proves that Ansible can reach your EpicBook VM?**
 
-Add your answer here.
+Executing ansible web -i inventory.ini -m ping returned a SUCCESS response with "ping": "pong" over SSH, confirming active network reachability, key authentication, and functional Python execution on the target node 3.80.215.0.
 
 ---
 
 **2. Why should you confirm playbook syntax before building a risk-review script?**
 
-Add your answer here.
+Verifying playbook syntax with --syntax-check ensures that all YAML structures, task definitions, and role references are syntactically valid before performing dry runs. This prevents parsing errors from breaking the automated risk-review parser.
 
 ---
 
@@ -64,7 +64,7 @@ Create a `CLAUDE.md` file that tells Claude Code how this project must behave.
 
 #### Screenshot 4 — `CLAUDE.md` open in VS Code or terminal showing the safety rules
 
-Add your screenshot here.
+[`CLAUDE.md` open in VS Code or terminal showing the safety rules](screenshots/task-74-diagram.png)
 
 ---
 
@@ -74,19 +74,19 @@ Answer the following in your own words:
 
 **1. Why should Claude Code have project-specific safety rules?**
 
-Add your answer here.
+Project-specific safety rules establish clear boundaries for AI tools, preventing autonomous execution of privileged or state-altering commands that could degrade production services, leak secrets, or make unintended infrastructure changes.
 
 ---
 
 **2. Why should the human run the real Ansible playbook manually?**
 
-Add your answer here.
+Keeping the final execution under human control preserves accountability and implements a "Human-in-the-Loop" safety pattern. The operator evaluates the AI-generated risk report, verifies safety, and makes the conscious decision to apply changes.
 
 ---
 
 **3. Which rule prevents Claude Code from applying changes automatically?**
 
-Add your answer here.
+The rule: "NO AUTOMATED APPLY: NEVER run ansible-playbook site.yml without --check. Real infrastructure changes must be executed by the human operator."
 
 ---
 
@@ -100,7 +100,7 @@ Use Claude Code to produce a read-only plan before writing the Bash script.
 
 #### Screenshot 5 — Claude Code showing the four-category risk-classification plan
 
-Add your screenshot here.
+[Claude Code showing the four-category risk-classification plan](screenshots/task-75-diagram.png)
 
 ---
 
@@ -110,19 +110,19 @@ Answer the following in your own words:
 
 **1. Which part of this task represents the Gather phase?**
 
-Add your answer here.
+The Gather phase is performed when Ansible executes ansible-playbook --check --diff, capturing the raw standard output, task execution status, and configuration file diffs without applying any changes to the target host.
 
 ---
 
 **2. Which part represents the Analyze phase?**
 
-Add your answer here.
+The Analyze phase takes place when the script parses the collected task diffs and matches detected changes against rule patterns to classify them into Low, Medium, High, or Critical risk categories.
 
 ---
 
 **3. How did you verify Claude Code did not create or edit files?**
 
-Add your answer here.
+I verified this by checking the terminal execution logs and checking git status, confirming that Claude Code only provided read-only analytical responses without invoking any file-modification tools or writing changes to disk.
 
 ---
 
@@ -136,25 +136,25 @@ Create a Bash script that runs an Ansible dry run and classifies risky changes.
 
 #### Screenshot 6 — Top section of `ansible-check-review.sh` showing `full_name`, `playbook_path`, `inventory_path`, and the `checks` array
 
-Add your screenshot here.
+[Top section of `ansible-check-review.sh` showing `full_name`, `playbook_path`, `inventory_path`, and the `checks` array](screenshots/task-76-diagram.png)
 
 ---
 
 #### Screenshot 7 — Middle section showing `extract_changed_tasks` and `check_tasks_matching_pattern`
 
-Add your screenshot here.
+[Middle section showing `extract_changed_tasks` and `check_tasks_matching_pattern`](screenshots/task-77-diagram.png)
 
 ---
 
 #### Screenshot 8 — Bottom section showing the loop, summary, and exit behavior
 
-Add your screenshot here.
+[Bottom section showing the loop, summary, and exit behavior](screenshots/task-78-diagram.png)
 
 ---
 
 #### Screenshot 9 — Output of `bash -n ansible-check-review.sh` and `ls -l ansible-check-review.sh`
 
-Add your screenshot here.
+[Output of `bash -n ansible-check-review.sh` and `ls -l ansible-check-review.sh`](screenshots/task-78-diagram.png)
 
 ---
 
@@ -164,25 +164,31 @@ Answer the following in your own words:
 
 **1. What is stored in the `changed_tasks` array?**
 
-Add your answer here.
+The changed_tasks array stores the names of all Ansible tasks that reported a state change (changed: [web1]) during the --check --diff dry-run execution.
 
 ---
 
 **2. Which function finds changed tasks from the Ansible output?**
 
-Add your answer here.
+The extract_changed_tasks function extracts changed tasks by using grep to filter task names followed immediately by changed: [ in the dry-run output log.
 
 ---
 
 **3. Why does the script use `--check --diff`?**
 
-Add your answer here.
+--check performs a dry run without applying any actual changes to the managed node, while --diff outputs the exact file/template differences that would occur. This combination allows for comprehensive pre-flight risk evaluation without altering live production state.
 
 ---
 
 **4. Why does the script use different exit codes for healthy, warning, and failed results?**
 
-Add your answer here.
+Exit codes allow automated pipelines and wrapper tools (like CI/CD runners or AI agent skills) to programmatically interpret execution outcomes without parsing text:
+
+0: Clean / No changes required.
+
+1: Low-risk changes present (safe to proceed under human supervision).
+
+2: High-risk/Critical changes detected (requires explicit human review and approval).
 
 ---
 
@@ -196,13 +202,13 @@ Run the script against your current EpicBook playbook and confirm the baseline r
 
 #### Screenshot 10 — Output of `./ansible-check-review.sh`
 
-Add your screenshot here.
+[Output of `./ansible-check-review.sh`](screenshots/task-79-diagram.png)
 
 ---
 
 #### Screenshot 11 — Output of `echo "Captured Exit Code: $script_exit_code"` and `cat reports/ansible-risk-report.txt`
 
-Add your screenshot here.
+[Output of `./ansible-check-review.sh`](screenshots/task-80-diagram.png)
 
 ---
 
@@ -212,25 +218,29 @@ Answer the following in your own words:
 
 **1. What was the overall status of your baseline run?**
 
-Add your answer here.
+RISKY CHANGES DETECTED (Exit code 2).
 
 ---
 
 **2. Did any tasks report `changed`?**
 
-Add your answer here.
+Yes, 2 tasks reported changed:
+
+TASK [nginx : Restart Nginx to force new configuration]
+
+TASK [epicbook : Add Node.js 20.x GPG key and APT repository]
 
 ---
 
 **3. Were any changed tasks flagged as risky?**
 
-Add your answer here.
+Yes, 1 task was flagged as a Medium Risk finding: [MEDIUM] Service restart (Pattern: 'Restart') due to the Nginx restart task.
 
 ---
 
 **4. What does the script exit code mean?**
 
-Add your answer here.
+An exit code of 2 indicates that at least one changed task matched a predefined risk rule (service restart), requiring human review before applying the playbook to live infrastructure.
 
 ---
 
@@ -244,13 +254,13 @@ Turn the Bash script into a reusable Claude Code skill called `/ansible-risk-rev
 
 #### Screenshot 12 — `SKILL.md` showing the frontmatter, allowed tools, and safety rules
 
-Add your screenshot here.
+[`SKILL.md` showing the frontmatter, allowed tools, and safety rules](screenshots/task-81-diagram.png)
 
 ---
 
 #### Screenshot 13 — Claude Code output after running `/ansible-risk-review`
 
-Add your screenshot here.
+[Claude Code output after running `/ansible-risk-review`](screenshots/task-82-diagram.png)
 
 ---
 
@@ -260,31 +270,31 @@ Answer the following in your own words:
 
 **1. Why does this skill allow `Bash`, `Read`, and `Grep`?**
 
-Add your answer here.
+Bash is required to run the read-only script (./ansible-check-review.sh), while Read and Grep allow the AI to inspect and parse the generated report (reports/ansible-risk-report.txt) and playbook files without modifying anything.
 
 ---
 
 **2. Why does this skill not allow file editing?**
 
-Add your answer here.
+Excluding file-editing tools (Edit, Write) prevents the AI agent from accidentally altering playbooks, modifying configuration settings, or bypassing safety guardrails during a risk assessment.
 
 ---
 
 **3. What part is handled by Bash?**
 
-Add your answer here.
+Bash handles running ansible-playbook --check --diff, executing string pattern matching against task diffs, and outputting the raw report to disk.
 
 ---
 
 **4. What part is handled by Claude Code?**
 
-Add your answer here.
+Claude Code interprets the generated report, translates technical log findings into clear executive risk summaries, and alerts the human operator whether it is safe to apply or if manual review is required.
 
 ---
 
 **5. Why is this better than asking Claude Code if the playbook is safe without giving it evidence?**
 
-Add your answer here.
+Asking an AI agent without execution evidence leads to speculative assumptions or hallucinations. Combining actual Ansible dry-run diffs (--check --diff) with structured Bash pattern checks provides concrete empirical evidence for the AI to analyze accurately.
 
 ---
 
@@ -298,25 +308,25 @@ Add a small controlled risky change in your lab playbook and confirm the script 
 
 #### Screenshot 14 — The added risky task inside the role file
 
-Add your screenshot here.
+[The added risky task inside the role file](screenshots/task-83-diagram.png)
 
 ---
 
 #### Screenshot 15 — Output of `./ansible-check-review.sh`
 
-Add your screenshot here.
+[Output of `./ansible-check-review.sh`](screenshots/task-84-diagram.png)
 
 ---
 
 #### Screenshot 16 — Claude Code `/ansible-risk-review` output showing the risky finding
 
-Add your screenshot here.
+[Claude Code `/ansible-risk-review` output showing the risky finding](screenshots/task-82-diagram.png)
 
 ---
 
 #### Screenshot 17 — Output of `cat reports/risky-change-report.txt`
 
-Add your screenshot here.
+[Output of `cat reports/risky-change-report.txt`](screenshots/task-85-diagram.png)
 
 ---
 
@@ -326,31 +336,31 @@ Answer the following in your own words:
 
 **1. Which risk category did the added task fall into?**
 
-Add your answer here.
+It fell into the CRITICAL risk category because it used state: absent to perform a file/directory deletion.
 
 ---
 
 **2. What evidence proves the task would change something?**
 
-Add your answer here.
+The --check --diff dry-run output listed the task TASK [common : CRITICAL: Remove legacy configuration backup directory] as changed: [web1].
 
 ---
 
 **3. Did Claude Code apply the playbook?**
 
-Add your answer here.
+No. Claude Code only analyzed the dry-run output and generated the report, abiding by the CLAUDE.md read-only guardrails.
 
 ---
 
 **4. Why is it important that Claude Code only analyzed the risk?**
 
-Add your answer here.
+Keeping the agent in a read-only analysis role prevents automated destructive actions on live servers, enforcing the "Human-in-the-Loop" paradigm where critical changes require explicit human approval.
 
 ---
 
 **5. Which phase of the Agentic Loop is represented by the Bash report?**
 
-Add your answer here.
+The Bash report represents the Observe/Gather and Analyze phases of the Agentic Loop, collecting state diffs and evaluating them against rules before any action step.
 
 ---
 
@@ -364,31 +374,31 @@ Review the risky-change report, apply the playbook manually as the human operato
 
 #### Screenshot 18 — Output of the real playbook run showing the final recap with `failed=0`
 
-Add your screenshot here.
+[Output of the real playbook run showing the final recap with `failed=0`](screenshots/task-86-diagram.png)
 
 ---
 
 #### Screenshot 19 — Output of `ansible web -i inventory.ini -m ping`
 
-Add your screenshot here.
+[Output of `ansible web -i inventory.ini -m ping`](screenshots/task-87-diagram.png)
 
 ---
 
 #### Screenshot 20 — Second `/ansible-risk-review` output after applying the change
 
-Add your screenshot here.
+[Second `/ansible-risk-review` output after applying the change](screenshots/task-88-diagram.png)
 
 ---
 
 #### Screenshot 21 — Output of `ls -lah reports`
 
-Add your screenshot here.
+[Output of `ls -lah reports`](screenshots/task-89-diagram.png)
 
 ---
 
 #### Screenshot 22 — `change-summary.md` showing all required sections and your Full Name
 
-Add your screenshot here.
+[`change-summary.md` showing all required sections and your Full Name](screenshots/task-90-diagram.png)
 
 ---
 
@@ -398,31 +408,31 @@ Answer the following in your own words:
 
 **1. What command did you run to apply the change for real?**
 
-Add your answer here.
+ansible-playbook -i inventory.ini site.yml
 
 ---
 
 **2. Who made the final decision to apply the playbook?**
 
-Add your answer here.
+The human operator (Cho Kar Hin) made the decision after reviewing the risk report generated during the dry run.
 
 ---
 
 **3. What evidence proves the VM is still reachable?**
 
-Add your answer here.
+Executing ansible web -i inventory.ini -m ping post-apply returned a SUCCESS status with a "ping": "pong" JSON response over SSH.
 
 ---
 
 **4. Why should the risk review be run again after applying?**
 
-Add your answer here.
+Running the risk review post-apply verifies idempotency. It confirms that all intended changes were successfully applied and that subsequent dry runs yield 0 changed tasks and exit code 0.
 
 ---
 
 **5. What could go wrong if an AI agent applied Ansible changes automatically?**
 
-Add your answer here.
+An autonomous AI agent could execute destructive tasks, delete critical database volumes or configuration files, cause unintended service downtime, or apply unverified changes without human oversight or fallback control.
 
 ---
 
@@ -434,13 +444,13 @@ Add your answer here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-ugcPost-7512882293045125120-usfO/`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+[ Published LinkedIn post](screenshots/task-29-diagram.png)
 
 ---
 
@@ -510,4 +520,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
