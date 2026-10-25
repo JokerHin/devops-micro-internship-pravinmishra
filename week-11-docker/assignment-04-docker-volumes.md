@@ -20,61 +20,61 @@ Run an Nginx container (`myweb`) with a Bind Mount from `~/nginx-logs` to `/var/
 
 #### Screenshot 1 — Output of `docker images`
 
-Add your screenshot here.
+[Output of `docker images`](screenshots/task-53-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker search nginx`
 
-Add your screenshot here.
+[Output of `docker search nginx`](screenshots/task-54-diagram.png)
 
 ---
 
 #### Screenshot 3 — Successful `docker pull nginx` (if applicable)
 
-Add your screenshot here.
+[Successful `docker pull nginx`](screenshots/task-55-diagram.png)
 
 ---
 
 #### Screenshot 4 — Creation of the `~/nginx-logs` directory
 
-Add your screenshot here.
+[Creation of the `~/nginx-logs` directory](screenshots/task-56-diagram.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker run` with the Bind Mount
 
-Add your screenshot here.
+[Output of `docker run` with the Bind Mount](screenshots/task-57-diagram.png)
 
 ---
 
 #### Screenshot 6 — Output of `docker ps` showing the running `myweb` container
 
-Add your screenshot here.
+[Output of `docker ps` showing the running `myweb` container](screenshots/task-58-diagram.png)
 
 ---
 
 #### Screenshot 7 — Browser displaying the Nginx Welcome Page
 
-Add your screenshot here.
+[Browser displaying the Nginx Welcome Page](screenshots/task-59-diagram.png)
 
 ---
 
 #### Screenshot 8 — Output of `ls ~/nginx-logs` showing `access.log` and `error.log`
 
-Add your screenshot here.
+[Output of `ls ~/nginx-logs` showing `access.log` and `error.log`](screenshots/task-60-diagram.png)
 
 ---
 
 #### Screenshot 9 — Successful removal of the container
 
-Add your screenshot here.
+[Successful removal of the container](screenshots/task-61-diagram.png)
 
 ---
 
 #### Screenshot 10 — Output of `ls ~/nginx-logs` confirming the log files remain after the container has been removed
 
-Add your screenshot here.
+[Output of `ls ~/nginx-logs` confirming the log files remain after the container has been removed](screenshots/task-62-diagram.png)
 
 ---
 
@@ -88,73 +88,73 @@ Create a custom network `mynetwork` and a Docker volume `shared-data`, build and
 
 #### Screenshot 1 — Project folder structure
 
-Add your screenshot here.
+[Project folder structure](screenshots/task-63-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker network create mynetwork`
 
-Add your screenshot here.
+[Output of `docker network create mynetwork`](screenshots/task-64-diagram.png)
 
 ---
 
 #### Screenshot 3 — Output of `docker volume create shared-data`
 
-Add your screenshot here.
+[Output of `docker volume create shared-data`](screenshots/task-65-diagram.png)
 
 ---
 
 #### Screenshot 4 — Backend Dockerfile
 
-Add your screenshot here.
+[Backend Dockerfile](screenshots/task-66-diagram.png)
 
 ---
 
 #### Screenshot 5 — Successful backend image build
 
-Add your screenshot here.
+[Successful backend image build](screenshots/task-67-diagram.png)
 
 ---
 
 #### Screenshot 6 — Frontend Dockerfile
 
-Add your screenshot here.
+[Successful backend image build](screenshots/task-68-diagram.png)
 
 ---
 
 #### Screenshot 7 — Successful frontend image build
 
-Add your screenshot here.
+[Successful frontend image build](screenshots/task-69-diagram.png)
 
 ---
 
 #### Screenshot 8 — Output of `docker ps` showing both containers
 
-Add your screenshot here.
+[Output of `docker ps` showing both containers](screenshots/task-70-diagram.png)
 
 ---
 
 #### Screenshot 9 — Successful execution of `docker exec backend curl http://localhost/write`
 
-Add your screenshot here.
+[Successful execution of `docker exec backend curl http://localhost/write`](screenshots/task-71-diagram.png)
 
 ---
 
 #### Screenshot 10 — Browser displaying "Hello from Backend!"
 
-Add your screenshot here.
+[Browser displaying "Hello from Backend!"](screenshots/task-71-diagram.png)
 
 ---
 
 #### Screenshot 11 — Browser displaying "Test Data 1" after the first update
 
-Add your screenshot here.
+[Browser displaying "Test Data 1" after the first update](screenshots/task-71-diagram.png)
 
 ---
 
 #### Screenshot 12 — Browser displaying "Test Data 2 - New Update" after the second update
 
-Add your screenshot here.
+[Browser displaying "Test Data 2 - New Update" after the second update](screenshots/task-72-diagram.png)
 
 ---
 
@@ -170,13 +170,13 @@ Create a LinkedIn post covering the assignment, Docker Hub repository, steps per
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-ugcPost-7512882293045125120-usfO/`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+[Published LinkedIn post](screenshots/task-10-diagram.png)
 
 ---
 
@@ -206,14 +206,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

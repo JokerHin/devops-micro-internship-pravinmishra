@@ -20,37 +20,37 @@ List Docker networks, verify/pull the Nginx image, run an Nginx container (`mywe
 
 #### Screenshot 1 — Output of `docker network ls`
 
-Add your screenshot here.
+[Output of `docker network ls`](screenshots/task-18-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker images`
 
-Add your screenshot here.
+[Output of `docker images`](screenshots/task-19-diagram.png)
 
 ---
 
 #### Screenshot 3 — Output of `docker search nginx`
 
-Add your screenshot here.
+[Output of `docker search nginx`](screenshots/task-20-diagram.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker pull nginx` (if applicable)
 
-Add your screenshot here.
+[Successful `docker pull nginx`](screenshots/task-21-diagram.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker ps` showing the running `myweb` container
 
-Add your screenshot here.
+[Output of `docker ps` showing the running `myweb` container](screenshots/task-22-diagram.png)
 
 ---
 
 #### Screenshot 6 — Browser displaying the Nginx Welcome Page using the Public IP address
 
-Add your screenshot here.
+[Browser displaying the Nginx Welcome Page using the Public IP address](screenshots/task-23-diagram.png)
 
 ---
 
@@ -64,55 +64,55 @@ Create a custom bridge network `mynetwork`, build and run a Node/Express `fronte
 
 #### Screenshot 1 — Output of `docker network create mynetwork`
 
-Add your screenshot here.
+[Output of `docker network create mynetwork`](screenshots/task-24-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker network ls`
 
-Add your screenshot here.
+[Output of `docker network ls`](screenshots/task-25-diagram.png)
 
 ---
 
 #### Screenshot 3 — Frontend Dockerfile
 
-Add your screenshot here.
+[Frontend Dockerfile](screenshots/task-26-diagram.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker build` for the frontend
 
-Add your screenshot here.
+[Successful `docker build` for the frontend](screenshots/task-27-diagram.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker ps` showing the frontend container
 
-Add your screenshot here.
+[Output of `docker ps` showing the frontend container](screenshots/task-28-diagram.png)
 
 ---
 
 #### Screenshot 6 — Output of `docker ps` showing both frontend and backend containers
 
-Add your screenshot here.
+[Output of `docker ps` showing both frontend and backend containers](screenshots/task-29-diagram.png)
 
 ---
 
 #### Screenshot 7 — Output of `docker network inspect mynetwork`
 
-Add your screenshot here.
+[Output of `docker network inspect mynetwork`](screenshots/task-30-diagram.png)
 
 ---
 
 #### Screenshot 8 — Successful `curl http://<Public-IP>` showing "Hello from Frontend"
 
-Add your screenshot here.
+[Successful `curl http://<Public-IP>` showing "Hello from Frontend"](screenshots/task-31-diagram.png)
 
 ---
 
 #### Screenshot 9 — Successful `curl backend` output from the frontend container showing the Nginx Welcome Page
 
-Add your screenshot here.
+[Successful `curl backend` output from the frontend container showing the Nginx Welcome Page](screenshots/task-32-diagram.png)
 
 ---
 
@@ -126,91 +126,91 @@ Build a three-tier app (frontend, backend, MongoDB) across `backend-network` (ba
 
 #### Screenshot 1 — Creation of `backend-network`
 
-Add your screenshot here.
+[Creation of `backend-network`](screenshots/task-33-diagram.png)
 
 ---
 
 #### Screenshot 2 — Creation of `frontend-network`
 
-Add your screenshot here.
+[Creation of `frontend-network`](screenshots/task-34-diagram.png)
 
 ---
 
 #### Screenshot 3 — Project folder structure
 
-Add your screenshot here.
+[Project folder structure](screenshots/task-35-diagram.png)
 
 ---
 
 #### Screenshot 4 — Database Dockerfile
 
-Add your screenshot here.
+[Database Dockerfile](screenshots/task-36-diagram.png)
 
 ---
 
 #### Screenshot 5 — Backend Dockerfile
 
-Add your screenshot here.
+[Backend Dockerfile](screenshots/task-37-diagram.png)
 
 ---
 
 #### Screenshot 6 — Frontend Dockerfile
 
-Add your screenshot here.
+[Frontend Dockerfile](screenshots/task-38-diagram.png)
 
 ---
 
 #### Screenshot 7 — Successful Docker image builds (database, backend, frontend)
 
-Add your screenshot here.
+[Successful Docker image builds (database, backend, frontend)](screenshots/task-39-diagram.png)
 
 ---
 
 #### Screenshot 8 — Running containers (`docker ps`)
 
-Add your screenshot here.
+[Running containers (`docker ps`)](screenshots/task-40-diagram.png)
 
 ---
 
 #### Screenshot 9 — Output of `docker network inspect backend-network`
 
-Add your screenshot here.
+[Output of `docker network inspect backend-network`](screenshots/task-41-diagram.png)
 
 ---
 
 #### Screenshot 10 — Output of `docker network inspect frontend-network`
 
-Add your screenshot here.
+[Output of `docker network inspect frontend-network`](screenshots/task-42-diagram.png)
 
 ---
 
 #### Screenshot 11 — Browser showing the frontend application
 
-Add your screenshot here.
+[Browser showing the frontend application](screenshots/task-43-diagram.png)
 
 ---
 
 #### Screenshot 12 — Successful `curl api` from the frontend container
 
-Add your screenshot here.
+[Successful `curl api` from the frontend container](screenshots/task-44-diagram.png)
 
 ---
 
 #### Screenshot 13 — MongoDB connection using `mongosh`
 
-Add your screenshot here.
+[MongoDB connection using `mongosh`](screenshots/task-45-diagram.png)
 
 ---
 
 #### Screenshot 14 — Successful document insertion
 
-Add your screenshot here.
+[Successful document insertion](screenshots/task-46-diagram.png)
 
 ---
 
 #### Screenshot 15 — Successful retrieval of the inserted document
 
-Add your screenshot here.
+[Successful retrieval of the inserted document](screenshots/task-47-diagram.png)
 
 ---
 
@@ -224,31 +224,31 @@ Deploy an Nginx container (`fastapp`) using Host Network Mode and verify it's re
 
 #### Screenshot 1 — Output of `docker run --network host`
 
-Add your screenshot here.
+[Output of `docker run --network host`](screenshots/task-48-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker ps` showing the running `fastapp` container
 
-Add your screenshot here.
+[Output of `docker ps` showing the running `fastapp` container](screenshots/task-49-diagram.png)
 
 ---
 
 #### Screenshot 3 — Browser or terminal displaying the Nginx Welcome Page
 
-Add your screenshot here.
+[Browser or terminal displaying the Nginx Welcome Page](screenshots/task-50-diagram.png)
 
 ---
 
 #### Screenshot 4 — Output of `docker inspect fastapp | grep "NetworkMode"`
 
-Add your screenshot here.
+[Output of `docker inspect fastapp | grep "NetworkMode"`](screenshots/task-51-diagram.png)
 
 ---
 
 #### Screenshot 5 — Successful cleanup showing `docker stop fastapp` and `docker rm fastapp`
 
-Add your screenshot here.
+[Successful cleanup showing `docker stop fastapp` and `docker rm fastapp`](screenshots/task-52-diagram.png)
 
 ---
 
@@ -264,13 +264,13 @@ Create a LinkedIn post covering the assignment objective, networking modes explo
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-ugcPost-7512882293045125120-usfO/`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+[Published LinkedIn post](screenshots/task-10-diagram.png)
 
 ---
 
@@ -302,14 +302,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

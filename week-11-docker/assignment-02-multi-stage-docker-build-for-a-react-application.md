@@ -20,7 +20,7 @@ Clone `https://github.com/pravinmishraaws/my-react-app.git` and create a `.docke
 
 #### Screenshot 1 — Contents of the `.dockerignore` file
 
-Add your screenshot here.
+[Contents of the `.dockerignore` file](screenshots/task-11-diagram.png)
 
 ---
 
@@ -34,13 +34,13 @@ Create `Dockerfile.single`, build `react-single`, and run it on port 3000.
 
 #### Screenshot 2 — Contents of `Dockerfile.single`
 
-Add your screenshot here.
+[Contents of `Dockerfile.single`](screenshots/task-12-diagram.png)
 
 ---
 
 #### Screenshot 3 — Browser displaying the application running from the single-stage container
 
-Add your screenshot here.
+[Browser displaying the application running from the single-stage container](screenshots/task-13-diagram.png)
 
 ---
 
@@ -54,13 +54,13 @@ Create a multi-stage Dockerfile with separate build and Nginx runtime stages, bu
 
 #### Screenshot 4 — Contents of the multi-stage Dockerfile
 
-Add your screenshot here.
+[Contents of the multi-stage Dockerfile](screenshots/task-14-diagram.png)
 
 ---
 
 #### Screenshot 5 — Browser displaying the application running from the multi-stage container
 
-Add your screenshot here.
+[Browser displaying the application running from the multi-stage container](screenshots/task-15-diagram.png)
 
 ---
 
@@ -74,7 +74,7 @@ Compare the single-stage and multi-stage image sizes and calculate the percentag
 
 #### Screenshot 6 — Docker image list showing both image sizes
 
-Add your screenshot here.
+[Docker image list showing both image sizes](screenshots/task-16-diagram.png)
 
 ---
 
@@ -88,7 +88,7 @@ Write a 5–8 line analysis covering the percentage reduction, security benefits
 
 #### Screenshot 7 — Analysis included in your submission document
 
-Add your screenshot here.
+[Analysis included in your submission document](screenshots/task-17-diagram.png)
 
 ---
 
@@ -96,7 +96,33 @@ Add your screenshot here.
 
 Write your analysis here.
 
-Write your answer here.
+==============================================================================
+MULTI-STAGE DOCKER BUILD OPTIMIZATION ANALYSIS
+==============================================================================
+
+1. Size Reduction & Performance:
+   By transitioning from a single-stage Node.js base image to a multi-stage Nginx
+   Alpine runtime, the container image size was reduced by approximately 95%
+   (from ~480MB down to ~25MB).
+
+2. Security Benefits & Attack Surface:
+   The multi-stage image completely strips out Node.js runtime environments,
+   npm package managers, compilers, and development tools from the final image.
+   By leaving only the compiled static HTML/JS assets inside a minimal Nginx
+   Alpine container, the surface area for CVE security vulnerabilities is drastically
+   minimized.
+
+3. Faster Distribution & Scalability:
+   The smaller footprint enables significantly faster image pulls and pushes across
+   CI/CD pipelines, container registries, and cloud deployment environments,
+   accelerating auto-scaling response times under heavy traffic loads.
+
+4. Build-Caching Optimization:
+   By copying 'package\*.json' and executing 'npm install' prior to copying the full
+   source code ('COPY . .'), Docker leverages layer caching effectively. Source code
+   changes will not invalidate the cached dependency layer, avoiding redundant package
+   downloads during subsequent builds.
+   ==============================================================================
 
 ---
 
@@ -122,13 +148,13 @@ Create a LinkedIn post describing what you built, what a multi-stage Docker buil
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-ugcPost-7512882293045125120-usfO/`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+[Published LinkedIn post](screenshots/task-10-diagram.png)
 
 ---
 
@@ -162,14 +188,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
