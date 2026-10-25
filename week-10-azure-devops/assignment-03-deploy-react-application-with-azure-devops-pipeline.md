@@ -20,7 +20,7 @@ Import `https://github.com/pravinmishraaws/my-react-app` into Azure Repos and co
 
 #### Screenshot 1 — Azure Repos showing the imported React project with `package.json` and `src/` visible
 
-Add your screenshot here.
+[Azure Repos showing the imported React project with `package.json` and `src/` visible](screenshots/task-15-diagram.png)
 
 ---
 
@@ -34,13 +34,13 @@ Provision a new Ubuntu VM with Terraform (ports 22/80 open) and prepare Nginx/`/
 
 #### Screenshot 2 — Terraform output or cloud console showing the new VM and public IP
 
-Add your screenshot here.
+[Terraform output or cloud console showing the new VM and public IP](screenshots/task-16-diagram.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing Ansible completed successfully and Nginx is active
 
-Add your screenshot here.
+[Terminal showing Ansible completed successfully and Nginx is active](screenshots/task-17-diagram.png)
 
 ---
 
@@ -54,7 +54,7 @@ Point the `ubuntu-nginx-ssh` Service Connection to the new VM and validate it.
 
 #### Screenshot 4 — SSH Service Connection page showing the new VM connection and successful validation, with the password hidden
 
-Add your screenshot here.
+[SSH Service Connection page showing the new VM connection and successful validation, with the password hidden](screenshots/task-18-diagram.png)
 
 ---
 
@@ -68,7 +68,7 @@ Create the Build (npm install/build), Test (`npm test -- --watchAll=false`, bloc
 
 #### Screenshot 5 — Azure Pipeline YAML definition with the Build, Test, Publish, and Deploy sections visible
 
-Add your screenshot here.
+[Azure Pipeline YAML definition with the Build, Test, Publish, and Deploy sections visible](screenshots/task-19-diagram.png)
 
 ---
 
@@ -82,19 +82,19 @@ Confirm a commit to `main` triggers the pipeline, all four stages succeed, the b
 
 #### Screenshot 6 — Pipeline run summary showing Build, Test, Publish, and Deploy succeeded
 
-Add your screenshot here.
+[Pipeline run summary showing Build, Test, Publish, and Deploy succeeded](screenshots/task-21-diagram.png)
 
 ---
 
 #### Screenshot 7 — Terminal or pipeline output showing `/var/www/html` after deployment
 
-Add your screenshot here.
+[Terminal or pipeline output showing `/var/www/html` after deployment](screenshots/task-22-diagram.png)
 
 ---
 
 #### Screenshot 8 — Browser showing the running React application with the public IP visible
 
-Add your screenshot here.
+[Browser showing the running React application with the public IP visible](screenshots/task-23-diagram.png)
 
 ---
 
@@ -110,13 +110,13 @@ Publish a LinkedIn post about the completed assignment, mentioning the Build/Tes
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-ugcPost-7512882293045125120-usfO/`
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the text and at least one link or image
 
-Add your screenshot here.
+[Published LinkedIn post showing the text and at least one link or image](screenshots/task-20-diagram.png)
 
 ---
 
@@ -149,14 +149,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

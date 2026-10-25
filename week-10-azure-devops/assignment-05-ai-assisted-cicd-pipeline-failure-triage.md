@@ -20,7 +20,7 @@ Confirm the latest run on both Azure DevOps and GitHub Actions currently succeed
 
 #### Screenshot 1 — Latest run status on Azure DevOps and/or GitHub Actions showing a successful run
 
-Add your screenshot here.
+[Latest run status on Azure DevOps and/or GitHub Actions showing a successful run](screenshots/task-31-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `CLAUDE.md` describing the pipeline-triage workflow (gather → analyze �
 
 #### Screenshot 2 — `CLAUDE.md` showing the workflow and safety rules
 
-Add your screenshot here.
+[`CLAUDE.md` showing the workflow and safety rules](screenshots/task-32-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Build `pipeline-triage.sh`, a read-only Bash script that fetches the latest run'
 
 #### Screenshot 3 — `pipeline-triage.sh` showing the check functions and their pattern-matching conditionals
 
-Add your screenshot here.
+[`pipeline-triage.sh` showing the check functions and their pattern-matching conditionals](screenshots/task-33-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Run the script against your current, passing pipeline and confirm it produces a 
 
 #### Screenshot 4 — Script output and report showing a healthy result with no failure category triggered
 
-Add your screenshot here.
+[Script output and report showing a healthy result with no failure category triggered](screenshots/task-34-diagram.png)
 
 ---
 
@@ -76,13 +76,13 @@ Create a Claude Code skill restricted to read-only tools (no `Write`) that runs 
 
 #### Screenshot 5 — `SKILL.md` frontmatter showing the tool restrictions and safety rules
 
-Add your screenshot here.
+[`SKILL.md` frontmatter showing the tool restrictions and safety rules](screenshots/task-35-diagram.png)
 
 ---
 
 #### Screenshot 6 — `/pipeline-triage` output for the healthy pipeline
 
-Add your screenshot here.
+[`/pipeline-triage` output for the healthy pipeline](screenshots/task-36-diagram.png)
 
 ---
 
@@ -96,13 +96,13 @@ Introduce one safe, obvious, and easily reversible failure (for example, an inte
 
 #### Screenshot 7 — The failed pipeline run showing the red/failed status
 
-Add your screenshot here.
+[The failed pipeline run showing the red/failed status](screenshots/task-37-diagram.png)
 
 ---
 
 #### Screenshot 8 — `/pipeline-triage` output showing the diagnosed failure category, the quoted log evidence, and the recommended fix
 
-Add your screenshot here.
+[`/pipeline-triage` output showing the diagnosed failure category, the quoted log evidence, and the recommended fix](screenshots/task-38-diagram.png)
 
 ---
 
@@ -116,13 +116,13 @@ Apply the recommended fix yourself, push it, confirm the pipeline succeeds again
 
 #### Screenshot 9 — The pipeline run succeeding after your fix
 
-Add your screenshot here.
+[The pipeline run succeeding after your fix](screenshots/task-39-diagram.png)
 
 ---
 
 #### Screenshot 10 — Second `/pipeline-triage` output confirming the pipeline is healthy again
 
-Add your screenshot here.
+[Second `/pipeline-triage` output confirming the pipeline is healthy again](screenshots/task-40-diagram.png)
 
 ---
 
@@ -130,7 +130,37 @@ Add your screenshot here.
 
 Explain, in your own words, why the skill was allowed to gather evidence and diagnose the failure but was never allowed to re-trigger the pipeline or apply the fix itself.
 
-Add your answer here
+==============================================================================
+DEVOPS MICRO INTERNSHIP (DMI) ASSIGNMENT 5 — WRITTEN ANSWER
+==============================================================================
+
+Why the AI Triage Skill is Restricted to Read-Only Operations:
+
+The /pipeline-triage skill is deliberately constrained to read-only tools
+(Gather and Analyze) without granting permissions to write code, modify
+pipeline definitions, or re-trigger pipeline executions due to three core
+DevOps and security principles:
+
+1. Prevention of Recursive Infinite Loops:
+   If an AI skill is permitted to automatically modify code and trigger pipeline
+   runs upon diagnosing a failure, an incorrect or incomplete diagnosis could
+   cause a continuous loop of broken commits and pipeline executions, consuming
+   compute resources and cluttering the Git commit history.
+
+2. Blast Radius Mitigation & Principle of Least Privilege:
+   Automated remediation scripts executing in CI/CD environments could
+   inadvertently apply unintended changes to production code, infrastructure
+   manifests, or secret configurations. Restricting the AI to evidence gathering
+   and diagnostic recommendations ensures that a human engineer remains the
+   authoritative decision-maker (Human-in-the-Loop) before any state-changing
+   action is taken.
+
+3. Credential and Secret Protection:
+   CI/CD logs and agent execution environments handle sensitive service connection
+   tokens and credentials. By strictly enforcing read-only behavior and prohibiting
+   write or execution privileges over pipeline state, we prevent accidental
+   exposures or unintended configuration drift.
+   ==============================================================================
 
 ---
 
@@ -139,6 +169,7 @@ Add your answer here
 Complete all tasks in sequence.
 
 Your submission must include:
+
 - All 10 required screenshots
 - Never expose a Personal Access Token, service connection credential, or GitHub token in a screenshot
 
@@ -168,14 +199,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
