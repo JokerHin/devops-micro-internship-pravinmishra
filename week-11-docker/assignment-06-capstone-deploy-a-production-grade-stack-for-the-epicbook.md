@@ -20,13 +20,13 @@ Explore the `theepicbook` repository, identify its components (UI, API, DB, work
 
 #### Deliverable — `docs/01-architecture-diagram.png`
 
-Add your diagram or link here.
+[`docs/01-architecture-diagram.png`](screenshots/task-98-diagram.png)
 
 ---
 
 #### Deliverable — `docs/02-env-and-ports.md`
 
-Add your content or link here.
+[`docs/02-env-and-ports.md`](screenshots/task-83-diagram.png)
 
 ---
 
@@ -40,7 +40,7 @@ Create minimal multi-stage Dockerfiles for the frontend and backend services, wi
 
 #### Deliverable — `frontend/Dockerfile`, `backend/Dockerfile`, and `.dockerignore` files, with a note on layer optimizations and security benefits
 
-Add your content or link here.
+[`frontend/Dockerfile`, `backend/Dockerfile`, and `.dockerignore` files, with a note on layer optimizations and security benefits](screenshots/task-84-diagram.png)
 
 ---
 
@@ -54,7 +54,7 @@ Author `docker-compose.yml` defining the reverse-proxy, frontend, backend, and d
 
 #### Deliverable — `docker-compose.yml`
 
-Add your content or link here.
+[`docker-compose.yml`](screenshots/task-85-diagram.png)
 
 ---
 
@@ -68,7 +68,7 @@ Add a database healthcheck, a `/health` endpoint check on the backend, and `depe
 
 #### Deliverable — `docs/03-healthchecks-and-depends-on.md`
 
-Add your content or link here.
+[`docs/03-healthchecks-and-depends-on.md`](screenshots/task-86-diagram.png)
 
 ---
 
@@ -82,7 +82,7 @@ Configure Nginx or Traefik to route `/api` to the backend and `/` to the fronten
 
 #### Deliverable — `docs/04-proxy-routing-and-cors.md`
 
-Add your content or link here.
+[`docs/04-proxy-routing-and-cors.md`](screenshots/task-87-diagram.png)
 
 ---
 
@@ -96,13 +96,13 @@ Mount the database data directory to a named volume, document a snapshot/backup 
 
 #### Deliverable — `docs/05-persistence-and-backup.md`
 
-Add your content or link here.
+[`docs/05-persistence-and-backup.md`](screenshots/task-88-diagram.png)
 
 ---
 
 #### Screenshot — System state before and after a manual snapshot restore cycle
 
-Add your screenshot here.
+[System state before and after a manual snapshot restore cycle](screenshots/task-89-diagram.png)
 
 ---
 
@@ -116,13 +116,13 @@ Bind-mount the reverse proxy log directory to the host, redirect application log
 
 #### Deliverable — `docs/06-logging-layout.md`
 
-Add your content or link here.
+[`docs/06-logging-layout.md`](screenshots/task-91-diagram.png)
 
 ---
 
 #### Screenshot — Live running JSON container log entries
 
-Add your screenshot here.
+[Live running JSON container log entries](screenshots/task-90-diagram.png)
 
 ---
 
@@ -136,19 +136,19 @@ Provision a VM per the security requirements (SSH restricted to your IP; HTTP/HT
 
 #### Deliverable — `docs/07-cloud-deployment-notes.md` (ports, firewall rules, deployment link)
 
-Add your content or link here.
+[`docs/07-cloud-deployment-notes.md` (ports, firewall rules, deployment link)](screenshots/task-92-diagram.png)
 
 ---
 
 #### Screenshot — Browser showing successful web UI retrieval via the cloud public IP
 
-Add your screenshot here.
+[Browser showing successful web UI retrieval via the cloud public IP](screenshots/task-93-diagram.png)
 
 ---
 
 #### Screenshot — Active page interaction confirming backend API data fetches succeed
 
-Add your screenshot here.
+[Active page interaction confirming backend API data fetches succeed](screenshots/task-94-diagram.png)
 
 ---
 
@@ -162,13 +162,32 @@ Build a pipeline (Azure Pipelines or GitHub Actions) that builds and tags multi-
 
 #### Deliverable — `docs/08-ci-cd-pipeline.md`
 
-Add your content or link here.
+name: Deploy EpicBook Production Stack
+
+on:
+push:
+branches: [ main ]
+
+jobs:
+deploy:
+runs-on: ubuntu-latest
+steps: - uses: actions/checkout@v3 - name: Deploy to Cloud VM via SSH
+uses: appleboy/ssh-action@master
+with:
+host: ${{ secrets.VM_HOST }}
+username: ubuntu
+key: ${{ secrets.SSH_PRIVATE_KEY }}
+script: |
+cd ~/epicbook-capstone
+git pull origin main
+docker compose down
+docker compose up -d --build
 
 ---
 
 #### Screenshot (optional) — Completed automated pipeline run
 
-Add your screenshot here.
+[Completed automated pipeline run](screenshots/task-95-diagram.png)
 
 ---
 
@@ -182,13 +201,13 @@ Inject faults (drop backend/database dependencies) and evaluate frontend error h
 
 #### Deliverable — `docs/09-runbook.md`
 
-Add your content or link here.
+[`docs/09-runbook.md`](screenshots/task-96-diagram.png)
 
 ---
 
 #### Deliverable — `docs/10-reliability-tests.md`
 
-Add your content or link here.
+[`docs/10-reliability-tests.md`](screenshots/task-97-diagram.png)
 
 ---
 
@@ -204,13 +223,13 @@ Publish a 6–10 line LinkedIn post covering the architectural decision that mos
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/kar-hin-cho_devops-dmi-devopsmicrointernship-ugcPost-7512882293045125120-usfO/`
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the text body and a deployment verification image
 
-Add your screenshot here.
+[Published LinkedIn post](screenshots/task-10-diagram.png)
 
 ---
 
@@ -250,14 +269,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

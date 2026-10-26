@@ -20,7 +20,7 @@ Confirm your production-grade EpicBook containers from this week's capstone are 
 
 #### Screenshot 1 — `docker ps` showing your running EpicBook application container
 
-Add your screenshot here.
+[`docker ps` showing your running EpicBook application container](screenshots/task-99-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a `CLAUDE.md` in your workspace that tells Claude this project only ever 
 
 #### Screenshot 2 — `CLAUDE.md` open in VS Code showing the project overview, hardening workflow, and safety rules
 
-Add your screenshot here.
+[`CLAUDE.md` open in VS Code showing the project overview, hardening workflow, and safety rules](screenshots/task-100-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Ask Claude Code to inspect your running container using only read-only Docker co
 
 #### Screenshot 3 — Claude's proposed audit plan and read-only inspection
 
-Add your screenshot here.
+[Claude's proposed audit plan and read-only inspection](screenshots/task-101-diagram.png)
 
 ---
 
@@ -62,13 +62,13 @@ Write a Bash script that runs `docker inspect` and `docker image inspect` agains
 
 #### Screenshot 4 — Your audit script open in an editor, showing the six check functions
 
-Add your screenshot here.
+[Your audit script open in an editor, showing the six check functions](screenshots/task-102-diagram.png)
 
 ---
 
 #### Screenshot 5 — Terminal output of `bash -n` confirming the script has no syntax errors, and `ls -l` showing it is executable
 
-Add your screenshot here.
+[Terminal output of `bash -n` confirming the script has no syntax errors, and `ls -l` showing it is executable](screenshots/task-103-diagram.png)
 
 ---
 
@@ -82,7 +82,7 @@ Run the script against your running EpicBook container and record the results ho
 
 #### Screenshot 6 — Script output showing your Full Name and all six check results
 
-Add your screenshot here.
+[Script output showing your Full Name and all six check results](screenshots/task-104-diagram.png)
 
 ---
 
@@ -96,13 +96,13 @@ Turn the script into a Claude Code skill restricted to read-only tools, and run 
 
 #### Screenshot 7 — `SKILL.md` frontmatter showing the tool restrictions and safety rules
 
-Add your screenshot here.
+[`SKILL.md` frontmatter showing the tool restrictions and safety rules](screenshots/task-105-diagram.png)
 
 ---
 
 #### Screenshot 8 — `/docker-audit` output showing the findings and Claude's recommended fix
 
-Add your screenshot here.
+[`/docker-audit` output showing the findings and Claude's recommended fix](screenshots/task-106-diagram.png)
 
 ---
 
@@ -116,19 +116,19 @@ Edit your Dockerfile to apply Claude's recommendation, rebuild the image, recrea
 
 #### Screenshot 9 — Your edited Dockerfile line(s) showing the fix
 
-Add your screenshot here.
+[Your edited Dockerfile line(s) showing the fix](screenshots/task-107-diagram.png)
 
 ---
 
 #### Screenshot 10 — `docker build` and `docker run` succeeding with the rebuilt image
 
-Add your screenshot here.
+[`docker build` and `docker run` succeeding with the rebuilt image](screenshots/task-108-diagram.png)
 
 ---
 
 #### Screenshot 11 — Second `/docker-audit` run showing the previously failed check now passing
 
-Add your screenshot here.
+[Second `/docker-audit` run showing the previously failed check now passing](screenshots/task-109-diagram.png)
 
 ---
 
@@ -136,7 +136,7 @@ Add your screenshot here.
 
 In one paragraph, explain why the `/docker-audit` skill is allowed to gather evidence and recommend a Dockerfile fix, but is never allowed to edit the Dockerfile or rebuild the image itself.
 
-Add your answer here
+The /docker-audit skill is strictly restricted to read-only evidence gathering and advisory fix generation to enforce a human-in-the-loop safety boundary and prevent automated deployment risks. Allowing an AI agent to autonomously edit Dockerfiles or trigger container rebuilds introduces severe operational dangers, such as unexpected production downtime, invalid dependency state changes, or unintended permissions escalation. By restricting the AI to inspecting metadata and proposing remediation code while requiring human engineers to review and execute changes, organizations maintain complete operational governance over containerized infrastructure while preventing catastrophic execution loops.
 
 ---
 
@@ -145,6 +145,7 @@ Add your answer here
 Complete all tasks in sequence.
 
 Your submission must include:
+
 - All 11 required screenshots
 - Full name must be visible in required screenshots
 - Do not expose Docker Hub credentials or cloud account IDs
@@ -175,14 +176,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
