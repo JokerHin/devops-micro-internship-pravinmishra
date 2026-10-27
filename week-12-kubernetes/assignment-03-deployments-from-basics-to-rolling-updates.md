@@ -20,7 +20,7 @@ Create the `~/k8s-labs/deployments` working directory.
 
 #### Screenshot 1 — Terminal showing the `~/k8s-labs/deployments` working directory
 
-Add your screenshot here.
+[Terminal showing the `~/k8s-labs/deployments` working directory](screenshots/task-9-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `nginx-deployment.yaml` with two replicas and image `nginx:1.21.1`, apply
 
 #### Screenshot 2 — Manifest plus `kubectl` output showing the Deployment, ReplicaSet, and two Pods
 
-Add your screenshot here.
+[Manifest plus `kubectl` output showing the Deployment, ReplicaSet, and two Pods](screenshots/task-10-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Add `strategy.rollingUpdate` with `maxSurge: 1` and `maxUnavailable: 0` to the D
 
 #### Screenshot 3 — Deployment YAML showing the RollingUpdate strategy and successful apply output
 
-Add your screenshot here.
+[Deployment YAML showing the RollingUpdate strategy and successful apply output](screenshots/task-11-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Update the image to `nginx:1.23.1` with `kubectl set image`, watch the rollout, 
 
 #### Screenshot 4 — Rolling-update status, multiple ReplicaSets, and successful rollback/history output
 
-Add your screenshot here.
+[Rolling-update status, multiple ReplicaSets, and successful rollback/history output](screenshots/task-12-diagram.png)
 
 ---
 
@@ -76,7 +76,7 @@ Scale to five replicas, verify, then scale back to two.
 
 #### Screenshot 5 — Terminal showing the scale-up and scale-down results
 
-Add your screenshot here.
+[Terminal showing the scale-up and scale-down results](screenshots/task-13-diagram.png)
 
 ---
 
@@ -84,7 +84,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+This lab demonstrated the core advantages of using Kubernetes Deployments over raw ReplicaSets or standalone Pods for application lifecycle management. By configuring a RollingUpdate strategy with maxSurge: 1 and maxUnavailable: 0, the cluster guarantees zero downtime during updates by bringing up a new pod before terminating an old one. Furthermore, Deployments track deployment revision history across underlying ReplicaSets, allowing instant automated rollbacks via kubectl rollout undo when faulty image versions are deployed. Finally, declarative scaling via kubectl scale allows workloads to quickly adjust to capacity requirements without interrupting active traffic.
 
 ---
 
@@ -116,14 +116,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

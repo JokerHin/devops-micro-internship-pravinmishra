@@ -20,7 +20,7 @@ Deploy two NGINX Pods without probes (`00-nginx-deploy-baseline.yaml`) to establ
 
 #### Screenshot 1 — Baseline manifest and healthy two-Pod rollout output
 
-Add your screenshot here.
+[Baseline manifest and healthy two-Pod rollout output](screenshots/task-19-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Add an HTTP readiness probe on `/` port 80 (`01-nginx-deploy-readiness.yaml`) an
 
 #### Screenshot 2 — Pod description showing the readiness probe and `Ready=True`
 
-Add your screenshot here.
+[Pod description showing the readiness probe and `Ready=True`](screenshots/task-20-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Change the readiness path to `/does-not-exist`, observe `NotReady` and a stalled
 
 #### Screenshot 3 — `NotReady` conditions followed by a successful fixed rollout
 
-Add your screenshot here.
+[`NotReady` conditions followed by a successful fixed rollout](screenshots/task-21-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Perform a good image update to `nginx:1.21.2`, then attempt an update to `nginx:
 
 #### Screenshot 4 — Successful good rollout, stalled broken rollout, and successful recovery
 
-Add your screenshot here.
+[Successful good rollout, stalled broken rollout, and successful recovery](screenshots/task-22-diagram.png)
 
 ---
 
@@ -76,7 +76,7 @@ Review probe timing/thresholds and retain or delete the Deployment.
 
 #### Screenshot 5 — Final healthy Pod state or optional cleanup output
 
-Add your screenshot here.
+[Final healthy Pod state or optional cleanup output](screenshots/task-23-diagram.png)
 
 ---
 
@@ -84,7 +84,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+This lab demonstrated how Kubernetes HTTP Readiness Probes safeguard application traffic and protect deployments during rolling updates. Unlike Liveness Probes (which restart failing containers), a Readiness Probe controls whether a container receives network traffic by gating its Ready condition. When a probe fails (such as querying an unmapped /does-not-exist endpoint), Kubernetes immediately removes the Pod's IP address from Service endpoints, preventing end users from receiving HTTP 500 or 404 errors. During rolling updates (RollingUpdate strategy), readiness probes act as a safety gate: new Pods are brought up, but the rollout controller refuses to terminate older, healthy Pods until newly created Pods pass their readiness checks. When a bad configuration or broken code is deployed, the rollout stalls automatically, allowing engineers to roll back with kubectl rollout undo without suffering user-facing downtime.
 
 ---
 
@@ -116,14 +116,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

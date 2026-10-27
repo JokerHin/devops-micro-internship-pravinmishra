@@ -20,7 +20,7 @@ Create the `~/k8s-labs/replicasets` working directory.
 
 #### Screenshot 1 — Terminal showing the `~/k8s-labs/replicasets` working directory
 
-Add your screenshot here.
+[Terminal showing the `~/k8s-labs/replicasets` working directory](screenshots/task-5-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Write `nginx-replicaset.yaml` (apiVersion `apps/v1`, kind `ReplicaSet`, 3 replic
 
 #### Screenshot 2 — `nginx-replicaset.yaml` and terminal output showing three running Pods
 
-Add your screenshot here.
+[`nginx-replicaset.yaml` and terminal output showing three running Pods](screenshots/task-6-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Delete one Pod managed by `nginx-replicaset` and confirm Kubernetes creates a re
 
 #### Screenshot 3 — Terminal showing the deleted Pod and the newly created replacement, with the desired count remaining three
 
-Add your screenshot here.
+[Terminal showing the deleted Pod and the newly created replacement, with the desired count remaining three](screenshots/task-7-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Change `replicas` from 3 to 5, reapply the manifest, and confirm five Pods are m
 
 #### Screenshot 4 — Terminal showing five Pods and the `nginx-replicaset` details
 
-Add your screenshot here.
+[Terminal showing five Pods and the `nginx-replicaset` details](screenshots/task-8-diagram.png)
 
 ---
 
@@ -93,14 +93,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

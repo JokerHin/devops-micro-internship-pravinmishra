@@ -20,7 +20,7 @@ Deploy two NGINX Pods without probes (`00-nginx-deploy-baseline.yaml`).
 
 #### Screenshot 1 — Baseline Deployment and two running Pods
 
-Add your screenshot here.
+[Baseline Deployment and two running Pods](screenshots/task-24-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Add an HTTP liveness probe on `/` port 80 (`01-nginx-deploy-liveness.yaml`) and 
 
 #### Screenshot 2 — Pod description showing the liveness probe
 
-Add your screenshot here.
+[Pod description showing the liveness probe](screenshots/task-25-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Change the liveness path to `/does-not-exist`, apply it, and watch `RESTARTS` in
 
 #### Screenshot 3 — Pod RESTARTS increment and the corresponding liveness failure events
 
-Add your screenshot here.
+[Pod RESTARTS increment and the corresponding liveness failure events](screenshots/task-26-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Reapply the good liveness manifest and confirm restart counts stop increasing.
 
 #### Screenshot 4 — Stable Pod state after the fixed manifest is applied
 
-Add your screenshot here.
+[Stable Pod state after the fixed manifest is applied](screenshots/task-27-diagram.png)
 
 ---
 
@@ -76,7 +76,7 @@ Review recommended probe ranges and retain or delete the Deployment.
 
 #### Screenshot 5 — Final healthy state and any troubleshooting evidence used
 
-Add your screenshot here.
+[Final healthy state and any troubleshooting evidence used](screenshots/task-28-diagram.png)
 
 ---
 
@@ -84,7 +84,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+This lab demonstrated how Kubernetes Liveness Probes provide automated process recovery for unresponsive or deadlocked containers. While Readiness Probes control network traffic routing, Liveness Probes determine whether a container process is healthy enough to remain running. When a liveness probe fails consecutively beyond its configured threshold (failureThreshold), the local kubelet agent intervenes by killing the failing container process and automatically restarting it according to the Pod's restart policy. By tuning parameters such as initialDelaySeconds (preventing premature restarts during slow startup), periodSeconds, and timeoutSeconds, Kubernetes guarantees self-healing resilience against unrecoverable application hangs without requiring manual operator restarts.
 
 ---
 
@@ -116,14 +116,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

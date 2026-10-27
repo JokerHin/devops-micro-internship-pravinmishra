@@ -20,7 +20,7 @@ Create the `~/k8s-labs/autoscaling` working directory.
 
 #### Screenshot 1 — Terminal showing the `autoscaling` directory
 
-Add your screenshot here.
+[Terminal showing the `autoscaling` directory](screenshots/task-14-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `demo-autohealing` (two replicas), delete one Pod, and confirm the desire
 
 #### Screenshot 2 — Deleted Pod and replacement Pod with the replica count restored
 
-Add your screenshot here.
+[Deleted Pod and replacement Pod with the replica count restored](screenshots/task-15-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Deploy `nginx-deployment` with CPU `requests: 100m` / `limits: 200m`, then enabl
 
 #### Screenshot 3 — Deployment resources plus successful Metrics Server status
 
-Add your screenshot here.
+[Deployment resources plus successful Metrics Server status](screenshots/task-16-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Create an HPA (imperatively via `kubectl autoscale` or declaratively via `autosc
 
 #### Screenshot 4 — `kubectl get hpa` and `kubectl describe hpa nginx-hpa` output
 
-Add your screenshot here.
+[`kubectl get hpa` and `kubectl describe hpa nginx-hpa` output](screenshots/task-17-diagram.png)
 
 ---
 
@@ -76,7 +76,7 @@ Generate CPU load inside an NGINX Pod (`yes > /dev/null`) and monitor whether th
 
 #### Screenshot 5 — HPA output showing current metrics and any replica increase
 
-Add your screenshot here.
+[HPA output showing current metrics and any replica increase](screenshots/task-18-diagram.png)
 
 ---
 
@@ -84,7 +84,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+This lab demonstrated the automated self-healing and horizontal scaling capabilities of Kubernetes workloads. In Task 2, deleting an active Pod proved how the Deployment controller continuously reconciles actual state with desired state by spinning up an immediate replacement to preserve availability. Tasks 3 through 5 demonstrated reactive horizontal scaling via the Horizontal Pod Autoscaler (HPA). By specifying container resource requests (100m CPU) and integrating with the Kubernetes Metrics Server, the HPA controller dynamically evaluates container resource usage against baseline targets (50% CPU utilization). When workload demands spike, the HPA automatically provisions additional Pod replicas up to the configured limit (maxReplicas: 5) and scales back down when traffic subsides, optimizing resource utilization without manual operator intervention.
 
 ---
 
@@ -116,14 +116,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
