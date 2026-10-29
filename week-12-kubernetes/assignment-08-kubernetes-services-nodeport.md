@@ -20,7 +20,7 @@ Create healthy, labeled NGINX Pods (readiness + liveness probes) for the NodePor
 
 #### Screenshot 1 — Healthy NGINX Pods before Service creation
 
-Add your screenshot here.
+[Healthy NGINX Pods before Service creation](screenshots/task-35-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `nginx-svc-nodeport` (type `NodePort`, port 80, `nodePort: 30080`) and in
 
 #### Screenshot 2 — Service output showing `80:30080` and populated endpoints
 
-Add your screenshot here.
+[Service output showing `80:30080` and populated endpoints](screenshots/task-36-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Find a reachable node IP and test `<NODE_IP>:30080` externally (curl) and intern
 
 #### Screenshot 3 — Successful external or internal NodePort response
 
-Add your screenshot here.
+[Successful external or internal NodePort response](screenshots/task-37-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Use the appropriate fallback for your cluster environment (`minikube service --u
 
 #### Screenshot 4 — Minikube helper URL or local validation result
 
-Add your screenshot here.
+[Minikube helper URL or local validation result](screenshots/task-38-diagram.png)
 
 ---
 
@@ -76,7 +76,7 @@ Change the selector to `app: does-not-match`, confirm endpoints empty and the re
 
 #### Screenshot 5 — Empty then restored endpoint output
 
-Add your screenshot here.
+[Empty then restored endpoint output](screenshots/task-39-diagram.png)
 
 ---
 
@@ -90,7 +90,7 @@ Delete one backend Pod while calling the NodePort from another terminal, confirm
 
 #### Screenshot 6 — Pod replacement while NodePort remains available
 
-Add your screenshot here.
+[Pod replacement while NodePort remains available](screenshots/task-40-diagram.png)
 
 ---
 
@@ -98,7 +98,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+This lab demonstrated how Kubernetes NodePort Services enable external traffic ingress directly to cluster workloads without requiring cloud load balancers. A NodePort Service builds upon ClusterIP by allocating a dedicated high-range port (30000–32767, such as 30080) across every cluster node. External traffic targeting <NodeIP>:30080 is intercepted by kube-proxy on the host node and proxied internally to the matching target container port (targetPort: 80). Task 6 highlighted how NodePort services deliver high availability during Pod churn: because kube-proxy continuously updates routing rules dynamically based on backend Endpoints, deleting an active Pod causes zero service downtime as traffic is instantly redirected to remaining ready replicas.
 
 ---
 
@@ -131,14 +131,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
