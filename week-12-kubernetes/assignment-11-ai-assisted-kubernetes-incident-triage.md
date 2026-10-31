@@ -20,13 +20,13 @@ Confirm every Book Review App pod is `Running` and `Ready` and that its Service 
 
 #### Screenshot 1 — `kubectl get pods` and `kubectl get endpoints` showing the Book Review App healthy
 
-Add your screenshot here.
+[`kubectl get pods` and `kubectl get endpoints` showing the Book Review App healthy](screenshots/task-66-diagram.png)
 
 ---
 
 #### Screenshot 2 — Workspace folder structure for this assignment
 
-Add your screenshot here.
+[Workspace folder structure for this assignment](screenshots/task-67-diagram.png)
 
 ---
 
@@ -40,7 +40,7 @@ Add a `CLAUDE.md` telling Claude this is a read-only Kubernetes triage workflow:
 
 #### Screenshot 3 — `CLAUDE.md` showing the project overview, incident workflow, and safety rules
 
-Add your screenshot here.
+[`CLAUDE.md` showing the project overview, incident workflow, and safety rules](screenshots/task-68-diagram.png)
 
 ---
 
@@ -54,7 +54,7 @@ Ask Claude to propose a read-only, five-check `kubectl` triage plan — pod stat
 
 #### Screenshot 4 — Claude's proposed five-check plan, with no file created or cluster state changed
 
-Add your screenshot here.
+[Claude's proposed five-check plan, with no file created or cluster state changed](screenshots/task-69-diagram.png)
 
 ---
 
@@ -68,13 +68,13 @@ Write a Bash script that runs the five read-only `kubectl` checks and writes a P
 
 #### Screenshot 5 — Script showing the five checks and how each one gathers its evidence
 
-Add your screenshot here.
+[Script showing the five checks and how each one gathers its evidence](screenshots/task-70-diagram.png)
 
 ---
 
 #### Screenshot 6 — `bash -n` and `ls -l` confirming the script is valid and executable
 
-Add your screenshot here.
+[`bash -n` and `ls -l` confirming the script is valid and executable](screenshots/task-71-diagram.png)
 
 ---
 
@@ -88,7 +88,7 @@ Run the script against your current, unmodified deployment and confirm it report
 
 #### Screenshot 7 — Script output showing all five checks passing
 
-Add your screenshot here.
+[Script output showing all five checks passing](screenshots/task-72-diagram.png)
 
 ---
 
@@ -102,13 +102,13 @@ Wrap the script in a Claude Code skill restricted to read-only tools (no `Write`
 
 #### Screenshot 8 — `SKILL.md` frontmatter showing the tool restrictions and safety rules
 
-Add your screenshot here.
+[`SKILL.md` frontmatter showing the tool restrictions and safety rules](screenshots/task-73-diagram.png)
 
 ---
 
 #### Screenshot 9 — `/k8s-triage` output for the healthy cluster
 
-Add your screenshot here.
+[`/k8s-triage` output for the healthy cluster](screenshots/task-74-diagram.png)
 
 ---
 
@@ -122,13 +122,13 @@ Deliberately break your own deployment — an image tag that does not exist, or 
 
 #### Screenshot 10 — The pod in a failed state and the Service showing no Endpoints
 
-Add your screenshot here.
+[The pod in a failed state and the Service showing no Endpoints](screenshots/task-75-diagram.png)
 
 ---
 
 #### Screenshot 11 — `/k8s-triage` output showing the diagnosis and the recommended `kubectl` command, not executed by Claude
 
-Add your screenshot here.
+[`/k8s-triage` output showing the diagnosis and the recommended `kubectl` command, not executed by Claude](screenshots/task-76-diagram.png)
 
 ---
 
@@ -142,13 +142,13 @@ Review the recommendation, apply the fix yourself, confirm the pod returns to `R
 
 #### Screenshot 12 — Pod back to `Running`/`Ready` and the Service showing Endpoints again
 
-Add your screenshot here.
+[Pod back to `Running`/`Ready` and the Service showing Endpoints again](screenshots/task-77-diagram.png)
 
 ---
 
 #### Screenshot 13 — Second `/k8s-triage` run confirming recovery
 
-Add your screenshot here.
+[Second `/k8s-triage` run confirming recovery](screenshots/task-78-diagram.png)
 
 ---
 
@@ -156,7 +156,11 @@ Add your screenshot here.
 
 Compare this incident to the Nginx incident from Week 3's AI-Assisted Linux Health Check. What stayed the same about the process, and what changed about the evidence you had to gather?
 
-Add your answer here
+Process Comparison (Week 3 Linux vs. Week 11 Kubernetes Triage):
+
+What Stayed the Same: The core agentic triage philosophy remained identical across both environments: run read-only, non-destructive checks to gather system evidence first, let AI analyze the collected evidence to determine the exact root cause, enforce strict human-in-the-loop control for executing any mutating recovery actions, and run a final post-recovery verification sweep to confirm operational health.
+
+What Changed in Evidence Gathering: In Week 3's Linux health check, evidence gathering focused on a single local host by checking systemd services (systemctl status), network sockets (netstat/ss), local configuration files, and system logs (journalctl). In Week 11's Kubernetes triage, evidence gathering operated across a distributed orchestrator. The script had to inspect multi-layer abstractions across namespaces: Pod phases (Running/Pending), container readiness probe results, restart counters (CrashLoopBackOff), cluster-level warning events (kubectl get events), and Service-to-Pod IP translation mappings (kubectl get endpoints).
 
 ---
 
@@ -165,6 +169,7 @@ Add your answer here
 Complete all tasks in sequence.
 
 Your submission must include:
+
 - All 13 required screenshots
 - Do not expose kubeconfig contents, cluster certificates, or tokens
 
@@ -194,14 +199,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._

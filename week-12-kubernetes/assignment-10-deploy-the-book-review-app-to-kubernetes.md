@@ -20,13 +20,13 @@ Select a Kubernetes platform, confirm `kubectl` (and Helm, if used) can communic
 
 #### Screenshot 1 — Terminal showing the active Kubernetes context and Ready nodes
 
-Add your screenshot here.
+[Terminal showing the active Kubernetes context and Ready nodes](screenshots/task-47-diagram.png)
 
 ---
 
 #### Screenshot 2 (if using Helm) — Terminal showing `helm version`
 
-Add your screenshot here.
+[Terminal showing `helm version`](screenshots/task-48-diagram.png)
 
 ---
 
@@ -40,7 +40,7 @@ Create an architecture diagram showing the public entry point, frontend, interna
 
 #### Screenshot 3 — Completed Kubernetes architecture diagram
 
-Add your screenshot here.
+[Completed Kubernetes architecture diagram](screenshots/task-49-diagram.png)
 
 ---
 
@@ -54,13 +54,13 @@ Externalize non-sensitive configuration into ConfigMaps and sensitive values (da
 
 #### Screenshot 4 — ConfigMap manifest or `kubectl describe configmap` output showing non-sensitive configuration
 
-Add your screenshot here.
+[ConfigMap manifest or `kubectl describe configmap` output showing non-sensitive configuration](screenshots/task-50-diagram.png)
 
 ---
 
 #### Screenshot 5 — Secret object usage with sensitive values hidden or redacted
 
-Add your screenshot here.
+[Secret object usage with sensitive values hidden or redacted](screenshots/task-51-diagram.png)
 
 ---
 
@@ -74,13 +74,13 @@ Provide a persistent MySQL database (managed service or StatefulSet + PVC) reach
 
 #### Screenshot 6 — Managed MySQL status or MySQL StatefulSet/PVC status
 
-Add your screenshot here.
+[Managed MySQL status or MySQL StatefulSet/PVC status](screenshots/task-52-diagram.png)
 
 ---
 
 #### Screenshot 7 — Successful database connectivity or schema verification with credentials hidden
 
-Add your screenshot here.
+[Successful database connectivity or schema verification with credentials hidden](screenshots/task-53-diagram.png)
 
 ---
 
@@ -94,13 +94,13 @@ Run one or two Node.js/Express backend replicas on port 3010, expose them via Cl
 
 #### Screenshot 8 — Backend Deployment, Pods, and internal Service
 
-Add your screenshot here.
+[Backend Deployment, Pods, and internal Service](screenshots/task-54-diagram.png)
 
 ---
 
 #### Screenshot 9 — Backend logs showing successful startup and database connectivity
 
-Add your screenshot here.
+[Backend logs showing successful startup and database connectivity](screenshots/task-55-diagram.png)
 
 ---
 
@@ -114,13 +114,13 @@ Run one or two Next.js frontend replicas behind Nginx on port 80, reverse-proxyi
 
 #### Screenshot 10 — Frontend Deployment and Ready Pods
 
-Add your screenshot here.
+[Frontend Deployment and Ready Pods](screenshots/task-56-diagram.png)
 
 ---
 
 #### Screenshot 11 — Nginx reverse-proxy configuration showing the internal backend Service name
 
-Add your screenshot here.
+[Nginx reverse-proxy configuration showing the internal backend Service name](screenshots/task-57-diagram.png)
 
 ---
 
@@ -134,13 +134,13 @@ Expose only the frontend publicly (LoadBalancer or Ingress), restrict backend ac
 
 #### Screenshot 12 — Frontend LoadBalancer or Ingress showing the public endpoint
 
-Add your screenshot here.
+[Frontend LoadBalancer or Ingress showing the public endpoint](screenshots/task-58-diagram.png)
 
 ---
 
 #### Screenshot 13 — Internal backend Service and NetworkPolicy (or equivalent restriction)
 
-Add your screenshot here.
+[Internal backend Service and NetworkPolicy](screenshots/task-59-diagram.png)
 
 ---
 
@@ -154,31 +154,31 @@ Confirm the frontend loads publicly, a full user flow reaches the backend and My
 
 #### Screenshot 14 — `kubectl get all` output
 
-Add your screenshot here.
+[`kubectl get all` output](screenshots/task-60-diagram.png)
 
 ---
 
 #### Screenshot 15 — Functional Book Review App in the browser with the public URL or IP visible
 
-Add your screenshot here.
+[Functional Book Review App in the browser with the public URL or IP visible](screenshots/task-61-diagram.png)
 
 ---
 
 #### Screenshot 16 — Frontend Pod logs
 
-Add your screenshot here.
+[Frontend Pod logs](screenshots/task-62-diagram.png)
 
 ---
 
 #### Screenshot 17 — Backend Pod logs showing successful requests or database activity
 
-Add your screenshot here.
+[Backend Pod logs showing successful requests or database activity](screenshots/task-63-diagram.png)
 
 ---
 
 #### Screenshot 18 (optional) — Kubernetes dashboard
 
-Add your screenshot here.
+[Kubernetes dashboard](screenshots/task-64-diagram.png)
 
 ---
 
@@ -192,7 +192,7 @@ Optionally package as a Helm chart, add HPA, add readiness/liveness probes, or c
 
 #### Screenshot 19 (optional) — Helm release, HPA, probes, or TLS evidence
 
-Add your screenshot here.
+[Helm release, HPA, probes, or TLS evidence](screenshots/task-65-diagram.png)
 
 ---
 
@@ -200,7 +200,40 @@ Add your screenshot here.
 
 Report the Kubernetes platform used, the public frontend URL/IP, a GitHub link to your manifests/Helm chart (if applicable), and the architecture diagram link. Summarize what worked, issues encountered and how they were resolved, and the tools/sources that helped the most.
 
-Write your answer here.
+Kubernetes Platform Used: Minikube (v1.3x) running via Docker Driver on Windows.
+
+Public Frontend URL: [http://127.0.0.1:80](http://127.0.0.1:80) (or [http://127.0.0.1:8080](http://127.0.0.1:8080) via port-forwarding).
+
+GitHub Repository / Manifests: pravinmishraaws/theepicbook (manifests under ~/k8s-labs/capstone).
+
+Architecture Overview:
+
+Frontend Tier: 2 Nginx reverse-proxy replicas handling edge traffic on port 80 and proxying backend requests (proxy_pass http://backend-svc:5000).
+
+Backend Tier: 2 Node.js/Express API replicas operating on port 5000, exposed internally via backend-svc (ClusterIP).
+
+Database Tier: 1 MySQL 8.0 pod backed by a 1Gi PersistentVolumeClaim (mysql-pvc), reachable exclusively via mysql-svc (ClusterIP).
+
+Configuration & Security: Non-sensitive settings managed via epicbook-config (ConfigMap) and database credentials isolated via epicbook-secret (Secret).
+
+Key Operational Challenges & Resolutions
+Inline Container Build Failures:
+
+Issue: The backend container originally failed to start (CrashLoopBackOff) due to an invalid package flag in Alpine Linux (apk add --no-libc-prefix), preventing Git installation and repository cloning.
+
+Resolution: Updated 03-backend.yaml to use apk add --no-cache git, added elevated execution context (securityContext: runAsUser: 0), and ensured /app was properly initialized prior to cloning.
+
+Local Host Port 80 Conflicts:
+
+Issue: Visiting [http://127.0.0.1](http://127.0.0.1) returned a default Windows IIS page instead of the application.
+
+Resolution: Disabled the local IIS service (net stop w3svc) to free up port 80 for minikube tunnel, or used kubectl port-forward svc/frontend-svc 8080:80 as an alternative local endpoint.
+
+Git Bash Exec Path Conversion:
+
+Issue: Running kubectl exec -it <pod> -- /bin/sh failed with exit code 127 because Git Bash auto-converted /bin/sh to a Windows path (C:/Program Files/Git/...).
+
+Resolution: Used winpty kubectl exec -it <pod> -- //bin//sh with double slashes to bypass path conversion and successfully run the database seed script.
 
 ---
 
@@ -237,14 +270,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
