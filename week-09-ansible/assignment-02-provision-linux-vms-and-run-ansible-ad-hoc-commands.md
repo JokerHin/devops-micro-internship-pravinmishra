@@ -24,13 +24,13 @@ This project will use the Git repository and Ansible controller prepared in Assi
 
 #### Screenshot 1 — Terminal showing the complete `ansible-adhoc-lab` project structure
 
-[project structure](screenshots/task-13-diagram.png)
+![project structure](screenshots/task-13-diagram.png)
 
 ---
 
 #### Screenshot 2 — Terminal showing `git status --short` with the new project files and updated `.gitignore`
 
-[Terminal showing `git status --short`](screenshots/task-14-diagram.png)
+![Terminal showing `git status --short`](screenshots/task-14-diagram.png)
 
 ---
 
@@ -59,19 +59,19 @@ Do not configure both providers for this assignment.
 
 #### Screenshot 3 — Terraform configuration showing the three or four server roles and the `for_each` or `count` implementation
 
-[three or four server roles](screenshots/task-15-diagram.png)
+![three or four server roles](screenshots/task-15-diagram.png)
 
 ---
 
 #### Screenshot 4 — Terraform configuration showing SSH restricted to the controller IP and HTTP allowed only for web hosts
 
-[SSH restricted to the controller IP and HTTP allowed](screenshots/task-16-diagram.png)
+![SSH restricted to the controller IP and HTTP allowed](screenshots/task-16-diagram.png)
 
 ---
 
 #### Screenshot 5 — Terraform output configuration showing how public IP addresses are associated with the server roles
 
-[public IP addresses are associated with the server](screenshots/task-17-diagram.png)
+![public IP addresses are associated with the server](screenshots/task-17-diagram.png)
 
 ---
 
@@ -95,19 +95,19 @@ Initialize and validate the Terraform configuration, review the execution plan, 
 
 #### Screenshot 6 — Final `terraform apply` output showing `Apply complete`
 
-[Final `terraform apply` output showing `Apply complete`](screenshots/task-18-diagram.png)
+![Final `terraform apply` output showing `Apply complete`](screenshots/task-18-diagram.png)
 
 ---
 
 #### Screenshot 7 — `terraform output public_ips` showing the role-to-IP mapping for all three or four VMs
 
-[`terraform output public_ips`](screenshots/task-18-diagram.png)
+![`terraform output public_ips`](screenshots/task-18-diagram.png)
 
 ---
 
 #### Screenshot 8 — Azure Portal or AWS Management Console showing all three or four VMs in the `Running` state, with their role-based names visible
 
-[all three or four VMs in the `Running`](screenshots/task-19-diagram.png)
+![all three or four VMs in the `Running`](screenshots/task-19-diagram.png)
 
 ---
 
@@ -129,7 +129,7 @@ Verify that each managed VM can be accessed from the Ansible controller using SS
 
 #### Screenshot 9 — Terminal showing successful SSH hostname output from all VMs
 
-[Terminal showing successful SSH hostname output from all VMs](screenshots/task-20-diagram.png)
+![Terminal showing successful SSH hostname output from all VMs](screenshots/task-20-diagram.png)
 
 ---
 
@@ -153,13 +153,13 @@ The inventory allows Ansible to run commands against all servers, or only specif
 
 #### Screenshot 10 — `inventory.ini` showing the `web`, `app`, and `db` groups
 
-[`inventory.ini` showing the `web`, `app`, and `db` groups](screenshots/task-21-diagram.png)
+![`inventory.ini` showing the `web`, `app`, and `db` groups](screenshots/task-21-diagram.png)
 
 ---
 
 #### Screenshot 11 — Output of `ansible-inventory -i inventory.ini --graph`
 
-[Output of `ansible-inventory -i inventory.ini --graph](screenshots/task-22-diagram.png)
+![Output of `ansible-inventory -i inventory.ini --graph](screenshots/task-22-diagram.png)
 
 ---
 
@@ -185,37 +185,37 @@ This task proves that the inventory is working and that Ansible can control mult
 
 #### Screenshot 12 — Output of `ansible all -i inventory.ini -m ping`
 
-[Output of `ansible all -i inventory.ini -m ping`](screenshots/task-23-diagram.png)
+![Output of `ansible all -i inventory.ini -m ping`](screenshots/task-23-diagram.png)
 
 ---
 
 #### Screenshot 13 — Output of `ansible all -i inventory.ini -m command -a "uptime"`
 
-[Output of `ansible all -i inventory.ini -m command -a "uptime"`](screenshots/task-24-diagram.png)
+![Output of `ansible all -i inventory.ini -m command -a "uptime"`](screenshots/task-24-diagram.png)
 
 ---
 
 #### Screenshot 14 — Output of `ansible web -i inventory.ini -m apt -a "name=nginx state=present update_cache=yes" --become`
 
-[Output of `ansible web -i inventory.ini -m apt -a "name=nginx state=present update_cache=yes" --become`](screenshots/task-25-diagram.png)
+![Output of `ansible web -i inventory.ini -m apt -a "name=nginx state=present update_cache=yes" --become`](screenshots/task-25-diagram.png)
 
 ---
 
 #### Screenshot 15 — Output of `ansible web -i inventory.ini -m service -a "name=nginx state=started enabled=yes" --become`
 
-[Output of `ansible web -i inventory.ini -m service -a "name=nginx state=started enabled=yes" --become`](screenshots/task-26-diagram.png)
+![Output of `ansible web -i inventory.ini -m service -a "name=nginx state=started enabled=yes" --become`](screenshots/task-26-diagram.png)
 
 ---
 
 #### Screenshot 16 — Output of `ansible all -i inventory.ini -m apt -a "name=htop state=present update_cache=yes" --become`
 
-[Output of `ansible all -i inventory.ini -m apt -a "name=htop state=present update_cache=yes" --become`](screenshots/task-27-diagram.png)
+![Output of `ansible all -i inventory.ini -m apt -a "name=htop state=present update_cache=yes" --become`](screenshots/task-27-diagram.png)
 
 ---
 
 #### Screenshot 17 — Output of `ansible web -i inventory.ini -m command -a "systemctl is-active nginx"`
 
-[Output of `ansible web -i inventory.ini -m command -a "systemctl is-active nginx"`](screenshots/task-28-diagram.png)
+![Output of `ansible web -i inventory.ini -m command -a "systemctl is-active nginx"`](screenshots/task-28-diagram.png)
 
 ---
 
@@ -247,7 +247,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post
 
-[ Published LinkedIn post](screenshots/task-29-diagram.png)
+![ Published LinkedIn post](screenshots/task-29-diagram.png)
 
 ---
 

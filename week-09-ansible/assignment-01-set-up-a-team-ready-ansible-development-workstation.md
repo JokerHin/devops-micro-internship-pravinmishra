@@ -24,7 +24,7 @@ Create the assignment workspace, initialize a Git repository, prepare the requir
 
 #### Screenshot 1 — Terminal showing the `ansible-onboarding` path, `ls -la` output, and `git status` confirming the Git repository is on the `main` branch
 
-[n the `main` branch](screenshots/task-1-diagram.png)
+![n the `main` branch](screenshots/task-1-diagram.png)
 
 ---
 
@@ -38,7 +38,7 @@ Create an isolated Python virtual environment and install Ansible and the requir
 
 #### Screenshot 2 — Terminal showing the active `(.venv)` environment, `which ansible`, `ansible --version`, `ansible-lint --version`, `yamllint --version`, and `pre-commit --version`
 
-[Terminal Ansible](screenshots/task-2-diagram.png)
+![Terminal Ansible](screenshots/task-2-diagram.png)
 
 ---
 
@@ -52,13 +52,13 @@ Configure Visual Studio Code to use the project’s Python virtual environment a
 
 #### Screenshot 3 — VS Code Extensions panel showing the Ansible, YAML, and Python extensions installed
 
-[Extensions panel](screenshots/task-3-diagram.png)
+![Extensions panel](screenshots/task-3-diagram.png)
 
 ---
 
 #### Screenshot 4 — VS Code showing `.vscode/settings.json` and `.editorconfig` open side by side, with the required settings clearly visible
 
-[`.vscode/settings.json` and `.editorconfig`](screenshots/task-4-diagram.png)
+![`.vscode/settings.json` and `.editorconfig`](screenshots/task-4-diagram.png)
 
 ---
 
@@ -72,13 +72,13 @@ Create a reusable `ansible.cfg` file containing the default settings that will b
 
 #### Screenshot 5 — `ansible.cfg` open in VS Code or another editor, showing the complete configuration
 
-[`ansible.cfg` open in VS Code or another editor`](screenshots/task-5-diagram.png)
+![`ansible.cfg` open in VS Code or another editor`](screenshots/task-5-diagram.png)
 
 ---
 
 #### Screenshot 6 — Terminal showing `ansible --version` with the `ansible.cfg` path and the output of `ansible-config dump --only-changed`
 
-[`ansible --version` with the `ansible.cfg``](screenshots/task-6-diagram.png)
+![`ansible --version` with the `ansible.cfg``](screenshots/task-6-diagram.png)
 
 ---
 
@@ -92,7 +92,7 @@ Prepare SSH key authentication, load the key into the SSH agent, configure reusa
 
 #### Screenshot 7 — Terminal showing `ssh-add -l` with the ED25519 key loaded and the SSH configuration verification output
 
-[ED25519 key loaded](screenshots/task-7-diagram.png)
+![ED25519 key loaded](screenshots/task-7-diagram.png)
 
 ---
 
@@ -106,7 +106,7 @@ Configure your Git identity and install pre-commit hooks that validate YAML and 
 
 #### Screenshot 8 — Terminal showing your Git full name, Git email, default branch, successful `pre-commit install` output, and `.git/hooks/pre-commit`
 
-[Terminal showing](screenshots/task-8-diagram.png)
+![Terminal showing](screenshots/task-8-diagram.png)
 
 ---
 
@@ -120,13 +120,13 @@ Verify that Ansible, the linting tools, Git hooks, SSH agent, and Git ignore rul
 
 #### Screenshot 9 — Terminal showing `pre-commit run --all-files` completing successfully
 
-[Terminal showing `pre-commit run --all-files` completing successfully](screenshots/task-9-diagram.png)
+![Terminal showing `pre-commit run --all-files` completing successfully](screenshots/task-9-diagram.png)
 
 ---
 
 #### Screenshot 10 — Terminal showing `ansible --version` with the project configuration path and `ssh-add -l` with the ED25519 key loaded
 
-[ansible --version](screenshots/task-10-diagram.png)
+![ansible --version](screenshots/task-10-diagram.png)
 
 ---
 
@@ -140,13 +140,13 @@ Document the completed Ansible workstation setup and create a reusable checklist
 
 #### Screenshot 11 — Terminal showing the final `ansible-onboarding` project structure
 
-[final `ansible-onboarding` project structure](screenshots/task-11-diagram.png)
+![final `ansible-onboarding` project structure](screenshots/task-11-diagram.png)
 
 ---
 
 #### Screenshot 12 — VS Code Markdown preview showing your full name, project summary, and part of the “New Machine? Do This” checklist
 
-[VS Code Markdow](screenshots/task-12-diagram.png)
+![VS Code Markdow](screenshots/task-12-diagram.png)
 
 ---
 

@@ -22,7 +22,7 @@ Create separate directories and files for the Terraform infrastructure and Ansib
 
 #### Screenshot 1 — Terminal or VS Code showing the complete `mini-finance` project structure
 
-[Terminal or VS Code showing the complete `mini-finance` project structure](screenshots/task-32-diagram.png)
+![Terminal or VS Code showing the complete `mini-finance` project structure](screenshots/task-32-diagram.png)
 
 ---
 
@@ -44,13 +44,13 @@ Use Terraform to provision an Ubuntu Virtual Machine with the required Azure net
 
 #### Screenshot 2 — Terraform code showing the `Allow-SSH` rule for port `22` and the `Allow-HTTP` rule for port `80`
 
-[Terraform code showing the `Allow-SSH` rule for port `22` and the `Allow-HTTP` rule for port `80`](screenshots/task-33-diagram.png)
+![Terraform code showing the `Allow-SSH` rule for port `22` and the `Allow-HTTP` rule for port `80`](screenshots/task-33-diagram.png)
 
 ---
 
 #### Screenshot 3 — Terraform code showing the association between `nsg-mini-finance` and `nic-mini-finance`
 
-[Terraform code showing the association between `nsg-mini-finance` and `nic-mini-finance`](screenshots/task-34-diagram.png)
+![Terraform code showing the association between `nsg-mini-finance` and `nic-mini-finance`](screenshots/task-34-diagram.png)
 
 ---
 
@@ -76,13 +76,13 @@ Format and validate the Terraform configuration, review the execution plan, and 
 
 #### Screenshot 4 — End of the `terraform apply` output showing `Apply complete!` with no errors
 
-[End of the `terraform apply` output showing `Apply complete!` with no errors](screenshots/task-35-diagram.png)
+![End of the `terraform apply` output showing `Apply complete!` with no errors](screenshots/task-35-diagram.png)
 
 ---
 
 #### Screenshot 5 — Output of `terraform output public_ip` showing the VM’s public IP address
 
-[Output of `terraform output public_ip` showing the VM’s public IP address](screenshots/task-36-diagram.png)
+![Output of `terraform output public_ip` showing the VM’s public IP address](screenshots/task-36-diagram.png)
 
 ---
 
@@ -106,7 +106,7 @@ Confirm that the Ansible controller can connect to the Terraform-provisioned Azu
 
 #### Screenshot 6 — Passwordless SSH command and the returned `mini-finance` hostname
 
-[Passwordless SSH command and the returned `mini-finance` hostname](screenshots/task-37-diagram.png)
+![Passwordless SSH command and the returned `mini-finance` hostname](screenshots/task-37-diagram.png)
 
 ---
 
@@ -130,7 +130,7 @@ Add the Terraform-provisioned Azure VM to the Ansible inventory and confirm that
 
 #### Screenshot 7 — Ansible ping output showing `SUCCESS` and `pong` from the Azure VM
 
-[Ansible ping output showing `SUCCESS` and `pong` from the Azure VM](screenshots/task-38-diagram.png)
+![Ansible ping output showing `SUCCESS` and `pong` from the Azure VM](screenshots/task-38-diagram.png)
 
 ---
 
@@ -162,7 +162,7 @@ Screenshot must show:
 - Nginx service configured as started and enabled
 - Beginning of Play 2 with the Git repository URL and synchronization task
 
-[`site.yml` showing Play 1 and the beginning of Play 2](screenshots/task-39-diagram.png)
+![`site.yml` showing Play 1 and the beginning of Play 2](screenshots/task-39-diagram.png)
 
 ---
 
@@ -176,7 +176,7 @@ Screenshot must show:
 - Play 3 targeting `localhost`
 - The `uri` verification and `assert` condition
 
-[`site.yml` showing the deployment destination, handler, and Play 3 verification](screenshots/task-40-diagram.png)
+![`site.yml` showing the deployment destination, handler, and Play 3 verification](screenshots/task-40-diagram.png)
 
 ---
 
@@ -271,19 +271,19 @@ Validate the syntax of the multi-play Ansible playbook and run it to install Ngi
 
 #### Screenshot 10 — Successful playbook syntax check showing `playbook: site.yml`
 
-[Successful playbook syntax check showing `playbook: site.yml`](screenshots/task-41-diagram.png)
+![Successful playbook syntax check showing `playbook: site.yml`](screenshots/task-41-diagram.png)
 
 ---
 
 #### Screenshot 11 — Play 3 output showing the successful HTTP verification and assertion
 
-[Play 3 output showing the successful HTTP verification and assertion](screenshots/task-43-diagram.png)
+![Play 3 output showing the successful HTTP verification and assertion](screenshots/task-43-diagram.png)
 
 ---
 
 #### Screenshot 12 — Final `PLAY RECAP` showing `failed=0` and `unreachable=0`
 
-[Final `PLAY RECAP` showing `failed=0` and `unreachable=0`](screenshots/task-43-diagram.png)
+![Final `PLAY RECAP` showing `failed=0` and `unreachable=0`](screenshots/task-43-diagram.png)
 
 ---
 
@@ -309,7 +309,7 @@ Confirm that the Mini Finance website is publicly accessible through the Azure V
 
 #### Screenshot 13 — Mini Finance website successfully loading in the browser, with the Azure VM’s public IP address visible in the address bar
 
-[Mini Finance website successfully loading in the browser, with the Azure VM’s public IP address visible in the address bar](screenshots/task-44-diagram.png)
+![Mini Finance website successfully loading in the browser, with the Azure VM’s public IP address visible in the address bar](screenshots/task-44-diagram.png)
 
 ---
 
@@ -333,7 +333,7 @@ Create a `README.md` file to document the Mini Finance infrastructure and deploy
 
 #### Screenshot 14 — Completed `README.md` displayed in the VS Code Markdown preview or terminal
 
-[Completed `README.md` displayed in the VS Code Markdown preview or terminal](screenshots/task-42-diagram.png)
+![Completed `README.md` displayed in the VS Code Markdown preview or terminal](screenshots/task-42-diagram.png)
 
 ---
 
@@ -389,7 +389,7 @@ This repository provisions cloud infrastructure on AWS using Terraform and autom
 
 #### Screenshot 15 — Published LinkedIn post showing the text and at least one deployment screenshot
 
-[ Published LinkedIn post](screenshots/task-29-diagram.png)
+![ Published LinkedIn post](screenshots/task-29-diagram.png)
 
 ---
 
