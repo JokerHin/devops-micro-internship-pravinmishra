@@ -20,7 +20,7 @@ Confirm the latest run on both Azure DevOps and GitHub Actions currently succeed
 
 #### Screenshot 1 — Latest run status on Azure DevOps and/or GitHub Actions showing a successful run
 
-[Latest run status on Azure DevOps and/or GitHub Actions showing a successful run](screenshots/task-31-diagram.png)
+![Latest run status on Azure DevOps and/or GitHub Actions showing a successful run](screenshots/task-31-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `CLAUDE.md` describing the pipeline-triage workflow (gather → analyze �
 
 #### Screenshot 2 — `CLAUDE.md` showing the workflow and safety rules
 
-[`CLAUDE.md` showing the workflow and safety rules](screenshots/task-32-diagram.png)
+![`CLAUDE.md` showing the workflow and safety rules](screenshots/task-32-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Build `pipeline-triage.sh`, a read-only Bash script that fetches the latest run'
 
 #### Screenshot 3 — `pipeline-triage.sh` showing the check functions and their pattern-matching conditionals
 
-[`pipeline-triage.sh` showing the check functions and their pattern-matching conditionals](screenshots/task-33-diagram.png)
+![`pipeline-triage.sh` showing the check functions and their pattern-matching conditionals](screenshots/task-33-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Run the script against your current, passing pipeline and confirm it produces a 
 
 #### Screenshot 4 — Script output and report showing a healthy result with no failure category triggered
 
-[Script output and report showing a healthy result with no failure category triggered](screenshots/task-34-diagram.png)
+![Script output and report showing a healthy result with no failure category triggered](screenshots/task-34-diagram.png)
 
 ---
 
@@ -76,13 +76,13 @@ Create a Claude Code skill restricted to read-only tools (no `Write`) that runs 
 
 #### Screenshot 5 — `SKILL.md` frontmatter showing the tool restrictions and safety rules
 
-[`SKILL.md` frontmatter showing the tool restrictions and safety rules](screenshots/task-35-diagram.png)
+![`SKILL.md` frontmatter showing the tool restrictions and safety rules](screenshots/task-35-diagram.png)
 
 ---
 
 #### Screenshot 6 — `/pipeline-triage` output for the healthy pipeline
 
-[`/pipeline-triage` output for the healthy pipeline](screenshots/task-36-diagram.png)
+![`/pipeline-triage` output for the healthy pipeline](screenshots/task-36-diagram.png)
 
 ---
 
@@ -96,13 +96,13 @@ Introduce one safe, obvious, and easily reversible failure (for example, an inte
 
 #### Screenshot 7 — The failed pipeline run showing the red/failed status
 
-[The failed pipeline run showing the red/failed status](screenshots/task-37-diagram.png)
+![The failed pipeline run showing the red/failed status](screenshots/task-37-diagram.png)
 
 ---
 
 #### Screenshot 8 — `/pipeline-triage` output showing the diagnosed failure category, the quoted log evidence, and the recommended fix
 
-[`/pipeline-triage` output showing the diagnosed failure category, the quoted log evidence, and the recommended fix](screenshots/task-38-diagram.png)
+![`/pipeline-triage` output showing the diagnosed failure category, the quoted log evidence, and the recommended fix](screenshots/task-38-diagram.png)
 
 ---
 
@@ -116,13 +116,13 @@ Apply the recommended fix yourself, push it, confirm the pipeline succeeds again
 
 #### Screenshot 9 — The pipeline run succeeding after your fix
 
-[The pipeline run succeeding after your fix](screenshots/task-39-diagram.png)
+![The pipeline run succeeding after your fix](screenshots/task-39-diagram.png)
 
 ---
 
 #### Screenshot 10 — Second `/pipeline-triage` output confirming the pipeline is healthy again
 
-[Second `/pipeline-triage` output confirming the pipeline is healthy again](screenshots/task-40-diagram.png)
+![Second `/pipeline-triage` output confirming the pipeline is healthy again](screenshots/task-40-diagram.png)
 
 ---
 

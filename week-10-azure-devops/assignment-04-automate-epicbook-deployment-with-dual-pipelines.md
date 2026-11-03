@@ -20,7 +20,7 @@ Prepare `infra-epicbook` (Terraform for network, frontend/backend VMs, MySQL, wi
 
 #### Screenshot 1 — Both repositories showing their required files and separation of responsibilities
 
-[Both repositories showing their required files and separation of responsibilities](screenshots/task-24-diagram.png)
+![Both repositories showing their required files and separation of responsibilities](screenshots/task-24-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create and validate an Azure Resource Manager SPN service connection (Tenant ID,
 
 #### Screenshot 2 — Azure Resource Manager service connection showing successful configuration with secrets hidden
 
-[Azure Resource Manager service connection showing successful configuration with secrets hidden](screenshots/task-25-diagram.png)
+![Azure Resource Manager service connection showing successful configuration with secrets hidden](screenshots/task-25-diagram.png)
 
 ---
 
@@ -48,13 +48,13 @@ Create a YAML pipeline for `infra-epicbook` that authenticates via the SPN conne
 
 #### Screenshot 3 — Infra Pipeline run showing `terraform apply` completion and the `app_public_ip` and `mysql_fqdn` outputs
 
-[Infra Pipeline run showing `terraform apply` completion and the `app_public_ip` and `mysql_fqdn` outputs](screenshots/task-26-diagram.png)
+![Infra Pipeline run showing `terraform apply` completion and the `app_public_ip` and `mysql_fqdn` outputs](screenshots/task-26-diagram.png)
 
 ---
 
 #### Screenshot 4 — Azure Portal confirming the provisioned resources
 
-[Azure Portal confirming the provisioned resources](screenshots/task-27-diagram.png)
+![Azure Portal confirming the provisioned resources](screenshots/task-27-diagram.png)
 
 ---
 
@@ -68,13 +68,13 @@ Upload the SSH private key to Azure DevOps Secure Files, create a YAML pipeline 
 
 #### Screenshot 5 — App Pipeline run summary showing successful completion
 
-[App Pipeline run summary showing successful completion](screenshots/task-28-diagram.png)
+![App Pipeline run summary showing successful completion](screenshots/task-28-diagram.png)
 
 ---
 
 #### Screenshot 6 — Ansible playbook output showing successful configuration with `failed=0`
 
-[Ansible playbook output showing successful configuration with `failed=0`](screenshots/task-29-diagram.png)
+![Ansible playbook output showing successful configuration with `failed=0`](screenshots/task-29-diagram.png)
 
 ---
 
@@ -88,7 +88,7 @@ Confirm both pipelines succeeded, the EpicBook application loads through the fro
 
 #### Screenshot 7 — Browser displaying the running EpicBook application with the frontend public IP visible
 
-[Browser displaying the running EpicBook application with the frontend public IP visible](screenshots/task-30-diagram.png)
+![Browser displaying the running EpicBook application with the frontend public IP visible](screenshots/task-30-diagram.png)
 
 ---
 
@@ -151,7 +151,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post showing the text and at least one link or image
 
-[Published LinkedIn post showing the text and at least one link or image](screenshots/task-20-diagram.png)
+![Published LinkedIn post showing the text and at least one link or image](screenshots/task-20-diagram.png)
 
 ---
 

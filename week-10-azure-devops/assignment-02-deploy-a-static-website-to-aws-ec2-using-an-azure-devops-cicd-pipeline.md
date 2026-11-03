@@ -20,7 +20,7 @@ Import `https://github.com/pravinmishraaws/Azure-Static-Website` into Azure Repo
 
 #### Screenshot 1 — Azure Repos showing the imported repository files with `index.html` visible
 
-[Azure Repos showing the imported repository files with `index.html` visible](screenshots/task-8-diagram.png)
+![Azure Repos showing the imported repository files with `index.html` visible](screenshots/task-8-diagram.png)
 
 ---
 
@@ -34,13 +34,13 @@ Provision a Linux VM with Terraform (ports 22/80 open), then use Ansible to inst
 
 #### Screenshot 2 — Terraform output or cloud console showing the running VM and public IP
 
-[Terraform output or cloud console showing the running VM and public IP](screenshots/task-9-diagram.png)
+![Terraform output or cloud console showing the running VM and public IP](screenshots/task-9-diagram.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing Ansible completed successfully and Nginx is active
 
-[Terminal showing Ansible completed successfully and Nginx is active](screenshots/task-10-diagram.png)
+![Terminal showing Ansible completed successfully and Nginx is active](screenshots/task-10-diagram.png)
 
 ---
 
@@ -54,7 +54,7 @@ Create the password-based SSH Service Connection `ubuntu-nginx-ssh` pointing to 
 
 #### Screenshot 4 — SSH Service Connection configuration page showing the connection details and successful validation, with the password hidden
 
-[SSH Service Connection configuration page showing the connection details and successful validation, with the password hidden](screenshots/task-11-diagram.png)
+![SSH Service Connection configuration page showing the connection details and successful validation, with the password hidden](screenshots/task-11-diagram.png)
 
 ---
 
@@ -68,7 +68,7 @@ Write a pipeline triggered on `main` that checks out the repo, copies files to `
 
 #### Screenshot 5 — Pipeline YAML definition open in the Azure DevOps editor
 
-[Pipeline YAML definition open in the Azure DevOps editor](screenshots/task-12-diagram.png)
+![Pipeline YAML definition open in the Azure DevOps editor](screenshots/task-12-diagram.png)
 
 ---
 
@@ -82,13 +82,13 @@ Confirm the pipeline run succeeded (checkout, SSH connection, file transfer, rem
 
 #### Screenshot 6 — Successful Azure DevOps pipeline run log summary
 
-[Successful Azure DevOps pipeline run log summary](screenshots/task-13-diagram.png)
+![Successful Azure DevOps pipeline run log summary](screenshots/task-13-diagram.png)
 
 ---
 
 #### Screenshot 7 — Browser showing the deployed website with the VM public IP visible
 
-[Browser showing the deployed website with the VM public IP visible](screenshots/task-14-diagram.png)
+![Browser showing the deployed website with the VM public IP visible](screenshots/task-14-diagram.png)
 
 ---
 

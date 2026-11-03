@@ -20,7 +20,7 @@ Import `https://github.com/pravinmishraaws/my-react-app` into Azure Repos and co
 
 #### Screenshot 1 — Azure Repos showing the imported React project with `package.json` and `src/` visible
 
-[Azure Repos showing the imported React project with `package.json` and `src/` visible](screenshots/task-15-diagram.png)
+![Azure Repos showing the imported React project with `package.json` and `src/` visible](screenshots/task-15-diagram.png)
 
 ---
 
@@ -34,13 +34,13 @@ Provision a new Ubuntu VM with Terraform (ports 22/80 open) and prepare Nginx/`/
 
 #### Screenshot 2 — Terraform output or cloud console showing the new VM and public IP
 
-[Terraform output or cloud console showing the new VM and public IP](screenshots/task-16-diagram.png)
+![Terraform output or cloud console showing the new VM and public IP](screenshots/task-16-diagram.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing Ansible completed successfully and Nginx is active
 
-[Terminal showing Ansible completed successfully and Nginx is active](screenshots/task-17-diagram.png)
+![Terminal showing Ansible completed successfully and Nginx is active](screenshots/task-17-diagram.png)
 
 ---
 
@@ -54,7 +54,7 @@ Point the `ubuntu-nginx-ssh` Service Connection to the new VM and validate it.
 
 #### Screenshot 4 — SSH Service Connection page showing the new VM connection and successful validation, with the password hidden
 
-[SSH Service Connection page showing the new VM connection and successful validation, with the password hidden](screenshots/task-18-diagram.png)
+![SSH Service Connection page showing the new VM connection and successful validation, with the password hidden](screenshots/task-18-diagram.png)
 
 ---
 
@@ -68,7 +68,7 @@ Create the Build (npm install/build), Test (`npm test -- --watchAll=false`, bloc
 
 #### Screenshot 5 — Azure Pipeline YAML definition with the Build, Test, Publish, and Deploy sections visible
 
-[Azure Pipeline YAML definition with the Build, Test, Publish, and Deploy sections visible](screenshots/task-19-diagram.png)
+![Azure Pipeline YAML definition with the Build, Test, Publish, and Deploy sections visible](screenshots/task-19-diagram.png)
 
 ---
 
@@ -82,19 +82,19 @@ Confirm a commit to `main` triggers the pipeline, all four stages succeed, the b
 
 #### Screenshot 6 — Pipeline run summary showing Build, Test, Publish, and Deploy succeeded
 
-[Pipeline run summary showing Build, Test, Publish, and Deploy succeeded](screenshots/task-21-diagram.png)
+![Pipeline run summary showing Build, Test, Publish, and Deploy succeeded](screenshots/task-21-diagram.png)
 
 ---
 
 #### Screenshot 7 — Terminal or pipeline output showing `/var/www/html` after deployment
 
-[Terminal or pipeline output showing `/var/www/html` after deployment](screenshots/task-22-diagram.png)
+![Terminal or pipeline output showing `/var/www/html` after deployment](screenshots/task-22-diagram.png)
 
 ---
 
 #### Screenshot 8 — Browser showing the running React application with the public IP visible
 
-[Browser showing the running React application with the public IP visible](screenshots/task-23-diagram.png)
+![Browser showing the running React application with the public IP visible](screenshots/task-23-diagram.png)
 
 ---
 
@@ -116,7 +116,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post showing the text and at least one link or image
 
-[Published LinkedIn post showing the text and at least one link or image](screenshots/task-20-diagram.png)
+![Published LinkedIn post showing the text and at least one link or image](screenshots/task-20-diagram.png)
 
 ---
 

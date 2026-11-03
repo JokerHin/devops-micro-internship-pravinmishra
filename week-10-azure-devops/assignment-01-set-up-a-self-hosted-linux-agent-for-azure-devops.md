@@ -30,7 +30,7 @@ Create a self-hosted agent pool (e.g. `SelfHostedPool`) in Azure DevOps Organiza
 
 #### Screenshot 1 — Azure DevOps Agent Pools page showing the newly created pool
 
-[Azure DevOps Agent Pools page showing the newly created pool](screenshots/task-1-diagram.png)
+![Azure DevOps Agent Pools page showing the newly created pool](screenshots/task-1-diagram.png)
 
 ---
 
@@ -44,13 +44,13 @@ Create an Ubuntu 22.04 (or latest) VM in AWS or Azure with SSH access, and confi
 
 #### Screenshot 2 — Cloud console showing the running Ubuntu VM and its public IP or DNS name
 
-[Cloud console showing the running Ubuntu VM and its public IP or DNS name](screenshots/task-2-diagram.png)
+![Cloud console showing the running Ubuntu VM and its public IP or DNS name](screenshots/task-2-diagram.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing a successful SSH login and Ubuntu version details
 
-[Terminal showing a successful SSH login and Ubuntu version details](screenshots/task-3-diagram.png)
+![Terminal showing a successful SSH login and Ubuntu version details](screenshots/task-3-diagram.png)
 
 ---
 
@@ -64,13 +64,13 @@ Download the Linux agent package, register it with your organization/pool/PAT vi
 
 #### Screenshot 4 — Terminal showing successful agent configuration without exposing the PAT
 
-[Terminal showing successful agent configuration without exposing the PAT](screenshots/task-4-diagram.png)
+![Terminal showing successful agent configuration without exposing the PAT](screenshots/task-4-diagram.png)
 
 ---
 
 #### Screenshot 5 — Terminal showing the agent service running successfully
 
-[Terminal showing the agent service running successfully](screenshots/task-5-diagram.png)
+![Terminal showing the agent service running successfully](screenshots/task-5-diagram.png)
 
 ---
 
@@ -84,7 +84,7 @@ Confirm the agent service is running and the agent shows as Online in the Azure 
 
 #### Screenshot 6 — Agent Pool listing showing the registered agent online
 
-[Agent Pool listing showing the registered agent online](screenshots/task-6-diagram.png)
+![Agent Pool listing showing the registered agent online](screenshots/task-6-diagram.png)
 
 ---
 
@@ -98,7 +98,7 @@ Create and run a YAML pipeline targeting the self-hosted pool, running `uname -a
 
 #### Screenshot 7 — Successful test pipeline run output in Azure DevOps showing the Linux commands
 
-[Successful test pipeline run output in Azure DevOps showing the Linux commands](screenshots/task-7-diagram.png)
+![Successful test pipeline run output in Azure DevOps showing the Linux commands](screenshots/task-7-diagram.png)
 
 ---
 
