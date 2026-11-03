@@ -20,13 +20,13 @@ Confirm every Book Review App pod is `Running` and `Ready` and that its Service 
 
 #### Screenshot 1 — `kubectl get pods` and `kubectl get endpoints` showing the Book Review App healthy
 
-[`kubectl get pods` and `kubectl get endpoints` showing the Book Review App healthy](screenshots/task-66-diagram.png)
+![`kubectl get pods` and `kubectl get endpoints` showing the Book Review App healthy](screenshots/task-66-diagram.png)
 
 ---
 
 #### Screenshot 2 — Workspace folder structure for this assignment
 
-[Workspace folder structure for this assignment](screenshots/task-67-diagram.png)
+![Workspace folder structure for this assignment](screenshots/task-67-diagram.png)
 
 ---
 
@@ -40,7 +40,7 @@ Add a `CLAUDE.md` telling Claude this is a read-only Kubernetes triage workflow:
 
 #### Screenshot 3 — `CLAUDE.md` showing the project overview, incident workflow, and safety rules
 
-[`CLAUDE.md` showing the project overview, incident workflow, and safety rules](screenshots/task-68-diagram.png)
+![`CLAUDE.md` showing the project overview, incident workflow, and safety rules](screenshots/task-68-diagram.png)
 
 ---
 
@@ -54,7 +54,7 @@ Ask Claude to propose a read-only, five-check `kubectl` triage plan — pod stat
 
 #### Screenshot 4 — Claude's proposed five-check plan, with no file created or cluster state changed
 
-[Claude's proposed five-check plan, with no file created or cluster state changed](screenshots/task-69-diagram.png)
+![Claude's proposed five-check plan, with no file created or cluster state changed](screenshots/task-69-diagram.png)
 
 ---
 
@@ -68,13 +68,13 @@ Write a Bash script that runs the five read-only `kubectl` checks and writes a P
 
 #### Screenshot 5 — Script showing the five checks and how each one gathers its evidence
 
-[Script showing the five checks and how each one gathers its evidence](screenshots/task-70-diagram.png)
+![Script showing the five checks and how each one gathers its evidence](screenshots/task-70-diagram.png)
 
 ---
 
 #### Screenshot 6 — `bash -n` and `ls -l` confirming the script is valid and executable
 
-[`bash -n` and `ls -l` confirming the script is valid and executable](screenshots/task-71-diagram.png)
+![`bash -n` and `ls -l` confirming the script is valid and executable](screenshots/task-71-diagram.png)
 
 ---
 
@@ -88,7 +88,7 @@ Run the script against your current, unmodified deployment and confirm it report
 
 #### Screenshot 7 — Script output showing all five checks passing
 
-[Script output showing all five checks passing](screenshots/task-72-diagram.png)
+![Script output showing all five checks passing](screenshots/task-72-diagram.png)
 
 ---
 
@@ -102,13 +102,13 @@ Wrap the script in a Claude Code skill restricted to read-only tools (no `Write`
 
 #### Screenshot 8 — `SKILL.md` frontmatter showing the tool restrictions and safety rules
 
-[`SKILL.md` frontmatter showing the tool restrictions and safety rules](screenshots/task-73-diagram.png)
+![`SKILL.md` frontmatter showing the tool restrictions and safety rules](screenshots/task-73-diagram.png)
 
 ---
 
 #### Screenshot 9 — `/k8s-triage` output for the healthy cluster
 
-[`/k8s-triage` output for the healthy cluster](screenshots/task-74-diagram.png)
+![`/k8s-triage` output for the healthy cluster](screenshots/task-74-diagram.png)
 
 ---
 
@@ -122,13 +122,13 @@ Deliberately break your own deployment — an image tag that does not exist, or 
 
 #### Screenshot 10 — The pod in a failed state and the Service showing no Endpoints
 
-[The pod in a failed state and the Service showing no Endpoints](screenshots/task-75-diagram.png)
+![The pod in a failed state and the Service showing no Endpoints](screenshots/task-75-diagram.png)
 
 ---
 
 #### Screenshot 11 — `/k8s-triage` output showing the diagnosis and the recommended `kubectl` command, not executed by Claude
 
-[`/k8s-triage` output showing the diagnosis and the recommended `kubectl` command, not executed by Claude](screenshots/task-76-diagram.png)
+![`/k8s-triage` output showing the diagnosis and the recommended `kubectl` command, not executed by Claude](screenshots/task-76-diagram.png)
 
 ---
 
@@ -142,13 +142,13 @@ Review the recommendation, apply the fix yourself, confirm the pod returns to `R
 
 #### Screenshot 12 — Pod back to `Running`/`Ready` and the Service showing Endpoints again
 
-[Pod back to `Running`/`Ready` and the Service showing Endpoints again](screenshots/task-77-diagram.png)
+![Pod back to `Running`/`Ready` and the Service showing Endpoints again](screenshots/task-77-diagram.png)
 
 ---
 
 #### Screenshot 13 — Second `/k8s-triage` run confirming recovery
 
-[Second `/k8s-triage` run confirming recovery](screenshots/task-78-diagram.png)
+![Second `/k8s-triage` run confirming recovery](screenshots/task-78-diagram.png)
 
 ---
 

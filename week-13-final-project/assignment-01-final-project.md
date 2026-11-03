@@ -38,7 +38,7 @@ Describe or embed a diagram of your project architecture.
 
 #### Screenshot 1 — Architecture diagram
 
-[Architecture diagram](screenshots/task-1-diagram.png)
+![Architecture diagram](screenshots/task-1-diagram.png)
 
 ---
 
@@ -74,7 +74,7 @@ Organized the totoro codebase into a clean, decoupled workspace. The repository 
 
 #### Screenshot 2 — Step 1
 
-[Local File & Project Directory Structure](screenshots/task-2-diagram.png)
+![Local File & Project Directory Structure](screenshots/task-2-diagram.png)
 
 #### Step 2 — DevSecOps Architecture Flow
 
@@ -88,7 +88,7 @@ Continuous Delivery Pipeline: Azure DevOps compiles container images, runs Trivy
 
 #### Screenshot 3 — Step 2
 
-[DevSecOps Architecture Flow](screenshots/task-1-diagram.png)
+![DevSecOps Architecture Flow](screenshots/task-1-diagram.png)
 
 #### Step 3 — Azure DevOps CI/CD Pipeline Implementation
 
@@ -96,7 +96,7 @@ Authored .azure-pipelines.yml inside .azure-pipelines/ to automate container bui
 
 #### Screenshot 4 — Step 3
 
-[Azure DevOps CI/CD Pipeline Implementation](screenshots/task-3-diagram.png)
+![Azure DevOps CI/CD Pipeline Implementation](screenshots/task-3-diagram.png)
 
 #### Step 4 — Azure DevOps Pipeline Run
 
@@ -104,7 +104,7 @@ Executed modular Terraform scripts to provision the VPC (Public/Private Subnets,
 
 #### Screenshot 5 — Step 4
 
-[Azure DevOps CI/CD Pipeline Implementation](screenshots/task-4-diagram.png)
+![Azure DevOps CI/CD Pipeline Implementation](screenshots/task-4-diagram.png)
 
 #### Step 5 — ArgoCD Application Sync Dashboard
 
@@ -116,7 +116,7 @@ Dynamic Secret Ingestion: ESO authenticates via IRSA to pull sensitive database 
 
 #### Screenshot 6 — Step 5
 
-[Azure DevOps CI/CD Pipeline Implementation](screenshots/task-5-diagram.png)
+![Azure DevOps CI/CD Pipeline Implementation](screenshots/task-5-diagram.png)
 
 #### Step 6 — Live Totoro Graphify Dashboard
 
@@ -128,7 +128,7 @@ Node Configuration & Hardening: Executed Ansible playbooks (ansible/site.yml) to
 
 #### Screenshot 7 — Step 6
 
-[Azure DevOps CI/CD Pipeline Implementation](screenshots/task-6-diagram.png)
+![Azure DevOps CI/CD Pipeline Implementation](screenshots/task-6-diagram.png)
 
 ---
 
