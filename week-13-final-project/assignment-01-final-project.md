@@ -199,7 +199,7 @@ Publish a LinkedIn post summarizing your final project and your journey through 
 
 #### LinkedIn Post URL
 
-Add your LinkedIn post URL here...
+`https://www.linkedin.com/posts/kar-hin-cho_recently-completed-my-devsecops-project-ugcPost-7523369856952414209-0lyS/`
 
 Add the following credit note at the end of your post:
 
