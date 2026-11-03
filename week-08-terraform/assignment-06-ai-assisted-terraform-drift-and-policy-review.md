@@ -353,7 +353,7 @@ Resolve the detected difference intentionally, verify the infrastructure returns
 
 Add a screenshot of the human-reviewed resolution or `terraform apply` output where applicable.
 
-[!Human-Reviewed Resolution](screenshots/task-102-diagram.png)
+![!Human-Reviewed Resolution](screenshots/task-102-diagram.png)
 
 ---
 
@@ -361,7 +361,7 @@ Add a screenshot of the human-reviewed resolution or `terraform apply` output wh
 
 Add a screenshot of the final `/tf-drift-review` showing `HEALTHY`.
 
-[Final Healthy Review](screenshots/task-103-diagram.png)
+![Final Healthy Review](screenshots/task-103-diagram.png)
 
 ---
 
@@ -372,7 +372,7 @@ Add a screenshot of `ls -lah reports` showing both:
 - `drift-detected-report.txt`
 - `resolved-report.txt`
 
-[Saved Reports](screenshots/task-104-diagram.png)
+![Saved Reports](screenshots/task-104-diagram.png)
 
 ---
 
@@ -380,7 +380,7 @@ Add a screenshot of `ls -lah reports` showing both:
 
 Add a screenshot of `drift-review-summary.md` showing all required sections and your full name.
 
-[Drift Review Summary](screenshots/task-105-diagram.png)
+![Drift Review Summary](screenshots/task-105-diagram.png)
 
 ## Terraform Drift Review Summary
 
@@ -501,7 +501,7 @@ Suggested tags:
 
 ### Published LinkedIn Post Screenshot — Mandatory
 
-[LinkedIn Post Screenshot](screenshots/task-105-diagram.png)
+![LinkedIn Post Screenshot](screenshots/task-105-diagram.png)
 
 ---
 
