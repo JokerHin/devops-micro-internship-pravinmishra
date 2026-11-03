@@ -20,7 +20,7 @@ Create healthy, labeled NGINX Pods (readiness + liveness probes) for the NodePor
 
 #### Screenshot 1 — Healthy NGINX Pods before Service creation
 
-[Healthy NGINX Pods before Service creation](screenshots/task-35-diagram.png)
+![Healthy NGINX Pods before Service creation](screenshots/task-35-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `nginx-svc-nodeport` (type `NodePort`, port 80, `nodePort: 30080`) and in
 
 #### Screenshot 2 — Service output showing `80:30080` and populated endpoints
 
-[Service output showing `80:30080` and populated endpoints](screenshots/task-36-diagram.png)
+![Service output showing `80:30080` and populated endpoints](screenshots/task-36-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Find a reachable node IP and test `<NODE_IP>:30080` externally (curl) and intern
 
 #### Screenshot 3 — Successful external or internal NodePort response
 
-[Successful external or internal NodePort response](screenshots/task-37-diagram.png)
+![Successful external or internal NodePort response](screenshots/task-37-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Use the appropriate fallback for your cluster environment (`minikube service --u
 
 #### Screenshot 4 — Minikube helper URL or local validation result
 
-[Minikube helper URL or local validation result](screenshots/task-38-diagram.png)
+![Minikube helper URL or local validation result](screenshots/task-38-diagram.png)
 
 ---
 
@@ -76,7 +76,7 @@ Change the selector to `app: does-not-match`, confirm endpoints empty and the re
 
 #### Screenshot 5 — Empty then restored endpoint output
 
-[Empty then restored endpoint output](screenshots/task-39-diagram.png)
+![Empty then restored endpoint output](screenshots/task-39-diagram.png)
 
 ---
 
@@ -90,7 +90,7 @@ Delete one backend Pod while calling the NodePort from another terminal, confirm
 
 #### Screenshot 6 — Pod replacement while NodePort remains available
 
-[Pod replacement while NodePort remains available](screenshots/task-40-diagram.png)
+![Pod replacement while NodePort remains available](screenshots/task-40-diagram.png)
 
 ---
 

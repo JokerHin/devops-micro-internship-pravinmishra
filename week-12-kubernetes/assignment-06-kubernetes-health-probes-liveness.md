@@ -20,7 +20,7 @@ Deploy two NGINX Pods without probes (`00-nginx-deploy-baseline.yaml`).
 
 #### Screenshot 1 — Baseline Deployment and two running Pods
 
-[Baseline Deployment and two running Pods](screenshots/task-24-diagram.png)
+![Baseline Deployment and two running Pods](screenshots/task-24-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Add an HTTP liveness probe on `/` port 80 (`01-nginx-deploy-liveness.yaml`) and 
 
 #### Screenshot 2 — Pod description showing the liveness probe
 
-[Pod description showing the liveness probe](screenshots/task-25-diagram.png)
+![Pod description showing the liveness probe](screenshots/task-25-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Change the liveness path to `/does-not-exist`, apply it, and watch `RESTARTS` in
 
 #### Screenshot 3 — Pod RESTARTS increment and the corresponding liveness failure events
 
-[Pod RESTARTS increment and the corresponding liveness failure events](screenshots/task-26-diagram.png)
+![Pod RESTARTS increment and the corresponding liveness failure events](screenshots/task-26-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Reapply the good liveness manifest and confirm restart counts stop increasing.
 
 #### Screenshot 4 — Stable Pod state after the fixed manifest is applied
 
-[Stable Pod state after the fixed manifest is applied](screenshots/task-27-diagram.png)
+![Stable Pod state after the fixed manifest is applied](screenshots/task-27-diagram.png)
 
 ---
 
@@ -76,7 +76,7 @@ Review recommended probe ranges and retain or delete the Deployment.
 
 #### Screenshot 5 — Final healthy state and any troubleshooting evidence used
 
-[Final healthy state and any troubleshooting evidence used](screenshots/task-28-diagram.png)
+![Final healthy state and any troubleshooting evidence used](screenshots/task-28-diagram.png)
 
 ---
 

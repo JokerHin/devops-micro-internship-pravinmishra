@@ -20,7 +20,7 @@ Create the `~/k8s-labs/pods` working directory for all Pod-related files.
 
 #### Screenshot 1 — Terminal showing the `~/k8s-labs/pods` working directory
 
-[Terminal showing the `~/k8s-labs/pods` working directory](screenshots/task-1-diagram.png)
+![Terminal showing the `~/k8s-labs/pods` working directory](screenshots/task-1-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `nginx-pod` with `kubectl run --image=nginx`, verify it reaches Running, 
 
 #### Screenshot 2 — Terminal showing `nginx-pod` in Running state before deletion
 
-[Terminal showing `nginx-pod` in Running state before deletion](screenshots/task-2-diagram.png)
+![Terminal showing `nginx-pod` in Running state before deletion](screenshots/task-2-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Write `nginx-pod.yaml` (apiVersion `v1`, kind `Pod`, label `app: nginx`, contain
 
 #### Screenshot 3 — `nginx-pod.yaml` and terminal output showing `nginx-pod` in Running state
 
-[`nginx-pod.yaml` and terminal output showing `nginx-pod` in Running state](screenshots/task-3-diagram.png)
+![`nginx-pod.yaml` and terminal output showing `nginx-pod` in Running state](screenshots/task-3-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Run `kubectl describe`, `kubectl logs`, and `kubectl exec -it ... -- /bin/bash` 
 
 #### Screenshot 4 — Terminal showing `kubectl describe`, `kubectl logs`, or the `/usr/share/nginx/html` directory
 
-[Terminal showing `kubectl describe`, `kubectl logs`, or the `/usr/share/nginx/html` directory](screenshots/task-4-diagram.png)
+![Terminal showing `kubectl describe`, `kubectl logs`, or the `/usr/share/nginx/html` directory](screenshots/task-4-diagram.png)
 
 ---
 

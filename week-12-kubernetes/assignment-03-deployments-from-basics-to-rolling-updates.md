@@ -20,7 +20,7 @@ Create the `~/k8s-labs/deployments` working directory.
 
 #### Screenshot 1 — Terminal showing the `~/k8s-labs/deployments` working directory
 
-[Terminal showing the `~/k8s-labs/deployments` working directory](screenshots/task-9-diagram.png)
+![Terminal showing the `~/k8s-labs/deployments` working directory](screenshots/task-9-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `nginx-deployment.yaml` with two replicas and image `nginx:1.21.1`, apply
 
 #### Screenshot 2 — Manifest plus `kubectl` output showing the Deployment, ReplicaSet, and two Pods
 
-[Manifest plus `kubectl` output showing the Deployment, ReplicaSet, and two Pods](screenshots/task-10-diagram.png)
+![Manifest plus `kubectl` output showing the Deployment, ReplicaSet, and two Pods](screenshots/task-10-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Add `strategy.rollingUpdate` with `maxSurge: 1` and `maxUnavailable: 0` to the D
 
 #### Screenshot 3 — Deployment YAML showing the RollingUpdate strategy and successful apply output
 
-[Deployment YAML showing the RollingUpdate strategy and successful apply output](screenshots/task-11-diagram.png)
+![Deployment YAML showing the RollingUpdate strategy and successful apply output](screenshots/task-11-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Update the image to `nginx:1.23.1` with `kubectl set image`, watch the rollout, 
 
 #### Screenshot 4 — Rolling-update status, multiple ReplicaSets, and successful rollback/history output
 
-[Rolling-update status, multiple ReplicaSets, and successful rollback/history output](screenshots/task-12-diagram.png)
+![Rolling-update status, multiple ReplicaSets, and successful rollback/history output](screenshots/task-12-diagram.png)
 
 ---
 
@@ -76,7 +76,7 @@ Scale to five replicas, verify, then scale back to two.
 
 #### Screenshot 5 — Terminal showing the scale-up and scale-down results
 
-[Terminal showing the scale-up and scale-down results](screenshots/task-13-diagram.png)
+![Terminal showing the scale-up and scale-down results](screenshots/task-13-diagram.png)
 
 ---
 

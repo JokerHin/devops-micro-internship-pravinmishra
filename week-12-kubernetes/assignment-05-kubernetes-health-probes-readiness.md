@@ -20,7 +20,7 @@ Deploy two NGINX Pods without probes (`00-nginx-deploy-baseline.yaml`) to establ
 
 #### Screenshot 1 — Baseline manifest and healthy two-Pod rollout output
 
-[Baseline manifest and healthy two-Pod rollout output](screenshots/task-19-diagram.png)
+![Baseline manifest and healthy two-Pod rollout output](screenshots/task-19-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Add an HTTP readiness probe on `/` port 80 (`01-nginx-deploy-readiness.yaml`) an
 
 #### Screenshot 2 — Pod description showing the readiness probe and `Ready=True`
 
-[Pod description showing the readiness probe and `Ready=True`](screenshots/task-20-diagram.png)
+![Pod description showing the readiness probe and `Ready=True`](screenshots/task-20-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Change the readiness path to `/does-not-exist`, observe `NotReady` and a stalled
 
 #### Screenshot 3 — `NotReady` conditions followed by a successful fixed rollout
 
-[`NotReady` conditions followed by a successful fixed rollout](screenshots/task-21-diagram.png)
+![`NotReady` conditions followed by a successful fixed rollout](screenshots/task-21-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Perform a good image update to `nginx:1.21.2`, then attempt an update to `nginx:
 
 #### Screenshot 4 — Successful good rollout, stalled broken rollout, and successful recovery
 
-[Successful good rollout, stalled broken rollout, and successful recovery](screenshots/task-22-diagram.png)
+![Successful good rollout, stalled broken rollout, and successful recovery](screenshots/task-22-diagram.png)
 
 ---
 
@@ -76,7 +76,7 @@ Review probe timing/thresholds and retain or delete the Deployment.
 
 #### Screenshot 5 — Final healthy Pod state or optional cleanup output
 
-[Final healthy Pod state or optional cleanup output](screenshots/task-23-diagram.png)
+![Final healthy Pod state or optional cleanup output](screenshots/task-23-diagram.png)
 
 ---
 

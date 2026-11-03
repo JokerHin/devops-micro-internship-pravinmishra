@@ -20,13 +20,13 @@ Select a Kubernetes platform, confirm `kubectl` (and Helm, if used) can communic
 
 #### Screenshot 1 — Terminal showing the active Kubernetes context and Ready nodes
 
-[Terminal showing the active Kubernetes context and Ready nodes](screenshots/task-47-diagram.png)
+![Terminal showing the active Kubernetes context and Ready nodes](screenshots/task-47-diagram.png)
 
 ---
 
 #### Screenshot 2 (if using Helm) — Terminal showing `helm version`
 
-[Terminal showing `helm version`](screenshots/task-48-diagram.png)
+![Terminal showing `helm version`](screenshots/task-48-diagram.png)
 
 ---
 
@@ -40,7 +40,7 @@ Create an architecture diagram showing the public entry point, frontend, interna
 
 #### Screenshot 3 — Completed Kubernetes architecture diagram
 
-[Completed Kubernetes architecture diagram](screenshots/task-49-diagram.png)
+![Completed Kubernetes architecture diagram](screenshots/task-49-diagram.png)
 
 ---
 
@@ -54,13 +54,13 @@ Externalize non-sensitive configuration into ConfigMaps and sensitive values (da
 
 #### Screenshot 4 — ConfigMap manifest or `kubectl describe configmap` output showing non-sensitive configuration
 
-[ConfigMap manifest or `kubectl describe configmap` output showing non-sensitive configuration](screenshots/task-50-diagram.png)
+![ConfigMap manifest or `kubectl describe configmap` output showing non-sensitive configuration](screenshots/task-50-diagram.png)
 
 ---
 
 #### Screenshot 5 — Secret object usage with sensitive values hidden or redacted
 
-[Secret object usage with sensitive values hidden or redacted](screenshots/task-51-diagram.png)
+![Secret object usage with sensitive values hidden or redacted](screenshots/task-51-diagram.png)
 
 ---
 
@@ -74,13 +74,13 @@ Provide a persistent MySQL database (managed service or StatefulSet + PVC) reach
 
 #### Screenshot 6 — Managed MySQL status or MySQL StatefulSet/PVC status
 
-[Managed MySQL status or MySQL StatefulSet/PVC status](screenshots/task-52-diagram.png)
+![Managed MySQL status or MySQL StatefulSet/PVC status](screenshots/task-52-diagram.png)
 
 ---
 
 #### Screenshot 7 — Successful database connectivity or schema verification with credentials hidden
 
-[Successful database connectivity or schema verification with credentials hidden](screenshots/task-53-diagram.png)
+![Successful database connectivity or schema verification with credentials hidden](screenshots/task-53-diagram.png)
 
 ---
 
@@ -94,13 +94,13 @@ Run one or two Node.js/Express backend replicas on port 3010, expose them via Cl
 
 #### Screenshot 8 — Backend Deployment, Pods, and internal Service
 
-[Backend Deployment, Pods, and internal Service](screenshots/task-54-diagram.png)
+![Backend Deployment, Pods, and internal Service](screenshots/task-54-diagram.png)
 
 ---
 
 #### Screenshot 9 — Backend logs showing successful startup and database connectivity
 
-[Backend logs showing successful startup and database connectivity](screenshots/task-55-diagram.png)
+![Backend logs showing successful startup and database connectivity](screenshots/task-55-diagram.png)
 
 ---
 
@@ -114,13 +114,13 @@ Run one or two Next.js frontend replicas behind Nginx on port 80, reverse-proxyi
 
 #### Screenshot 10 — Frontend Deployment and Ready Pods
 
-[Frontend Deployment and Ready Pods](screenshots/task-56-diagram.png)
+![Frontend Deployment and Ready Pods](screenshots/task-56-diagram.png)
 
 ---
 
 #### Screenshot 11 — Nginx reverse-proxy configuration showing the internal backend Service name
 
-[Nginx reverse-proxy configuration showing the internal backend Service name](screenshots/task-57-diagram.png)
+![Nginx reverse-proxy configuration showing the internal backend Service name](screenshots/task-57-diagram.png)
 
 ---
 
@@ -134,13 +134,13 @@ Expose only the frontend publicly (LoadBalancer or Ingress), restrict backend ac
 
 #### Screenshot 12 — Frontend LoadBalancer or Ingress showing the public endpoint
 
-[Frontend LoadBalancer or Ingress showing the public endpoint](screenshots/task-58-diagram.png)
+![Frontend LoadBalancer or Ingress showing the public endpoint](screenshots/task-58-diagram.png)
 
 ---
 
 #### Screenshot 13 — Internal backend Service and NetworkPolicy (or equivalent restriction)
 
-[Internal backend Service and NetworkPolicy](screenshots/task-59-diagram.png)
+![Internal backend Service and NetworkPolicy](screenshots/task-59-diagram.png)
 
 ---
 
@@ -154,31 +154,31 @@ Confirm the frontend loads publicly, a full user flow reaches the backend and My
 
 #### Screenshot 14 — `kubectl get all` output
 
-[`kubectl get all` output](screenshots/task-60-diagram.png)
+![`kubectl get all` output](screenshots/task-60-diagram.png)
 
 ---
 
 #### Screenshot 15 — Functional Book Review App in the browser with the public URL or IP visible
 
-[Functional Book Review App in the browser with the public URL or IP visible](screenshots/task-61-diagram.png)
+![Functional Book Review App in the browser with the public URL or IP visible](screenshots/task-61-diagram.png)
 
 ---
 
 #### Screenshot 16 — Frontend Pod logs
 
-[Frontend Pod logs](screenshots/task-62-diagram.png)
+![Frontend Pod logs](screenshots/task-62-diagram.png)
 
 ---
 
 #### Screenshot 17 — Backend Pod logs showing successful requests or database activity
 
-[Backend Pod logs showing successful requests or database activity](screenshots/task-63-diagram.png)
+![Backend Pod logs showing successful requests or database activity](screenshots/task-63-diagram.png)
 
 ---
 
 #### Screenshot 18 (optional) — Kubernetes dashboard
 
-[Kubernetes dashboard](screenshots/task-64-diagram.png)
+![Kubernetes dashboard](screenshots/task-64-diagram.png)
 
 ---
 
@@ -192,7 +192,7 @@ Optionally package as a Helm chart, add HPA, add readiness/liveness probes, or c
 
 #### Screenshot 19 (optional) — Helm release, HPA, probes, or TLS evidence
 
-[Helm release, HPA, probes, or TLS evidence](screenshots/task-65-diagram.png)
+![Helm release, HPA, probes, or TLS evidence](screenshots/task-65-diagram.png)
 
 ---
 

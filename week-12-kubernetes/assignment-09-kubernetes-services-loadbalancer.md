@@ -20,7 +20,7 @@ Create resource group `rg-aks-lb-lab` and a one-node AKS cluster `aks-lb-lab` (`
 
 #### Screenshot 1 — AKS creation result and Ready node output
 
-[AKS creation result and Ready node output](screenshots/task-41-diagram.png)
+![AKS creation result and Ready node output](screenshots/task-41-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create two healthy, probed NGINX Pods for the public Service.
 
 #### Screenshot 2 — Successful rollout and two Ready Pods
 
-[Successful rollout and two Ready Pods](screenshots/task-42-diagram.png)
+![Successful rollout and two Ready Pods](screenshots/task-42-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Create `nginx-svc-lb` (type `LoadBalancer`, port 80), wait for `EXTERNAL-IP`, an
 
 #### Screenshot 3 — Service with public `EXTERNAL-IP` and successful `curl` output
 
-[Service with public `EXTERNAL-IP` and successful `curl` output](screenshots/task-43-diagram.png)
+![Service with public `EXTERNAL-IP` and successful `curl` output](screenshots/task-43-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Apply a broken readiness patch, confirm the Pod leaves the endpoint set and publ
 
 #### Screenshot 4 — Endpoint changes and public `curl` behavior before and after recovery
 
-[Endpoint changes and public `curl` behavior before and after recovery](screenshots/task-44-diagram.png)
+![Endpoint changes and public `curl` behavior before and after recovery](screenshots/task-44-diagram.png)
 
 ---
 
@@ -76,7 +76,7 @@ Scale to four replicas and confirm the endpoint set grows while the public IP st
 
 #### Screenshot 5 — Four replicas/endpoints behind the unchanged public endpoint
 
-[Four replicas/endpoints behind the unchanged public endpoint](screenshots/task-45-diagram.png)
+![Four replicas/endpoints behind the unchanged public endpoint](screenshots/task-45-diagram.png)
 
 ---
 
@@ -90,7 +90,7 @@ Resolve any pending endpoint or unhealthy backend issues, then delete the Kubern
 
 #### Screenshot 6 — Clean final verification or resource deletion command output
 
-[Clean final verification or resource deletion command output](screenshots/task-46-diagram.png)
+![Clean final verification or resource deletion command output](screenshots/task-46-diagram.png)
 
 ---
 

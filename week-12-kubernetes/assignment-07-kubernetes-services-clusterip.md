@@ -20,7 +20,7 @@ Create two healthy, labeled NGINX Pods (readiness + liveness probes) as Service 
 
 #### Screenshot 1 — Two Ready Pods with labels and IPs
 
-[Two Ready Pods with labels and IPs](screenshots/task-29-diagram.png)
+![Two Ready Pods with labels and IPs](screenshots/task-29-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `nginx-svc` (type `ClusterIP`, selector `app: nginx`, port 80) and inspec
 
 #### Screenshot 2 — Service ClusterIP plus populated Endpoints and EndpointSlices
 
-[Service ClusterIP plus populated Endpoints and EndpointSlice](screenshots/task-30-diagram.png)
+![Service ClusterIP plus populated Endpoints and EndpointSlice](screenshots/task-30-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Create a BusyBox `tester` Pod and call `nginx-svc` by short name, ClusterIP, and
 
 #### Screenshot 3 — Successful `wget` responses and `nslookup` output
 
-[Successful `wget` responses and `nslookup` output](screenshots/task-31-diagram.png)
+![Successful `wget` responses and `nslookup` output](screenshots/task-31-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Change the Service selector to `app: does-not-match`, confirm endpoints become e
 
 #### Screenshot 4 — Empty endpoints during failure and restored endpoints after the fix
 
-[Empty endpoints during failure and restored endpoints after the fix](screenshots/task-32-diagram.png)
+![Empty endpoints during failure and restored endpoints after the fix](screenshots/task-32-diagram.png)
 
 ---
 
@@ -76,7 +76,7 @@ Scale to one replica, apply a broken readiness patch, confirm the NotReady Pod i
 
 #### Screenshot 5 — NotReady Pod with excluded endpoint, followed by restored endpoint membership
 
-[NotReady Pod with excluded endpoint, followed by restored endpoint membership](screenshots/task-33-diagram.png)
+![NotReady Pod with excluded endpoint, followed by restored endpoint membership](screenshots/task-33-diagram.png)
 
 ---
 
@@ -90,7 +90,7 @@ Verify the Service path, then optionally delete `tester` and `nginx-svc`.
 
 #### Screenshot 6 — Final verification or optional cleanup output
 
-[Final verification or optional cleanup output](screenshots/task-34-diagram.png)
+![Final verification or optional cleanup output](screenshots/task-34-diagram.png)
 
 ---
 
