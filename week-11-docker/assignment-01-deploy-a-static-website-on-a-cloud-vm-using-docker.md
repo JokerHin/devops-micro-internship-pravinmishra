@@ -20,7 +20,7 @@ Provision an Ubuntu VM on AWS or Azure with a public IP and Security Group/NSG r
 
 #### Screenshot 1 — Cloud VM overview page showing the running VM, public IP, and security rules
 
-[Cloud VM overview page showing the running VM, public IP, and security rules](screenshots/task-1-diagram.png)
+![Cloud VM overview page showing the running VM, public IP, and security rules](screenshots/task-1-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Configure User Data (AWS) or Custom Data (Azure) to automatically install Docker
 
 #### Screenshot 2 — Output of `cat /var/log/cloud-init-output.log` showing Docker installation activity
 
-[Output of `cat /var/log/cloud-init-output.log` showing Docker installation activity](screenshots/task-2-diagram.png)
+![Output of `cat /var/log/cloud-init-output.log` showing Docker installation activity](screenshots/task-2-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Connect via SSH and confirm Docker is installed and running.
 
 #### Screenshot 3 — Terminal showing `docker --version` and `docker ps`
 
-[Terminal showing `docker --version` and `docker ps`](screenshots/task-3-diagram.png)
+![Terminal showing `docker --version` and `docker ps`](screenshots/task-3-diagram.png)
 
 ---
 
@@ -62,7 +62,7 @@ Clone `https://github.com/pravinmishraaws/Azure-Static-Website.git` and verify t
 
 #### Screenshot 4 — Terminal showing the project directory contents
 
-[Terminal showing the project directory contents](screenshots/task-4-diagram.png)
+![Terminal showing the project directory contents](screenshots/task-4-diagram.png)
 
 ---
 
@@ -76,7 +76,7 @@ Create a Dockerfile that serves the static site with `nginx:alpine`.
 
 #### Screenshot 5 — Dockerfile contents
 
-[Dockerfile contents](screenshots/task-5-diagram.png)
+![Dockerfile contents](screenshots/task-5-diagram.png)
 
 ---
 
@@ -90,7 +90,7 @@ Build the image tagged `static-site:latest`.
 
 #### Screenshot 6 — Terminal showing `docker images` with the `static-site:latest` image
 
-[Terminal showing `docker images` with the `static-site:latest` image](screenshots/task-6-diagram.png)
+![Terminal showing `docker images` with the `static-site:latest` image](screenshots/task-6-diagram.png)
 
 ---
 
@@ -104,7 +104,7 @@ Run the container mapping port 80, named `static-site`.
 
 #### Screenshot 7 — Terminal showing `docker ps` displaying the running container
 
-[Terminal showing `docker ps` displaying the running container](screenshots/task-7-diagram.png)
+![Terminal showing `docker ps` displaying the running container](screenshots/task-7-diagram.png)
 
 ---
 
@@ -118,13 +118,13 @@ Confirm the site is accessible through the VM's public IP in a browser.
 
 #### Screenshot 8 — Terminal showing the Public IP
 
-[Terminal showing the Public IP](screenshots/task-8-diagram.png)
+![Terminal showing the Public IP](screenshots/task-8-diagram.png)
 
 ---
 
 #### Screenshot 9 — Browser displaying the deployed website
 
-[Browser displaying the deployed website](screenshots/task-9-diagram.png)
+![Browser displaying the deployed website](screenshots/task-9-diagram.png)
 
 ---
 
@@ -146,7 +146,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post
 
-[Published LinkedIn post](screenshots/task-10-diagram.png)
+![Published LinkedIn post](screenshots/task-10-diagram.png)
 
 ---
 

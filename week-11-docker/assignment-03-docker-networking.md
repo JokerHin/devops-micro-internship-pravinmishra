@@ -20,37 +20,37 @@ List Docker networks, verify/pull the Nginx image, run an Nginx container (`mywe
 
 #### Screenshot 1 — Output of `docker network ls`
 
-[Output of `docker network ls`](screenshots/task-18-diagram.png)
+![Output of `docker network ls`](screenshots/task-18-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker images`
 
-[Output of `docker images`](screenshots/task-19-diagram.png)
+![Output of `docker images`](screenshots/task-19-diagram.png)
 
 ---
 
 #### Screenshot 3 — Output of `docker search nginx`
 
-[Output of `docker search nginx`](screenshots/task-20-diagram.png)
+![Output of `docker search nginx`](screenshots/task-20-diagram.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker pull nginx` (if applicable)
 
-[Successful `docker pull nginx`](screenshots/task-21-diagram.png)
+![Successful `docker pull nginx`](screenshots/task-21-diagram.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker ps` showing the running `myweb` container
 
-[Output of `docker ps` showing the running `myweb` container](screenshots/task-22-diagram.png)
+![Output of `docker ps` showing the running `myweb` container](screenshots/task-22-diagram.png)
 
 ---
 
 #### Screenshot 6 — Browser displaying the Nginx Welcome Page using the Public IP address
 
-[Browser displaying the Nginx Welcome Page using the Public IP address](screenshots/task-23-diagram.png)
+![Browser displaying the Nginx Welcome Page using the Public IP address](screenshots/task-23-diagram.png)
 
 ---
 
@@ -64,55 +64,55 @@ Create a custom bridge network `mynetwork`, build and run a Node/Express `fronte
 
 #### Screenshot 1 — Output of `docker network create mynetwork`
 
-[Output of `docker network create mynetwork`](screenshots/task-24-diagram.png)
+![Output of `docker network create mynetwork`](screenshots/task-24-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker network ls`
 
-[Output of `docker network ls`](screenshots/task-25-diagram.png)
+![Output of `docker network ls`](screenshots/task-25-diagram.png)
 
 ---
 
 #### Screenshot 3 — Frontend Dockerfile
 
-[Frontend Dockerfile](screenshots/task-26-diagram.png)
+![Frontend Dockerfile](screenshots/task-26-diagram.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker build` for the frontend
 
-[Successful `docker build` for the frontend](screenshots/task-27-diagram.png)
+![Successful `docker build` for the frontend](screenshots/task-27-diagram.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker ps` showing the frontend container
 
-[Output of `docker ps` showing the frontend container](screenshots/task-28-diagram.png)
+![Output of `docker ps` showing the frontend container](screenshots/task-28-diagram.png)
 
 ---
 
 #### Screenshot 6 — Output of `docker ps` showing both frontend and backend containers
 
-[Output of `docker ps` showing both frontend and backend containers](screenshots/task-29-diagram.png)
+![Output of `docker ps` showing both frontend and backend containers](screenshots/task-29-diagram.png)
 
 ---
 
 #### Screenshot 7 — Output of `docker network inspect mynetwork`
 
-[Output of `docker network inspect mynetwork`](screenshots/task-30-diagram.png)
+![Output of `docker network inspect mynetwork`](screenshots/task-30-diagram.png)
 
 ---
 
 #### Screenshot 8 — Successful `curl http://<Public-IP>` showing "Hello from Frontend"
 
-[Successful `curl http://<Public-IP>` showing "Hello from Frontend"](screenshots/task-31-diagram.png)
+![Successful `curl http://<Public-IP>` showing "Hello from Frontend"](screenshots/task-31-diagram.png)
 
 ---
 
 #### Screenshot 9 — Successful `curl backend` output from the frontend container showing the Nginx Welcome Page
 
-[Successful `curl backend` output from the frontend container showing the Nginx Welcome Page](screenshots/task-32-diagram.png)
+![Successful `curl backend` output from the frontend container showing the Nginx Welcome Page](screenshots/task-32-diagram.png)
 
 ---
 
@@ -126,91 +126,91 @@ Build a three-tier app (frontend, backend, MongoDB) across `backend-network` (ba
 
 #### Screenshot 1 — Creation of `backend-network`
 
-[Creation of `backend-network`](screenshots/task-33-diagram.png)
+![Creation of `backend-network`](screenshots/task-33-diagram.png)
 
 ---
 
 #### Screenshot 2 — Creation of `frontend-network`
 
-[Creation of `frontend-network`](screenshots/task-34-diagram.png)
+![Creation of `frontend-network`](screenshots/task-34-diagram.png)
 
 ---
 
 #### Screenshot 3 — Project folder structure
 
-[Project folder structure](screenshots/task-35-diagram.png)
+![Project folder structure](screenshots/task-35-diagram.png)
 
 ---
 
 #### Screenshot 4 — Database Dockerfile
 
-[Database Dockerfile](screenshots/task-36-diagram.png)
+![Database Dockerfile](screenshots/task-36-diagram.png)
 
 ---
 
 #### Screenshot 5 — Backend Dockerfile
 
-[Backend Dockerfile](screenshots/task-37-diagram.png)
+![Backend Dockerfile](screenshots/task-37-diagram.png)
 
 ---
 
 #### Screenshot 6 — Frontend Dockerfile
 
-[Frontend Dockerfile](screenshots/task-38-diagram.png)
+![Frontend Dockerfile](screenshots/task-38-diagram.png)
 
 ---
 
 #### Screenshot 7 — Successful Docker image builds (database, backend, frontend)
 
-[Successful Docker image builds (database, backend, frontend)](screenshots/task-39-diagram.png)
+![Successful Docker image builds (database, backend, frontend)](screenshots/task-39-diagram.png)
 
 ---
 
 #### Screenshot 8 — Running containers (`docker ps`)
 
-[Running containers (`docker ps`)](screenshots/task-40-diagram.png)
+![Running containers (`docker ps`)](screenshots/task-40-diagram.png)
 
 ---
 
 #### Screenshot 9 — Output of `docker network inspect backend-network`
 
-[Output of `docker network inspect backend-network`](screenshots/task-41-diagram.png)
+![Output of `docker network inspect backend-network`](screenshots/task-41-diagram.png)
 
 ---
 
 #### Screenshot 10 — Output of `docker network inspect frontend-network`
 
-[Output of `docker network inspect frontend-network`](screenshots/task-42-diagram.png)
+![Output of `docker network inspect frontend-network`](screenshots/task-42-diagram.png)
 
 ---
 
 #### Screenshot 11 — Browser showing the frontend application
 
-[Browser showing the frontend application](screenshots/task-43-diagram.png)
+![Browser showing the frontend application](screenshots/task-43-diagram.png)
 
 ---
 
 #### Screenshot 12 — Successful `curl api` from the frontend container
 
-[Successful `curl api` from the frontend container](screenshots/task-44-diagram.png)
+![Successful `curl api` from the frontend container](screenshots/task-44-diagram.png)
 
 ---
 
 #### Screenshot 13 — MongoDB connection using `mongosh`
 
-[MongoDB connection using `mongosh`](screenshots/task-45-diagram.png)
+![MongoDB connection using `mongosh`](screenshots/task-45-diagram.png)
 
 ---
 
 #### Screenshot 14 — Successful document insertion
 
-[Successful document insertion](screenshots/task-46-diagram.png)
+![Successful document insertion](screenshots/task-46-diagram.png)
 
 ---
 
 #### Screenshot 15 — Successful retrieval of the inserted document
 
-[Successful retrieval of the inserted document](screenshots/task-47-diagram.png)
+![Successful retrieval of the inserted document](screenshots/task-47-diagram.png)
 
 ---
 
@@ -224,31 +224,31 @@ Deploy an Nginx container (`fastapp`) using Host Network Mode and verify it's re
 
 #### Screenshot 1 — Output of `docker run --network host`
 
-[Output of `docker run --network host`](screenshots/task-48-diagram.png)
+![Output of `docker run --network host`](screenshots/task-48-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker ps` showing the running `fastapp` container
 
-[Output of `docker ps` showing the running `fastapp` container](screenshots/task-49-diagram.png)
+![Output of `docker ps` showing the running `fastapp` container](screenshots/task-49-diagram.png)
 
 ---
 
 #### Screenshot 3 — Browser or terminal displaying the Nginx Welcome Page
 
-[Browser or terminal displaying the Nginx Welcome Page](screenshots/task-50-diagram.png)
+![Browser or terminal displaying the Nginx Welcome Page](screenshots/task-50-diagram.png)
 
 ---
 
 #### Screenshot 4 — Output of `docker inspect fastapp | grep "NetworkMode"`
 
-[Output of `docker inspect fastapp | grep "NetworkMode"`](screenshots/task-51-diagram.png)
+![Output of `docker inspect fastapp | grep "NetworkMode"`](screenshots/task-51-diagram.png)
 
 ---
 
 #### Screenshot 5 — Successful cleanup showing `docker stop fastapp` and `docker rm fastapp`
 
-[Successful cleanup showing `docker stop fastapp` and `docker rm fastapp`](screenshots/task-52-diagram.png)
+![Successful cleanup showing `docker stop fastapp` and `docker rm fastapp`](screenshots/task-52-diagram.png)
 
 ---
 
@@ -270,7 +270,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post
 
-[Published LinkedIn post](screenshots/task-10-diagram.png)
+![Published LinkedIn post](screenshots/task-10-diagram.png)
 
 ---
 

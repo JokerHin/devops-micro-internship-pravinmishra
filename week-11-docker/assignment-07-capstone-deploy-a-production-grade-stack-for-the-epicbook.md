@@ -20,13 +20,13 @@ Explore the `theepicbook` repository, identify its components (UI, API, DB, work
 
 #### Deliverable — `docs/01-architecture-diagram.png`
 
-[`docs/01-architecture-diagram.png`](screenshots/task-98-diagram.png)
+![`docs/01-architecture-diagram.png`](screenshots/task-98-diagram.png)
 
 ---
 
 #### Deliverable — `docs/02-env-and-ports.md`
 
-[`docs/02-env-and-ports.md`](screenshots/task-83-diagram.png)
+![`docs/02-env-and-ports.md`](screenshots/task-83-diagram.png)
 
 ---
 
@@ -40,7 +40,7 @@ Create minimal multi-stage Dockerfiles for the frontend and backend services, wi
 
 #### Deliverable — `frontend/Dockerfile`, `backend/Dockerfile`, and `.dockerignore` files, with a note on layer optimizations and security benefits
 
-[`frontend/Dockerfile`, `backend/Dockerfile`, and `.dockerignore` files, with a note on layer optimizations and security benefits](screenshots/task-84-diagram.png)
+![`frontend/Dockerfile`, `backend/Dockerfile`, and `.dockerignore` files, with a note on layer optimizations and security benefits](screenshots/task-84-diagram.png)
 
 ---
 
@@ -54,7 +54,7 @@ Author `docker-compose.yml` defining the reverse-proxy, frontend, backend, and d
 
 #### Deliverable — `docker-compose.yml`
 
-[`docker-compose.yml`](screenshots/task-85-diagram.png)
+![`docker-compose.yml`](screenshots/task-85-diagram.png)
 
 ---
 
@@ -68,7 +68,7 @@ Add a database healthcheck, a `/health` endpoint check on the backend, and `depe
 
 #### Deliverable — `docs/03-healthchecks-and-depends-on.md`
 
-[`docs/03-healthchecks-and-depends-on.md`](screenshots/task-86-diagram.png)
+![`docs/03-healthchecks-and-depends-on.md`](screenshots/task-86-diagram.png)
 
 ---
 
@@ -82,7 +82,7 @@ Configure Nginx or Traefik to route `/api` to the backend and `/` to the fronten
 
 #### Deliverable — `docs/04-proxy-routing-and-cors.md`
 
-[`docs/04-proxy-routing-and-cors.md`](screenshots/task-87-diagram.png)
+![`docs/04-proxy-routing-and-cors.md`](screenshots/task-87-diagram.png)
 
 ---
 
@@ -96,13 +96,13 @@ Mount the database data directory to a named volume, document a snapshot/backup 
 
 #### Deliverable — `docs/05-persistence-and-backup.md`
 
-[`docs/05-persistence-and-backup.md`](screenshots/task-88-diagram.png)
+![`docs/05-persistence-and-backup.md`](screenshots/task-88-diagram.png)
 
 ---
 
 #### Screenshot — System state before and after a manual snapshot restore cycle
 
-[System state before and after a manual snapshot restore cycle](screenshots/task-89-diagram.png)
+![System state before and after a manual snapshot restore cycle](screenshots/task-89-diagram.png)
 
 ---
 
@@ -116,13 +116,13 @@ Bind-mount the reverse proxy log directory to the host, redirect application log
 
 #### Deliverable — `docs/06-logging-layout.md`
 
-[`docs/06-logging-layout.md`](screenshots/task-91-diagram.png)
+![`docs/06-logging-layout.md`](screenshots/task-91-diagram.png)
 
 ---
 
 #### Screenshot — Live running JSON container log entries
 
-[Live running JSON container log entries](screenshots/task-90-diagram.png)
+![Live running JSON container log entries](screenshots/task-90-diagram.png)
 
 ---
 
@@ -142,13 +142,13 @@ Provision a VM per the security requirements (SSH restricted to your IP; HTTP/HT
 
 #### Screenshot — Browser showing successful web UI retrieval via the cloud public IP
 
-[Browser showing successful web UI retrieval via the cloud public IP](screenshots/task-93-diagram.png)
+![Browser showing successful web UI retrieval via the cloud public IP](screenshots/task-93-diagram.png)
 
 ---
 
 #### Screenshot — Active page interaction confirming backend API data fetches succeed
 
-[Active page interaction confirming backend API data fetches succeed](screenshots/task-94-diagram.png)
+![Active page interaction confirming backend API data fetches succeed](screenshots/task-94-diagram.png)
 
 ---
 
@@ -187,7 +187,7 @@ docker compose up -d --build
 
 #### Screenshot (optional) — Completed automated pipeline run
 
-[Completed automated pipeline run](screenshots/task-95-diagram.png)
+![Completed automated pipeline run](screenshots/task-95-diagram.png)
 
 ---
 
@@ -201,13 +201,13 @@ Inject faults (drop backend/database dependencies) and evaluate frontend error h
 
 #### Deliverable — `docs/09-runbook.md`
 
-[`docs/09-runbook.md`](screenshots/task-96-diagram.png)
+![`docs/09-runbook.md`](screenshots/task-96-diagram.png)
 
 ---
 
 #### Deliverable — `docs/10-reliability-tests.md`
 
-[`docs/10-reliability-tests.md`](screenshots/task-97-diagram.png)
+![`docs/10-reliability-tests.md`](screenshots/task-97-diagram.png)
 
 ---
 
@@ -229,7 +229,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post showing the text body and a deployment verification image
 
-[Published LinkedIn post](screenshots/task-10-diagram.png)
+![Published LinkedIn post](screenshots/task-10-diagram.png)
 
 ---
 

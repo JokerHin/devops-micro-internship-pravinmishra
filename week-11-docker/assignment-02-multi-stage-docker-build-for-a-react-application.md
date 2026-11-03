@@ -20,7 +20,7 @@ Clone `https://github.com/pravinmishraaws/my-react-app.git` and create a `.docke
 
 #### Screenshot 1 — Contents of the `.dockerignore` file
 
-[Contents of the `.dockerignore` file](screenshots/task-11-diagram.png)
+![Contents of the `.dockerignore` file](screenshots/task-11-diagram.png)
 
 ---
 
@@ -34,13 +34,13 @@ Create `Dockerfile.single`, build `react-single`, and run it on port 3000.
 
 #### Screenshot 2 — Contents of `Dockerfile.single`
 
-[Contents of `Dockerfile.single`](screenshots/task-12-diagram.png)
+![Contents of `Dockerfile.single`](screenshots/task-12-diagram.png)
 
 ---
 
 #### Screenshot 3 — Browser displaying the application running from the single-stage container
 
-[Browser displaying the application running from the single-stage container](screenshots/task-13-diagram.png)
+![Browser displaying the application running from the single-stage container](screenshots/task-13-diagram.png)
 
 ---
 
@@ -54,13 +54,13 @@ Create a multi-stage Dockerfile with separate build and Nginx runtime stages, bu
 
 #### Screenshot 4 — Contents of the multi-stage Dockerfile
 
-[Contents of the multi-stage Dockerfile](screenshots/task-14-diagram.png)
+![Contents of the multi-stage Dockerfile](screenshots/task-14-diagram.png)
 
 ---
 
 #### Screenshot 5 — Browser displaying the application running from the multi-stage container
 
-[Browser displaying the application running from the multi-stage container](screenshots/task-15-diagram.png)
+![Browser displaying the application running from the multi-stage container](screenshots/task-15-diagram.png)
 
 ---
 
@@ -74,7 +74,7 @@ Compare the single-stage and multi-stage image sizes and calculate the percentag
 
 #### Screenshot 6 — Docker image list showing both image sizes
 
-[Docker image list showing both image sizes](screenshots/task-16-diagram.png)
+![Docker image list showing both image sizes](screenshots/task-16-diagram.png)
 
 ---
 
@@ -88,7 +88,7 @@ Write a 5–8 line analysis covering the percentage reduction, security benefits
 
 #### Screenshot 7 — Analysis included in your submission document
 
-[Analysis included in your submission document](screenshots/task-17-diagram.png)
+![Analysis included in your submission document](screenshots/task-17-diagram.png)
 
 ---
 
@@ -154,7 +154,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post
 
-[Published LinkedIn post](screenshots/task-10-diagram.png)
+![Published LinkedIn post](screenshots/task-10-diagram.png)
 
 ---
 

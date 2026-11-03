@@ -20,7 +20,7 @@ Confirm your production-grade EpicBook containers from this week's capstone are 
 
 #### Screenshot 1 — `docker ps` showing your running EpicBook application container
 
-[`docker ps` showing your running EpicBook application container](screenshots/task-99-diagram.png)
+![`docker ps` showing your running EpicBook application container](screenshots/task-99-diagram.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a `CLAUDE.md` in your workspace that tells Claude this project only ever 
 
 #### Screenshot 2 — `CLAUDE.md` open in VS Code showing the project overview, hardening workflow, and safety rules
 
-[`CLAUDE.md` open in VS Code showing the project overview, hardening workflow, and safety rules](screenshots/task-100-diagram.png)
+![`CLAUDE.md` open in VS Code showing the project overview, hardening workflow, and safety rules](screenshots/task-100-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ Ask Claude Code to inspect your running container using only read-only Docker co
 
 #### Screenshot 3 — Claude's proposed audit plan and read-only inspection
 
-[Claude's proposed audit plan and read-only inspection](screenshots/task-101-diagram.png)
+![Claude's proposed audit plan and read-only inspection](screenshots/task-101-diagram.png)
 
 ---
 
@@ -62,13 +62,13 @@ Write a Bash script that runs `docker inspect` and `docker image inspect` agains
 
 #### Screenshot 4 — Your audit script open in an editor, showing the six check functions
 
-[Your audit script open in an editor, showing the six check functions](screenshots/task-102-diagram.png)
+![Your audit script open in an editor, showing the six check functions](screenshots/task-102-diagram.png)
 
 ---
 
 #### Screenshot 5 — Terminal output of `bash -n` confirming the script has no syntax errors, and `ls -l` showing it is executable
 
-[Terminal output of `bash -n` confirming the script has no syntax errors, and `ls -l` showing it is executable](screenshots/task-103-diagram.png)
+![Terminal output of `bash -n` confirming the script has no syntax errors, and `ls -l` showing it is executable](screenshots/task-103-diagram.png)
 
 ---
 
@@ -82,7 +82,7 @@ Run the script against your running EpicBook container and record the results ho
 
 #### Screenshot 6 — Script output showing your Full Name and all six check results
 
-[Script output showing your Full Name and all six check results](screenshots/task-104-diagram.png)
+![Script output showing your Full Name and all six check results](screenshots/task-104-diagram.png)
 
 ---
 
@@ -96,13 +96,13 @@ Turn the script into a Claude Code skill restricted to read-only tools, and run 
 
 #### Screenshot 7 — `SKILL.md` frontmatter showing the tool restrictions and safety rules
 
-[`SKILL.md` frontmatter showing the tool restrictions and safety rules](screenshots/task-105-diagram.png)
+![`SKILL.md` frontmatter showing the tool restrictions and safety rules](screenshots/task-105-diagram.png)
 
 ---
 
 #### Screenshot 8 — `/docker-audit` output showing the findings and Claude's recommended fix
 
-[`/docker-audit` output showing the findings and Claude's recommended fix](screenshots/task-106-diagram.png)
+![`/docker-audit` output showing the findings and Claude's recommended fix](screenshots/task-106-diagram.png)
 
 ---
 
@@ -122,13 +122,13 @@ Edit your Dockerfile to apply Claude's recommendation, rebuild the image, recrea
 
 #### Screenshot 10 — `docker build` and `docker run` succeeding with the rebuilt image
 
-[`docker build` and `docker run` succeeding with the rebuilt image](screenshots/task-108-diagram.png)
+![`docker build` and `docker run` succeeding with the rebuilt image](screenshots/task-108-diagram.png)
 
 ---
 
 #### Screenshot 11 — Second `/docker-audit` run showing the previously failed check now passing
 
-[Second `/docker-audit` run showing the previously failed check now passing](screenshots/task-109-diagram.png)
+![Second `/docker-audit` run showing the previously failed check now passing](screenshots/task-109-diagram.png)
 
 ---
 

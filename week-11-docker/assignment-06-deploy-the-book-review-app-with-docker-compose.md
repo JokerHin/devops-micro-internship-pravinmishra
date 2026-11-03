@@ -30,7 +30,7 @@ backend/
 docker-compose.yml
 ```
 
-[Project Structure](screenshots/task-110-diagram.png)
+![Project Structure](screenshots/task-110-diagram.png)
 
 ---
 
@@ -47,7 +47,7 @@ backend/.dockerignore
 
 Ensure that no real passwords, tokens, or secrets are visible.
 
-[Environment and Docker Ignore Files](screenshots/task-110-diagram.png)
+![Environment and Docker Ignore Files](screenshots/task-110-diagram.png)
 
 ---
 
@@ -63,7 +63,7 @@ Prepare Dockerfiles for the frontend and backend services and build both service
 
 Add a screenshot showing the completed `frontend/Dockerfile`.
 
-[Frontend Dockerfile](screenshots/task-111-diagram.png)
+![Frontend Dockerfile](screenshots/task-111-diagram.png)
 
 ---
 
@@ -71,7 +71,7 @@ Add a screenshot showing the completed `frontend/Dockerfile`.
 
 Add a screenshot showing the completed `backend/Dockerfile`.
 
-[Backend Dockerfile](screenshots/task-112-diagram.png)
+![Backend Dockerfile](screenshots/task-112-diagram.png)
 
 ---
 
@@ -83,7 +83,7 @@ Add a screenshot of the terminal showing successful completion of:
 docker compose build
 ```
 
-[Docker Compose Build](screenshots/task-113-diagram.png)
+![Docker Compose Build](screenshots/task-113-diagram.png)
 
 ---
 
@@ -105,7 +105,7 @@ Add a screenshot showing the MySQL service in `docker-compose.yml`, including:
 - `mysql_data` volume mount
 - No published MySQL port
 
-[MySQL Service, Health Check, and Volume Mount](screenshots/task-114-diagram.png)
+![MySQL Service, Health Check, and Volume Mount](screenshots/task-114-diagram.png)
 
 ---
 
@@ -118,7 +118,7 @@ Add a screenshot showing the backend service configuration, including:
 - Browser frontend origin configured for CORS
 - Published backend port
 
-[Backend Configuration](screenshots/task-115-diagram.png)
+![Backend Configuration](screenshots/task-115-diagram.png)
 
 ---
 
@@ -130,7 +130,7 @@ Add a screenshot showing the frontend service configuration, including:
 - `depends_on` for the backend service
 - Browser-facing `NEXT_PUBLIC_API_URL`
 
-[Frontend Configuration](screenshots/task-115-diagram.png)
+![Frontend Configuration](screenshots/task-115-diagram.png)
 
 ---
 
@@ -138,7 +138,7 @@ Add a screenshot showing the frontend service configuration, including:
 
 Add a screenshot showing the `mysql_data` volume definition in `docker-compose.yml`.
 
-[Named Volume Definition](screenshots/task-116-diagram.png)
+![Named Volume Definition](screenshots/task-116-diagram.png)
 
 ---
 
@@ -160,7 +160,7 @@ docker compose ps
 
 The output must show the MySQL, backend, and frontend services running. MySQL must show as healthy.
 
-[Docker Compose Service Status](screenshots/task-117-diagram.png)
+![Docker Compose Service Status](screenshots/task-117-diagram.png)
 
 ---
 
@@ -174,7 +174,7 @@ docker compose logs mysql backend --tail=50
 
 The logs must show MySQL readiness and successful backend database connection.
 
-[MySQL and Backend Logs](screenshots/task-118-diagram.png)
+![MySQL and Backend Logs](screenshots/task-118-diagram.png)
 
 ---
 
@@ -192,7 +192,7 @@ Add a browser screenshot showing successful user registration or login.
 
 Add your full name as a clear caption directly below the screenshot.
 
-[Successful Registration or Login](screenshots/task-119-diagram.png)
+![Successful Registration or Login](screenshots/task-119-diagram.png)
 
 ---
 
@@ -202,7 +202,7 @@ Add a browser screenshot showing a created book review visible in the applicatio
 
 Add your full name as a clear caption directly below the screenshot.
 
-[Created Book Review](screenshots/task-119-diagram.png)
+![Created Book Review](screenshots/task-119-diagram.png)
 
 ---
 
@@ -213,7 +213,7 @@ Add a browser developer-tools screenshot with:
 - The Network tab showing a successful API request
 - The Console drawer showing no CORS error after the API interaction
 
-[CORS Verification](screenshots/task-120-diagram.png)
+![CORS Verification](screenshots/task-120-diagram.png)
 
 ---
 
@@ -231,7 +231,7 @@ Add a browser screenshot showing the registered user or created review before th
 
 Add your full name as a clear caption directly below the screenshot.
 
-[Data Before Restart](screenshots/task-119-diagram.png)
+![Data Before Restart](screenshots/task-119-diagram.png)
 
 ---
 
@@ -247,7 +247,7 @@ docker compose ps
 
 Do not use `docker compose down -v`.
 
-[Non-Destructive Stack Restart](screenshots/task-121-diagram.png)
+![Non-Destructive Stack Restart](screenshots/task-121-diagram.png)
 
 ---
 
@@ -257,7 +257,7 @@ Add a browser screenshot showing the same registered user or review after the st
 
 Add your full name as a clear caption directly below the screenshot.
 
-[Data Before Restart](screenshots/task-119-diagram.png)
+![Data Before Restart](screenshots/task-119-diagram.png)
 
 ---
 

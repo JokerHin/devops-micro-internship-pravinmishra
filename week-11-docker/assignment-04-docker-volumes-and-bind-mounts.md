@@ -20,61 +20,61 @@ Run an Nginx container (`myweb`) with a Bind Mount from `~/nginx-logs` to `/var/
 
 #### Screenshot 1 — Output of `docker images`
 
-[Output of `docker images`](screenshots/task-53-diagram.png)
+![Output of `docker images`](screenshots/task-53-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker search nginx`
 
-[Output of `docker search nginx`](screenshots/task-54-diagram.png)
+![Output of `docker search nginx`](screenshots/task-54-diagram.png)
 
 ---
 
 #### Screenshot 3 — Successful `docker pull nginx` (if applicable)
 
-[Successful `docker pull nginx`](screenshots/task-55-diagram.png)
+![Successful `docker pull nginx`](screenshots/task-55-diagram.png)
 
 ---
 
 #### Screenshot 4 — Creation of the `~/nginx-logs` directory
 
-[Creation of the `~/nginx-logs` directory](screenshots/task-56-diagram.png)
+![Creation of the `~/nginx-logs` directory](screenshots/task-56-diagram.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker run` with the Bind Mount
 
-[Output of `docker run` with the Bind Mount](screenshots/task-57-diagram.png)
+![Output of `docker run` with the Bind Mount](screenshots/task-57-diagram.png)
 
 ---
 
 #### Screenshot 6 — Output of `docker ps` showing the running `myweb` container
 
-[Output of `docker ps` showing the running `myweb` container](screenshots/task-58-diagram.png)
+![Output of `docker ps` showing the running `myweb` container](screenshots/task-58-diagram.png)
 
 ---
 
 #### Screenshot 7 — Browser displaying the Nginx Welcome Page
 
-[Browser displaying the Nginx Welcome Page](screenshots/task-59-diagram.png)
+![Browser displaying the Nginx Welcome Page](screenshots/task-59-diagram.png)
 
 ---
 
 #### Screenshot 8 — Output of `ls ~/nginx-logs` showing `access.log` and `error.log`
 
-[Output of `ls ~/nginx-logs` showing `access.log` and `error.log`](screenshots/task-60-diagram.png)
+![Output of `ls ~/nginx-logs` showing `access.log` and `error.log`](screenshots/task-60-diagram.png)
 
 ---
 
 #### Screenshot 9 — Successful removal of the container
 
-[Successful removal of the container](screenshots/task-61-diagram.png)
+![Successful removal of the container](screenshots/task-61-diagram.png)
 
 ---
 
 #### Screenshot 10 — Output of `ls ~/nginx-logs` confirming the log files remain after the container has been removed
 
-[Output of `ls ~/nginx-logs` confirming the log files remain after the container has been removed](screenshots/task-62-diagram.png)
+![Output of `ls ~/nginx-logs` confirming the log files remain after the container has been removed](screenshots/task-62-diagram.png)
 
 ---
 
@@ -88,73 +88,73 @@ Create a custom network `mynetwork` and a Docker volume `shared-data`, build and
 
 #### Screenshot 1 — Project folder structure
 
-[Project folder structure](screenshots/task-63-diagram.png)
+![Project folder structure](screenshots/task-63-diagram.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker network create mynetwork`
 
-[Output of `docker network create mynetwork`](screenshots/task-64-diagram.png)
+![Output of `docker network create mynetwork`](screenshots/task-64-diagram.png)
 
 ---
 
 #### Screenshot 3 — Output of `docker volume create shared-data`
 
-[Output of `docker volume create shared-data`](screenshots/task-65-diagram.png)
+![Output of `docker volume create shared-data`](screenshots/task-65-diagram.png)
 
 ---
 
 #### Screenshot 4 — Backend Dockerfile
 
-[Backend Dockerfile](screenshots/task-66-diagram.png)
+![Backend Dockerfile](screenshots/task-66-diagram.png)
 
 ---
 
 #### Screenshot 5 — Successful backend image build
 
-[Successful backend image build](screenshots/task-67-diagram.png)
+![Successful backend image build](screenshots/task-67-diagram.png)
 
 ---
 
 #### Screenshot 6 — Frontend Dockerfile
 
-[Successful backend image build](screenshots/task-68-diagram.png)
+![Successful backend image build](screenshots/task-68-diagram.png)
 
 ---
 
 #### Screenshot 7 — Successful frontend image build
 
-[Successful frontend image build](screenshots/task-69-diagram.png)
+![Successful frontend image build](screenshots/task-69-diagram.png)
 
 ---
 
 #### Screenshot 8 — Output of `docker ps` showing both containers
 
-[Output of `docker ps` showing both containers](screenshots/task-70-diagram.png)
+![Output of `docker ps` showing both containers](screenshots/task-70-diagram.png)
 
 ---
 
 #### Screenshot 9 — Successful execution of `docker exec backend curl http://localhost/write`
 
-[Successful execution of `docker exec backend curl http://localhost/write`](screenshots/task-71-diagram.png)
+![Successful execution of `docker exec backend curl http://localhost/write`](screenshots/task-71-diagram.png)
 
 ---
 
 #### Screenshot 10 — Browser displaying "Hello from Backend!"
 
-[Browser displaying "Hello from Backend!"](screenshots/task-71-diagram.png)
+![Browser displaying "Hello from Backend!"](screenshots/task-71-diagram.png)
 
 ---
 
 #### Screenshot 11 — Browser displaying "Test Data 1" after the first update
 
-[Browser displaying "Test Data 1" after the first update](screenshots/task-71-diagram.png)
+![Browser displaying "Test Data 1" after the first update](screenshots/task-71-diagram.png)
 
 ---
 
 #### Screenshot 12 — Browser displaying "Test Data 2 - New Update" after the second update
 
-[Browser displaying "Test Data 2 - New Update" after the second update](screenshots/task-72-diagram.png)
+![Browser displaying "Test Data 2 - New Update" after the second update](screenshots/task-72-diagram.png)
 
 ---
 
@@ -176,7 +176,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post
 
-[Published LinkedIn post](screenshots/task-10-diagram.png)
+![Published LinkedIn post](screenshots/task-10-diagram.png)
 
 ---
 

@@ -20,49 +20,49 @@ Create a Docker Hub repository (`my-react-app`), log in from the CLI, tag and pu
 
 #### Screenshot 1 — Docker Hub repository (`my-react-app`)
 
-[Docker Hub repository (`my-react-app`)](screenshots/task-74-diagram.png)
+![Docker Hub repository (`my-react-app`)](screenshots/task-74-diagram.png)
 
 ---
 
 #### Screenshot 2 — Successful `docker login`
 
-[Successful `docker login`](screenshots/task-75-diagram.png)
+![Successful `docker login`](screenshots/task-75-diagram.png)
 
 ---
 
 #### Screenshot 3 — Successful `docker tag`
 
-[Successful `docker tag`](screenshots/task-76-diagram.png)
+![Successful `docker tag`](screenshots/task-76-diagram.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker push`
 
-[Successful `docker push`](screenshots/task-77-diagram.png)
+![Successful `docker push`](screenshots/task-77-diagram.png)
 
 ---
 
 #### Screenshot 5 — Docker Hub repository showing the uploaded image
 
-[Docker Hub repository showing the uploaded image](screenshots/task-78-diagram.png)
+![Docker Hub repository showing the uploaded image](screenshots/task-78-diagram.png)
 
 ---
 
 #### Screenshot 6 — Successful `docker pull`
 
-[Successful `docker pull`](screenshots/task-79-diagram.png)
+![Successful `docker pull`](screenshots/task-79-diagram.png)
 
 ---
 
 #### Screenshot 7 — Output of `docker ps`
 
-[Output of `docker ps`](screenshots/task-80-diagram.png)
+![Output of `docker ps`](screenshots/task-80-diagram.png)
 
 ---
 
 #### Screenshot 8 — Browser displaying the running React application
 
-[Browser displaying the running React application](screenshots/task-81-diagram.png)
+![Browser displaying the running React application](screenshots/task-81-diagram.png)
 
 ---
 
@@ -84,7 +84,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post
 
-[Published LinkedIn post](screenshots/task-10-diagram.png)
+![Published LinkedIn post](screenshots/task-10-diagram.png)
 
 ---
 
